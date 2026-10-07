@@ -10,6 +10,7 @@ interface AssumptionsPanelProps {
   onToggle: () => void;
   returnPct: string;
   onReturnPctChange: (v: string) => void;
+  onReturnPctBlur: () => void;
   taxRate: number;
   onTaxRateChange: (v: number) => void;
   rebalancesPerYear: number;
@@ -23,6 +24,7 @@ export default function AssumptionsPanel({
   onToggle,
   returnPct,
   onReturnPctChange,
+  onReturnPctBlur,
   taxRate,
   onTaxRateChange,
   rebalancesPerYear,
@@ -65,6 +67,7 @@ export default function AssumptionsPanel({
                 helperText="7% is the S&P 500's long-run average after inflation. The nominal average is closer to 10%, so these totals are in today's dollars."
                 value={returnPct}
                 onChange={onReturnPctChange}
+                onBlur={onReturnPctBlur}
                 suffix="%"
                 placeholder="7"
                 className="pt-4"

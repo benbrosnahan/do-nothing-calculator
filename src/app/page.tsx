@@ -12,14 +12,15 @@ export default function Home() {
   const [contributionRaw, setContributionRaw] = useState(
     formatDollarInput(String(DEFAULT_INPUTS.monthlyContribution))
   );
-  const [returnPct, setReturnPct] = useState(String(DEFAULT_INPUTS.annualReturn * 100));
+  const [returnPct, setReturnPct] = useState((DEFAULT_INPUTS.annualReturn * 100).toFixed(2));
   const [taxRate, setTaxRate] = useState(DEFAULT_INPUTS.taxRate);
   const [rebalancesPerYear, setRebalancesPerYear] = useState(DEFAULT_INPUTS.rebalancesPerYear);
   const [years, setYears] = useState(DEFAULT_INPUTS.years);
   const [assumptionsOpen, setAssumptionsOpen] = useState(false);
 
   const monthlyContribution = parseDollarInput(contributionRaw);
-  const annualReturn = Math.max(0, Math.min(30, Number(returnPct) || 0)) / 100;
+  const returnPctClamped = Math.max(0, Math.min(30, Number(returnPct) || 0));
+  const annualReturn = returnPctClamped / 100;
 
   const result = useMemo(
     () =>
@@ -139,7 +140,7 @@ export default function Home() {
                   <GrowthChart points={result.points} years={years} />
 
                   <p className="text-[10px] text-ink-faint mt-4 leading-relaxed">
-                    Assumes a steady {(annualReturn * 100).toFixed(1)}% average annual return with no volatility,
+                    Assumes a steady {Number(returnPctClamped.toFixed(2))}% average annual return with no volatility,
                     {" "}${Math.round(result.totalContributed).toLocaleString()} total contributed over {years} years,
                     and short-term capital gains tax of {Math.round(taxRate * 100)}% paid on gains realized at every
                     sell-and-rebuy point.
@@ -171,6 +172,7 @@ export default function Home() {
               onToggle={() => setAssumptionsOpen((v) => !v)}
               returnPct={returnPct}
               onReturnPctChange={setReturnPct}
+              onReturnPctBlur={() => setReturnPct(returnPctClamped.toFixed(2))}
               taxRate={taxRate}
               onTaxRateChange={setTaxRate}
               rebalancesPerYear={rebalancesPerYear}

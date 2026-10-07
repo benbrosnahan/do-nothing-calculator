@@ -8,6 +8,7 @@ interface NumberInputProps {
   helperText?: string;
   value: string;
   onChange: (displayValue: string) => void;
+  onBlur?: () => void;
   placeholder?: string;
   prefix?: string;
   suffix?: string;
@@ -20,6 +21,7 @@ export default function NumberInput({
   helperText,
   value,
   onChange,
+  onBlur,
   placeholder,
   prefix,
   suffix,
@@ -47,6 +49,7 @@ export default function NumberInput({
           inputMode="decimal"
           value={value}
           onChange={(e) => onChange(e.target.value)}
+          onBlur={onBlur}
           placeholder={placeholder}
           aria-describedby={helperText ? `${id}-help` : undefined}
           className={cn(
