@@ -1,3 +1,4 @@
+// Created with Claude Code for the 2026-11-15 audit.
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
