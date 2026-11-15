@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Tokens are Loan Desk's (tailwind.config.ts). Text colours clear 4.5:1 on white and on the page:
+   slate-900 #275B2D 7.8:1, slate-700 #3A6B3E 6.1:1, slate-600 #4A6E4D 5.6:1, accent-hover #A8531F 5.2:1.
+   #8CA98E (slate-400) is 2.5:1, so it is never used for text. */
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   color: #275b2d;
   background: #fffcec;
@@ -12,5 +20,80 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  /* Money must not jitter as the numbers change. */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+  /* Headline figures: proportional digits, so a big number does not look gappy. */
+  .figure {
+    font-family: var(--font-display), var(--font-sans), system-ui, sans-serif;
+    font-variant-numeric: proportional-nums;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Entrances are CSS, not JavaScript. A script-driven fade starts content at opacity 0 and relies on animation
+   frames to bring it back, so a background tab or a slow phone can show a blank page. A CSS animation always ends
+   in its final state. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  animation: rise 0.24s ease-out both;
+}
+@keyframes unfold {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.unfold {
+  animation: unfold 0.2s ease-out both;
+}
+
+/* The gap draws itself in once, on load: the one moment of motion on the page. */
+@keyframes reveal-gap {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+.reveal-gap {
+  animation: reveal-gap 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) 0.1s both;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
