@@ -1,4 +1,4 @@
-// Smoke tests: the page loads, the main controls work, and nothing errors. Created with Claude Code, 2026-11-15.
+// Smoke tests: the page loads, the main controls work, and nothing errors.
 import { test, expect, openApp, openAssumptions, readResult, PHONE } from './helpers.mjs';
 
 test('loads with its name, a main landmark and a result, with no console errors', async ({ page }) => {

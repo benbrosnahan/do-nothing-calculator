@@ -1,4 +1,4 @@
-// Security and privacy: headers, no third-party requests, nothing stored. Created with Claude Code, 2026-11-15.
+// Security and privacy: headers, no third-party requests, nothing stored.
 import { test, expect, openApp, setInputs } from './helpers.mjs';
 
 test('SEC-01 the page sends the security headers', async ({ request }) => {

@@ -1,7 +1,7 @@
 // Shared helpers for the Playwright suite. Each test gets a fresh browser context. The helpers drive the controls
 // by the words a student sees, and those words cover both the pre-audit build and this one, so the same tests run
 // against the live site (where the money tests fail) and the audited build (where they pass).
-// Created with Claude Code for the 2026-11-15 audit, adapted from the Loan Desk kit.
+// Adapted from the Loan Desk kit.
 import { test, expect } from '@playwright/test';
 
 export { test, expect };

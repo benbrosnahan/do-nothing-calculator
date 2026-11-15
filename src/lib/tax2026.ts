@@ -1,4 +1,3 @@
-// Created with Claude Code for the 2026-11-15 audit.
 // Federal tax figures the calculator uses, with where each one comes from. Read 2026-11-15.
 //
 // - 2026 brackets, single filer: Rev. Proc. 2025-32, section 4.01, Table 3.

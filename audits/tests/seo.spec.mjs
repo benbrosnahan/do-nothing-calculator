@@ -1,4 +1,4 @@
-// SEO and agent-readiness basics. Created with Claude Code, 2026-11-15.
+// SEO and agent-readiness basics.
 import { test, expect } from './helpers.mjs';
 
 test('SEO-01 title, description, canonical and a share image', async ({ page }) => {

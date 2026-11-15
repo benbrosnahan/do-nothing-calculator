@@ -1,5 +1,5 @@
 // Accessibility: axe on every state at phone and desktop, plus the Cense floors axe does not check (13px type,
-// 40px tap targets, 16px inputs). Created with Claude Code, 2026-11-15.
+// 40px tap targets, 16px inputs).
 import AxeBuilder from '@axe-core/playwright';
 import { test, expect, openApp, openAssumptions, PHONE, DESKTOP } from './helpers.mjs';
 

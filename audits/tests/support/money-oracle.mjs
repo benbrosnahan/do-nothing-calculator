@@ -1,6 +1,5 @@
 // Independent money oracle for the Do-Nothing Calculator. Written from the primary sources below, never from the
 // app's code: it keeps every monthly purchase as its own tax lot, where the app keeps one balance and one cost basis.
-// Created with Claude Code for the 2026-11-15 audit.
 //
 // Sources, read 2026-11-15:
 //   - Rev. Proc. 2025-32, section 4.01 Table 3 (2026 brackets, unmarried individuals) and section 4.03 (2026

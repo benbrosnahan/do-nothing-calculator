@@ -1,7 +1,6 @@
 // Money tests. Every expected figure comes from support/money-oracle.mjs, which is written from the IRS and CPI
 // sources and keeps each purchase as its own tax lot; nothing here imports the app's code. Figures on screen are
 // whole dollars, so each check allows $1 for rounding.
-// Created with Claude Code for the 2026-11-15 audit.
 import { test, expect, openApp, openAssumptions, setInputs, readResult, readTable } from './helpers.mjs';
 import { oracle, holdClosedForm } from './support/money-oracle.mjs';
 

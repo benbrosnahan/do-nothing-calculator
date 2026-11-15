@@ -1,6 +1,5 @@
 // Screenshots for the redesign loop: the default result and the assumptions opened, at phone and desktop sizes.
 // Usage: node screenshots.mjs <base url> <out dir> [prefix] [--only-default]
-// Created with Claude Code for the 2026-11-15 audit.
 import { chromium } from '@playwright/test';
 import { mkdirSync } from 'node:fs';
 import path from 'node:path';

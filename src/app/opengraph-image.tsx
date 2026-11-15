@@ -1,4 +1,3 @@
-// Created with Claude Code for the 2026-11-15 audit.
 import { ImageResponse } from "next/og";
 
 // The share card, drawn at build time. Plain system type: no font is fetched. The two lines are illustrative.
