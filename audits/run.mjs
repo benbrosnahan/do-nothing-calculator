@@ -797,10 +797,10 @@ function budgetsSection(checks, targets, bundle, ctx) {
       : 'First-load JS is read from the local build, so it is checked only when the target is served from this machine.');
   }
   if (checks.some(c => c.id.startsWith('floor.') && c.id !== 'floor.readableFirstMs')) {
-    lines.push('Floors are not goals: they are the scores measured on 2026-11-02, so falling below one means something regressed.');
+    lines.push('Floors are not goals: they are the live site scores on 2026-11-15, before the audit fixes, so falling below one means something regressed.');
   }
   if (checks.some(c => c.id === 'floor.readableFirstMs')) {
-    lines.push('The readable floor is a time, so going over it fails. It sits well above the times measured on 2026-11-02, because throttled loads on a shared machine are noisy: a regression guard, not a goal.');
+    lines.push('The readable floor is a time, so going over it fails. It sits above measured times, because throttled loads on a shared machine are noisy: a regression guard, not a goal.');
   }
   if (targets.length) {
     lines.push('', 'Targets, which never fail a run:', '');

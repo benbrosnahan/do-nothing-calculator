@@ -1,10 +1,12 @@
 {
-  "name": "cense-loan-desk-audits",
+  "name": "do-nothing-calculator-audits",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Audit kit for Cense Loan Desk: performance, UX/UI, accessibility, best practices, SEO, agentic friendliness. Isolated from the app's dependencies.",
-  "engines": { "node": ">=22.19" },
+  "description": "Audit kit for the Do-Nothing Calculator: money oracle, Playwright suite, and the Loan Desk scans (performance, accessibility, best practices, SEO, security, agentic friendliness). Isolated from the app dependencies.",
+  "engines": {
+    "node": ">=22.19"
+  },
   "scripts": {
     "setup": "playwright install chromium",
     "audit": "node run.mjs",
