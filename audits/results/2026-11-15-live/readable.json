@@ -1,0 +1,42 @@
+{
+ "url": "https://do-nothing-calculator.vercel.app/",
+ "runs": 1,
+ "throttle": {
+  "latencyMs": 562.5,
+  "downloadKbps": 1474.56,
+  "uploadKbps": 675,
+  "cpu": 4
+ },
+ "viewport": {
+  "width": 412,
+  "height": 823,
+  "deviceScaleFactor": 1.75,
+  "isMobile": true,
+  "hasTouch": true
+ },
+ "method": "Cold loads, each in a fresh browser, on slow 4G applied for real with devtools throttling (not simulated) and 4x CPU. Marks are ms from navigation start, read inside the page: skeleton is the first frame with .animate-pulse in the DOM, real the first frame with main h1 and no .animate-pulse, readable the first frame where the first .rise block is at opacity 0.99 or more (real when there is no .rise); fp and fcp are Paint Timing, lcp the last largest-contentful-paint entry. Each median is per mark, over the loads without an error; with an even count, the higher middle value.",
+ "scenarios": {
+  "first": {
+   "runs": [
+    {
+     "run": 1,
+     "fp": 1500,
+     "fcp": 1500,
+     "skeleton": null,
+     "real": 1486,
+     "readable": 2892,
+     "lcp": 2528,
+     "lcpElement": "p \"Two portfolios with the same monthly con\""
+    }
+   ],
+   "median": {
+    "fp": 1500,
+    "fcp": 1500,
+    "skeleton": null,
+    "real": 1486,
+    "readable": 2892,
+    "lcp": 2528
+   }
+  }
+ }
+}

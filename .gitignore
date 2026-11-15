@@ -1,8 +1,11 @@
 node_modules
 .next
 out
-.env*.local
+.env*
 .vercel
 *.tsbuildinfo
 next-env.d.ts
 .DS_Store
+
+# audit screenshots stay on disk for review, out of git
+audits/screenshots/

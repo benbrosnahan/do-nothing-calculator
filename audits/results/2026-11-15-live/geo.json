@@ -1,0 +1,492 @@
+{
+ "url": "https://do-nothing-calculator.vercel.app/",
+ "geoScore": 60,
+ "measurementValid": true,
+ "categories": {
+  "crawlAccess": {
+   "score": 20,
+   "max": 20
+  },
+  "serverContent": {
+   "score": 28,
+   "max": 30
+  },
+  "structuredData": {
+   "score": 0,
+   "max": 20
+  },
+  "socialMeta": {
+   "score": 7,
+   "max": 15
+  },
+  "discovery": {
+   "score": 0,
+   "max": 10
+  },
+  "indexability": {
+   "score": 5,
+   "max": 5
+  }
+ },
+ "contentParity": 100,
+ "ssrWordCount": 205,
+ "csrWordCount": 205,
+ "checks": [
+  {
+   "category": "LLM Crawl Access",
+   "name": "AI Bot Access in robots.txt",
+   "score": 20,
+   "maxScore": 20,
+   "status": "pass",
+   "detail": "No robots.txt (HTTP 404) — all 14 LLM bots unrestricted"
+  },
+  {
+   "category": "Server-Side Content",
+   "name": "Title in SSR",
+   "score": 5,
+   "maxScore": 5,
+   "status": "pass",
+   "detail": "\"The Do-Nothing Calculator by Cense\""
+  },
+  {
+   "category": "Server-Side Content",
+   "name": "Meta Description in SSR",
+   "score": 7,
+   "maxScore": 7,
+   "status": "pass",
+   "detail": "\"See what selling and rebuying your investments actually costs you in taxes, versus just leaving it alone.\""
+  },
+  {
+   "category": "Server-Side Content",
+   "name": "H1 Tag in SSR",
+   "score": 5,
+   "maxScore": 5,
+   "status": "pass",
+   "detail": "H1 present & matches CSR"
+  },
+  {
+   "category": "Server-Side Content",
+   "name": "Heading Hierarchy",
+   "score": 1,
+   "maxScore": 3,
+   "status": "warn",
+   "detail": "1 headings in SSR (1 in CSR)"
+  },
+  {
+   "category": "Server-Side Content",
+   "name": "Body Text Parity (SSR vs CSR)",
+   "score": 10,
+   "maxScore": 10,
+   "status": "pass",
+   "detail": "SSR matches CSR exactly (205 words, parity 100%) — LLMs see everything users see."
+  },
+  {
+   "category": "Structured Data",
+   "name": "JSON-LD in SSR",
+   "score": 0,
+   "maxScore": 12,
+   "status": "fail",
+   "detail": "No JSON-LD structured data in SSR — LLMs rely heavily on this"
+  },
+  {
+   "category": "Structured Data",
+   "name": "Rich Schema Types",
+   "score": 0,
+   "maxScore": 8,
+   "status": "fail",
+   "detail": "No schema types detected"
+  },
+  {
+   "category": "Social & Meta Tags",
+   "name": "Open Graph Tags",
+   "score": 3,
+   "maxScore": 7,
+   "status": "warn",
+   "detail": "Missing OG: og:image"
+  },
+  {
+   "category": "Social & Meta Tags",
+   "name": "Twitter Card",
+   "score": 4,
+   "maxScore": 4,
+   "status": "pass",
+   "detail": "Card type: summary_large_image"
+  },
+  {
+   "category": "Social & Meta Tags",
+   "name": "Canonical URL",
+   "score": 0,
+   "maxScore": 4,
+   "status": "warn",
+   "detail": "No canonical URL"
+  },
+  {
+   "category": "LLM Discovery",
+   "name": "llms.txt",
+   "score": 0,
+   "maxScore": 5,
+   "status": "info",
+   "detail": "No /llms.txt — consider adding one for AI crawlers"
+  },
+  {
+   "category": "LLM Discovery",
+   "name": "Markdown Content Negotiation",
+   "score": 0,
+   "maxScore": 3,
+   "status": "info",
+   "detail": "No markdown via content negotiation"
+  },
+  {
+   "category": "LLM Discovery",
+   "name": "AI Plugin / MCP Discovery",
+   "score": 0,
+   "maxScore": 2,
+   "status": "info",
+   "detail": "No AI plugin manifest"
+  },
+  {
+   "category": "Indexability",
+   "name": "Meta Robots",
+   "score": 5,
+   "maxScore": 5,
+   "status": "pass",
+   "detail": "No restrictive meta robots"
+  }
+ ],
+ "recommendations": [
+  {
+   "severity": "high",
+   "title": "Add JSON-LD structured data",
+   "detail": "Structured data gives LLMs machine-readable context about your content (product details, pricing, reviews). Without it, LLMs must infer meaning from unstructured text."
+  },
+  {
+   "severity": "medium",
+   "title": "Complete Open Graph tags",
+   "detail": "OG tags provide AI systems with canonical title, description, and image. Missing tags mean LLMs must guess what to show users."
+  },
+  {
+   "severity": "low",
+   "title": "Add canonical URL",
+   "detail": "A canonical URL prevents LLMs from indexing duplicate versions of this page."
+  },
+  {
+   "severity": "low",
+   "title": "Create /llms.txt",
+   "detail": "The llms.txt convention (like robots.txt for AI) provides a structured summary of your site for LLM crawlers. See llmstxt.org for the spec."
+  },
+  {
+   "severity": "low",
+   "title": "Serve markdown via Accept header",
+   "detail": "Some AI crawlers request text/markdown. Serving a markdown version improves content extraction quality. Cloudflare and some CDNs can automate this."
+  }
+ ],
+ "comparison": {
+  "title": {
+   "status": "match",
+   "ssr": "The Do-Nothing Calculator by Cense",
+   "csr": "The Do-Nothing Calculator by Cense"
+  },
+  "description": {
+   "status": "match",
+   "ssr": "See what selling and rebuying your investments actually costs you in taxes, versus just leaving it alone.",
+   "csr": "See what selling and rebuying your investments actually costs you in taxes, versus just leaving it alone."
+  },
+  "og": [
+   {
+    "key": "og:title",
+    "ssr": "The Do-Nothing Calculator by Cense",
+    "csr": "The Do-Nothing Calculator by Cense",
+    "match": true
+   },
+   {
+    "key": "og:description",
+    "ssr": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+    "csr": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+    "match": true
+   },
+   {
+    "key": "og:type",
+    "ssr": "website",
+    "csr": "website",
+    "match": true
+   }
+  ],
+  "twitter": [
+   {
+    "key": "twitter:card",
+    "ssr": "summary_large_image",
+    "csr": "summary_large_image",
+    "match": true
+   },
+   {
+    "key": "twitter:title",
+    "ssr": "The Do-Nothing Calculator by Cense",
+    "csr": "The Do-Nothing Calculator by Cense",
+    "match": true
+   },
+   {
+    "key": "twitter:description",
+    "ssr": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+    "csr": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+    "match": true
+   }
+  ],
+  "h1": {
+   "status": "match",
+   "ssr": [
+    "The Do-Nothing Calculator"
+   ],
+   "csr": [
+    "The Do-Nothing Calculator"
+   ]
+  },
+  "parity": {
+   "ssrWords": 205,
+   "csrWords": 205,
+   "pct": 100,
+   "gapDirection": "even",
+   "ssrChunkCount": 8,
+   "csrChunkCount": 8,
+   "onlyInSSR": [],
+   "onlyInCSR": []
+  },
+  "structuredData": {
+   "ssrTypes": [],
+   "csrTypes": [],
+   "onlyCSR": [],
+   "onlySSR": [],
+   "match": true
+  },
+  "headingsOnlyCSR": [],
+  "headingsOnlySSR": [],
+  "canonical": {
+   "ssr": "",
+   "csr": ""
+  },
+  "robotsMeta": {
+   "ssr": "",
+   "csr": ""
+  },
+  "lang": {
+   "ssr": "en",
+   "csr": "en"
+  }
+ },
+ "robots": {
+  "found": false,
+  "bots": [
+   {
+    "name": "GPTBot",
+    "owner": "OpenAI",
+    "status": "no-robots-txt"
+   },
+   {
+    "name": "ChatGPT-User",
+    "owner": "OpenAI",
+    "status": "no-robots-txt"
+   },
+   {
+    "name": "ClaudeBot",
+    "owner": "Anthropic",
+    "status": "no-robots-txt"
+   },
+   {
+    "name": "anthropic-ai",
+    "owner": "Anthropic",
+    "status": "no-robots-txt"
+   },
+   {
+    "name": "CCBot",
+    "owner": "Common Crawl",
+    "status": "no-robots-txt"
+   },
+   {
+    "name": "Google-Extended",
+    "owner": "Google",
+    "status": "no-robots-txt"
+   },
+   {
+    "name": "GoogleOther",
+    "owner": "Google",
+    "status": "no-robots-txt"
+   },
+   {
+    "name": "PerplexityBot",
+    "owner": "Perplexity",
+    "status": "no-robots-txt"
+   },
+   {
+    "name": "cohere-ai",
+    "owner": "Cohere",
+    "status": "no-robots-txt"
+   },
+   {
+    "name": "Bytespider",
+    "owner": "ByteDance",
+    "status": "no-robots-txt"
+   },
+   {
+    "name": "Amazonbot",
+    "owner": "Amazon",
+    "status": "no-robots-txt"
+   },
+   {
+    "name": "Meta-ExternalAgent",
+    "owner": "Meta",
+    "status": "no-robots-txt"
+   },
+   {
+    "name": "Applebot-Extended",
+    "owner": "Apple",
+    "status": "no-robots-txt"
+   },
+   {
+    "name": "Diffbot",
+    "owner": "Diffbot",
+    "status": "no-robots-txt"
+   }
+  ]
+ },
+ "discovery": {
+  "llmsTxt": {
+   "found": false
+  },
+  "llmsFullTxt": {
+   "found": false
+  },
+  "markdown": {
+   "served": false,
+   "contentType": "text/html; charset=utf-8"
+  },
+  "aiPlugin": {
+   "found": false
+  }
+ },
+ "metaResult": {
+  "url": "https://do-nothing-calculator.vercel.app/",
+  "tags": [
+   {
+    "name": "title",
+    "content": "The Do-Nothing Calculator by Cense",
+    "status": "good",
+    "recommendation": "Title is 34 chars. Good length."
+   },
+   {
+    "name": "meta description",
+    "content": "See what selling and rebuying your investments actually costs you in taxes, versus just leaving it alone.",
+    "status": "good",
+    "recommendation": "Description is 105 chars. Good length."
+   },
+   {
+    "name": "viewport",
+    "content": "width=device-width, initial-scale=1",
+    "status": "good",
+    "recommendation": "Viewport is set."
+   },
+   {
+    "name": "canonical",
+    "content": null,
+    "status": "warning",
+    "recommendation": "Add a canonical URL to prevent duplicate content issues."
+   },
+   {
+    "name": "og:title",
+    "content": "The Do-Nothing Calculator by Cense",
+    "status": "good",
+    "recommendation": "Set to: The Do-Nothing Calculator by Cense"
+   },
+   {
+    "name": "og:description",
+    "content": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+    "status": "good",
+    "recommendation": "Set to: Two lines. One is you holding. One is you fidgeting. Watch the gap."
+   },
+   {
+    "name": "og:image",
+    "content": null,
+    "status": "missing",
+    "recommendation": "Add og:image for better social media sharing."
+   },
+   {
+    "name": "og:url",
+    "content": null,
+    "status": "missing",
+    "recommendation": "Add og:url for better social media sharing."
+   },
+   {
+    "name": "og:type",
+    "content": "website",
+    "status": "good",
+    "recommendation": "Set to: website"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image",
+    "status": "good",
+    "recommendation": "Set to: summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "The Do-Nothing Calculator by Cense",
+    "status": "good",
+    "recommendation": "Set to: The Do-Nothing Calculator by Cense"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+    "status": "good",
+    "recommendation": "Set to: Two lines. One is you holding. One is you fidgeting. Watch the gap."
+   },
+   {
+    "name": "twitter:image",
+    "content": null,
+    "status": "warning",
+    "recommendation": "Add twitter:image for Twitter card previews."
+   },
+   {
+    "name": "lang attribute",
+    "content": "en",
+    "status": "good",
+    "recommendation": "Language: en"
+   },
+   {
+    "name": "favicon",
+    "content": null,
+    "status": "warning",
+    "recommendation": "Add a favicon for better browser tab identification."
+   }
+  ],
+  "preview": {
+   "title": "The Do-Nothing Calculator by Cense",
+   "description": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+   "image": null,
+   "url": "https://do-nothing-calculator.vercel.app/",
+   "siteName": "do-nothing-calculator.vercel.app"
+  },
+  "summary": {
+   "good": 10,
+   "warnings": 3,
+   "missing": 2,
+   "total": 15
+  },
+  "score": 67
+ },
+ "structuredDataResult": {
+  "url": "https://do-nothing-calculator.vercel.app/",
+  "totalSchemas": 0,
+  "items": [],
+  "summary": {
+   "total": 0,
+   "valid": 0,
+   "withErrors": 0,
+   "totalErrors": 0,
+   "totalWarnings": 0,
+   "jsonLd": 0,
+   "microdata": 0
+  },
+  "richResultEligibility": {
+   "eligible": false,
+   "types": []
+  }
+ }
+}

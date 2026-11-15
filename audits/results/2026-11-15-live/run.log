@@ -1,0 +1,82 @@
+Auditing https://do-nothing-calculator.vercel.app/: lighthouse, flow, security, geo, design, ux, tools, responsive, readable. Results go to /Users/benjaminbrosnahan/Desktop/dev/do-nothing-calculator/audits/results/2026-11-15-live
+
+== lighthouse
+  first-mobile run 1/1: perf 100 a11y 94 bp 96 seo 100 lcp 1850.117 fcp 851.117 cls 0 tbt 55
+  first-desktop run 1/1: perf 100 a11y 94 bp 96 seo 100 lcp 422.705 fcp 229.705 cls 0 tbt 0
+  lighthouse: ok in 15.5 s
+
+== flow
+  mobile [navigation] First load: perf 100 a11y 94 bp 96 seo 100 cls 0 tbt 36
+  mobile [timespan] Type a monthly amount: perf 100 bp 95 inp 87.033 cls 0 tbt 33.874
+  mobile [snapshot] Result for $350 a month: a11y 94 bp 100 seo 100
+  mobile [timespan] Open the assumptions: perf 100 bp 95 inp 89.419 cls 0 tbt 0
+  mobile [timespan] Change bracket, how often and horizon: perf 100 bp 95 inp 49.668 cls 0 tbt 0
+  mobile [snapshot] Assumptions changed: a11y 94 bp 100 seo 100
+  desktop [navigation] First load: perf 100 a11y 94 bp 96 seo 100 cls 0 tbt 0
+  desktop [timespan] Type a monthly amount: perf 100 bp 95 inp 20.747 cls 0 tbt 0
+  desktop [snapshot] Result for $350 a month: a11y 94 bp 100 seo 100
+  desktop [timespan] Open the assumptions: perf 100 bp 95 inp 48.901 cls 0 tbt 0
+  desktop [timespan] Change bracket, how often and horizon: perf 100 bp 95 inp 22.897 cls 0 tbt 0
+  desktop [snapshot] Assumptions changed: a11y 94 bp 100 seo 100
+  flow: ok in 98 s
+
+== security
+  score 71 {"https":100,"headers":27,"cookies":100,"content":80,"deps":null}
+  security: ok in 0.1 s
+
+== geo
+  score 60 parity 100% raw words 205 rendered words 205
+  geo: ok in 11.2 s
+
+== design
+  result: desktop 69.3 D, mobile 69.3 D, merged 69 D
+  assumptions: desktop 69.3 D, mobile 69.3 D, merged 69 D
+  design: ok in 32.8 s
+
+== ux
+  result-desktop: 6 rule findings (P1 2, P2 4, P3 0), 1 probe findings, design 69.3
+  result-mobile: 6 rule findings (P1 2, P2 4, P3 0), 0 probe findings, design 69.3
+  assumptions-desktop: 6 rule findings (P1 2, P2 4, P3 0), 1 probe findings, design 69.3
+  assumptions-mobile: 6 rule findings (P1 2, P2 4, P3 0), 0 probe findings, design 69.3
+  ux: ok in under 0.1 s
+
+== tools
+  header-check: score 40: 4 good, 1 warnings, 5 missing
+  meta-validate: score 67: 10 good, 3 warnings, 2 missing
+  structured-data: 0 schemas, 0 errors, 0 warnings
+  sitemap-validate: not found (Sitemap not found at https://do-nothing-calculator.vercel.app/sitemap.xml. HTTP 404)
+  redirect-check: 0 redirects, final status 200: No redirects detected. URL resolves directly.
+  broken-links: 10 links, 0 broken, 0 redirects, 0 errors, 0 timeouts
+  webmcp-check: AI readiness 0
+  tools: ok in 1.3 s
+
+== responsive
+  result@320: scrollWidth=320 clientWidth=320 height=1426
+  result@375: scrollWidth=375 clientWidth=375 height=1309
+  result@768: scrollWidth=768 clientWidth=768 height=1254
+  result@1024: scrollWidth=1024 clientWidth=1024 height=1254
+  result@1440: scrollWidth=1440 clientWidth=1440 height=1254
+  assumptions@320: scrollWidth=320 clientWidth=320 height=2011
+  assumptions@375: scrollWidth=375 clientWidth=375 height=1761
+  assumptions@768: scrollWidth=768 clientWidth=768 height=1646
+  assumptions@1024: scrollWidth=1024 clientWidth=1024 height=1646
+  assumptions@1440: scrollWidth=1440 clientWidth=1440 height=1646
+  responsive: ok in 22.9 s
+
+== readable
+  first run1 fp 1500 fcp 1500 skeleton – real 1486 readable 2892 lcp 2528 (lcp on p "Two portfolios with the same monthly con")
+  readable: ok in 4.6 s
+
+Scoreboard for https://do-nothing-calculator.vercel.app/, median of 1 run
+
+| Page | Perf | A11y | BP | SEO | LCP | FCP | CLS |
+|---|---|---|---|---|---|---|---|
+| First, mobile | 100 | 94 | 96 | 100 | 1850 ms | 851 ms | 0 |
+| First, desktop | 100 | 94 | 96 | 100 | 423 ms | 230 ms | 0 |
+
+Security 71 · GEO 60 · Design 69.3-69.3 · Flow INP mobile 89 ms · Flow INP desktop 49 ms · Overflow 0 of 10 · Readable first visit 2892 ms
+Budgets FAIL: 15 passed, 2 failed
+  FAIL Accessibility, first, mobile: 94, limit ≥ 100
+  FAIL Accessibility, first, desktop: 94, limit ≥ 100
+Summary: /Users/benjaminbrosnahan/Desktop/dev/do-nothing-calculator/audits/results/2026-11-15-live/SUMMARY.md
+exit 1

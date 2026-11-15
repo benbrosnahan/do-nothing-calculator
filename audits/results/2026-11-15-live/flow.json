@@ -1,0 +1,580 @@
+{
+ "url": "https://do-nothing-calculator.vercel.app/",
+ "journey": "Do-Nothing Calculator core journey",
+ "formFactors": {
+  "mobile": {
+   "steps": [
+    {
+     "name": "First load",
+     "gatherMode": "navigation",
+     "performance": 100,
+     "accessibility": 94,
+     "bestPractices": 96,
+     "seo": 100,
+     "lcp": 1925.662,
+     "fcp": 879.662,
+     "cls": 0,
+     "tbt": 36,
+     "si": 1305.963,
+     "tti": 1925.662,
+     "inp": null,
+     "failing": [
+      {
+       "id": "largest-contentful-paint",
+       "title": "Largest Contentful Paint",
+       "score": 0.98,
+       "displayValue": "1.9 s"
+      },
+      {
+       "id": "max-potential-fid",
+       "title": "Max Potential First Input Delay",
+       "score": 0.99,
+       "displayValue": "80 ms"
+      },
+      {
+       "id": "errors-in-console",
+       "title": "Browser errors were logged to the console",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "color-contrast",
+       "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "label-content-name-mismatch",
+       "title": "Elements with visible text labels do not have matching accessible names.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "landmark-one-main",
+       "title": "Document does not have a main landmark.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "unused-javascript",
+       "title": "Reduce unused JavaScript",
+       "score": 0,
+       "displayValue": "Est savings of 48 KiB"
+      },
+      {
+       "id": "legacy-javascript-insight",
+       "title": "Legacy JavaScript",
+       "score": 0,
+       "displayValue": "Est savings of 12 KiB"
+      },
+      {
+       "id": "network-dependency-tree-insight",
+       "title": "Network dependency tree",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "render-blocking-insight",
+       "title": "Render-blocking requests",
+       "score": 0.5,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [
+      {
+       "id": "unused-javascript",
+       "title": "Reduce unused JavaScript",
+       "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+       "score": 0,
+       "scoreDisplayMode": "metricSavings",
+       "displayValue": "Est savings of 48 KiB",
+       "numericValue": 300,
+       "numericUnit": "millisecond",
+       "savingsMs": 300,
+       "savingsBytes": 49445,
+       "items": [
+        {
+         "url": "https://do-nothing-calculator.vercel.app/_next/static/chunks/898-53017fb4894a2966.js",
+         "wastedBytes": 26614,
+         "wastedMs": null,
+         "totalBytes": 52641
+        },
+        {
+         "url": "https://do-nothing-calculator.vercel.app/_next/static/chunks/fd9d1056-b11b2651f33aae7f.js",
+         "wastedBytes": 22831,
+         "wastedMs": null,
+         "totalBytes": 55131
+        }
+       ]
+      }
+     ],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Type a monthly amount",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 95,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 33.874,
+     "si": null,
+     "tti": null,
+     "inp": 87.033,
+     "failing": [
+      {
+       "id": "interaction-to-next-paint",
+       "title": "Interaction to Next Paint",
+       "score": 0.99,
+       "displayValue": "90 ms"
+      },
+      {
+       "id": "errors-in-console",
+       "title": "Browser errors were logged to the console",
+       "score": 0,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 2
+     }
+    },
+    {
+     "name": "Result for $350 a month",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 94,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [
+      {
+       "id": "color-contrast",
+       "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "label-content-name-mismatch",
+       "title": "Elements with visible text labels do not have matching accessible names.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "landmark-one-main",
+       "title": "Document does not have a main landmark.",
+       "score": 0,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Open the assumptions",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 95,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 89.419,
+     "failing": [
+      {
+       "id": "interaction-to-next-paint",
+       "title": "Interaction to Next Paint",
+       "score": 0.99,
+       "displayValue": "90 ms"
+      },
+      {
+       "id": "errors-in-console",
+       "title": "Browser errors were logged to the console",
+       "score": 0,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 5
+     }
+    },
+    {
+     "name": "Change bracket, how often and horizon",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 95,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 49.668,
+     "failing": [
+      {
+       "id": "errors-in-console",
+       "title": "Browser errors were logged to the console",
+       "score": 0,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 1
+     }
+    },
+    {
+     "name": "Assumptions changed",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 94,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [
+      {
+       "id": "color-contrast",
+       "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "label-content-name-mismatch",
+       "title": "Elements with visible text labels do not have matching accessible names.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "landmark-one-main",
+       "title": "Document does not have a main landmark.",
+       "score": 0,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": null
+    }
+   ],
+   "warnings": []
+  },
+  "desktop": {
+   "steps": [
+    {
+     "name": "First load",
+     "gatherMode": "navigation",
+     "performance": 100,
+     "accessibility": 94,
+     "bestPractices": 96,
+     "seo": 100,
+     "lcp": 407.981,
+     "fcp": 220.981,
+     "cls": 0,
+     "tbt": 0,
+     "si": 315.075,
+     "tti": 407.981,
+     "inp": null,
+     "failing": [
+      {
+       "id": "errors-in-console",
+       "title": "Browser errors were logged to the console",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "color-contrast",
+       "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "label-content-name-mismatch",
+       "title": "Elements with visible text labels do not have matching accessible names.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "landmark-one-main",
+       "title": "Document does not have a main landmark.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "unused-javascript",
+       "title": "Reduce unused JavaScript",
+       "score": 0,
+       "displayValue": "Est savings of 48 KiB"
+      },
+      {
+       "id": "legacy-javascript-insight",
+       "title": "Legacy JavaScript",
+       "score": 0,
+       "displayValue": "Est savings of 12 KiB"
+      },
+      {
+       "id": "network-dependency-tree-insight",
+       "title": "Network dependency tree",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "render-blocking-insight",
+       "title": "Render-blocking requests",
+       "score": 0.5,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [
+      {
+       "id": "unused-javascript",
+       "title": "Reduce unused JavaScript",
+       "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+       "score": 0,
+       "scoreDisplayMode": "metricSavings",
+       "displayValue": "Est savings of 48 KiB",
+       "numericValue": 40,
+       "numericUnit": "millisecond",
+       "savingsMs": 40,
+       "savingsBytes": 49015,
+       "items": [
+        {
+         "url": "https://do-nothing-calculator.vercel.app/_next/static/chunks/898-53017fb4894a2966.js",
+         "wastedBytes": 26614,
+         "wastedMs": null,
+         "totalBytes": 52641
+        },
+        {
+         "url": "https://do-nothing-calculator.vercel.app/_next/static/chunks/fd9d1056-b11b2651f33aae7f.js",
+         "wastedBytes": 22401,
+         "wastedMs": null,
+         "totalBytes": 55131
+        }
+       ]
+      }
+     ],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Type a monthly amount",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 95,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 20.747,
+     "failing": [
+      {
+       "id": "errors-in-console",
+       "title": "Browser errors were logged to the console",
+       "score": 0,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 0
+     }
+    },
+    {
+     "name": "Result for $350 a month",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 94,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [
+      {
+       "id": "color-contrast",
+       "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "label-content-name-mismatch",
+       "title": "Elements with visible text labels do not have matching accessible names.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "landmark-one-main",
+       "title": "Document does not have a main landmark.",
+       "score": 0,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Open the assumptions",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 95,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 48.901,
+     "failing": [
+      {
+       "id": "errors-in-console",
+       "title": "Browser errors were logged to the console",
+       "score": 0,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 4
+     }
+    },
+    {
+     "name": "Change bracket, how often and horizon",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 95,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 22.897,
+     "failing": [
+      {
+       "id": "errors-in-console",
+       "title": "Browser errors were logged to the console",
+       "score": 0,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 1
+     }
+    },
+    {
+     "name": "Assumptions changed",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 94,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [
+      {
+       "id": "color-contrast",
+       "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "label-content-name-mismatch",
+       "title": "Elements with visible text labels do not have matching accessible names.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "landmark-one-main",
+       "title": "Document does not have a main landmark.",
+       "score": 0,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": null
+    }
+   ],
+   "warnings": []
+  }
+ }
+}

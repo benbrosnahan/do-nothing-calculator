@@ -1,0 +1,2322 @@
+{
+ "state": "assumptions",
+ "formFactor": "desktop",
+ "pageContext": {
+  "indexable": true,
+  "siteType": "saas"
+ },
+ "report": {
+  "uxScore": null,
+  "typographyScore": null,
+  "contrastScore": null,
+  "layoutScore": null,
+  "responsiveScore": null,
+  "navigationScore": null,
+  "contentScore": null,
+  "totalIssues": 6,
+  "p1Count": 2,
+  "p2Count": 4,
+  "p3Count": 0,
+  "findings": [
+   {
+    "id": "524f6116-c5e0-4466-a3dd-06810efd61a5",
+    "severity": "P1",
+    "category": "Color/Contrast",
+    "device": "desktop",
+    "title": "13 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+    "description": "13 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large). Examples: span.text-ink-faint \"/\" (2.49:1); span.text-ink-muted.text-sm \"Do-Nothing Calculator\" (4.38:1); span.text-xs.text-ink-faint \"No data stored. All calculations run loc\" (2.49:1).",
+    "recommendation": "Darken the text or lighten the background until the ratio reaches 4.5:1 (3:1 for large text).",
+    "source": "engine",
+    "themeId": "eng:contrast-fail",
+    "scope": "element",
+    "renderContext": "dom",
+    "observedOn": 1,
+    "sampleSize": 1,
+    "viewport": {
+     "width": 1440,
+     "height": 900,
+     "dpr": 1,
+     "isMobile": false
+    },
+    "wcagCriterion": "1.4.3",
+    "evidence": {
+     "measured": "2.24:1",
+     "required": "≥4.5:1 (3:1 large)",
+     "selector": "p.text-[11px].font-semibold",
+     "sample": "Sell & rebuy",
+     "count": 13
+    }
+   },
+   {
+    "id": "3ee7612a-f25c-4d34-884c-b5fb4b5593db",
+    "severity": "P2",
+    "category": "Accessibility",
+    "device": "desktop",
+    "title": "20 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide",
+    "description": "20 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide — they clear the WCAG 2.5.8 24px minimum. Examples: button.text-xs.font-semibold \"$100\" (51×26px); button.text-xs.font-semibold \"$200\" (53×26px); button.text-xs.font-semibold \"$500\" (53×26px). Measured at the 1440×900px desktop viewport.",
+    "recommendation": "Fix it once in the shared style or component that produces it, so every instance changes together.",
+    "source": "engine",
+    "themeId": "eng:tap-target-comfort",
+    "scope": "element",
+    "renderContext": "dom",
+    "observedOn": 1,
+    "sampleSize": 1,
+    "viewport": {
+     "width": 1440,
+     "height": 900,
+     "dpr": 1,
+     "isMobile": false
+    },
+    "wcagCriterion": "2.5.8",
+    "evidence": {
+     "measured": "51×26px",
+     "required": "≥48×48px",
+     "selector": "button.text-xs.font-semibold",
+     "sample": "$100",
+     "count": 20
+    }
+   },
+   {
+    "id": "465622f9-8ded-44a0-a968-717bba74810b",
+    "severity": "P2",
+    "category": "Accessibility",
+    "device": "desktop",
+    "title": "Missing landmark(s): main, nav, contentinfo.",
+    "description": "Missing landmark(s): main, nav, contentinfo.",
+    "recommendation": "Add the missing landmark elements (main, nav, header, footer) so assistive tech can navigate the page.",
+    "source": "engine",
+    "themeId": "eng:missing-landmarks",
+    "scope": "page",
+    "renderContext": "dom",
+    "observedOn": 1,
+    "sampleSize": 1,
+    "viewport": {
+     "width": 1440,
+     "height": 900,
+     "dpr": 1,
+     "isMobile": false
+    },
+    "evidence": {
+     "measured": "0 matches for main, [role=\"main\"]",
+     "contributors": [
+      {
+       "selector": "main, [role=\"main\"]",
+       "value": "no matching element"
+      },
+      {
+       "selector": "nav, [role=\"navigation\"]",
+       "value": "no matching element"
+      },
+      {
+       "selector": "footer, [role=\"contentinfo\"]",
+       "value": "no matching element"
+      }
+     ]
+    }
+   },
+   {
+    "id": "e0c12fea-afa8-4983-8b4e-d23556db3119",
+    "severity": "P2",
+    "category": "Design Consistency",
+    "device": "desktop",
+    "title": "9 distinct text colors",
+    "description": "9 distinct text colors — color fragmentation (M3 uses a small set of on-* roles).",
+    "recommendation": "Consolidate to a small token set: define CSS variables for the sanctioned values and replace ad-hoc ones.",
+    "source": "engine",
+    "themeId": "eng:text-color-fragmentation",
+    "scope": "page",
+    "renderContext": "dom",
+    "observedOn": 1,
+    "sampleSize": 1,
+    "viewport": {
+     "width": 1440,
+     "height": 900,
+     "dpr": 1,
+     "isMobile": false
+    },
+    "evidence": {
+     "measured": "9 occurrence(s)",
+     "count": 9,
+     "contributors": [
+      {
+       "selector": "span.text-ink-muted.text-sm",
+       "value": "rgb(92,127,95) · 18 node(s)"
+      },
+      {
+       "selector": "span.font-semibold.text-ink",
+       "value": "rgb(39,91,45) · 9 node(s)"
+      },
+      {
+       "selector": "span.text-ink-faint",
+       "value": "rgb(140,169,142) · 9 node(s)"
+      },
+      {
+       "selector": "span.text-white.text-xs",
+       "value": "rgb(255,255,255) · 6 node(s)"
+      },
+      {
+       "selector": "p.text-xs.font-semibold",
+       "value": "rgba(255,255,255,0.7) · 2 node(s)"
+      }
+     ]
+    }
+   },
+   {
+    "id": "a1a7eeac-3c56-4333-a698-3a6416fbfed3",
+    "severity": "P2",
+    "category": "Typography",
+    "device": "desktop",
+    "title": "10 reading-copy text node(s) below 16px (or any text below 11px).",
+    "description": "10 reading-copy text node(s) below 16px (or any text below 11px). Examples: p.text-sm.text-ink-muted \"Two portfolios with the same monthly con\" (14px); p.text-xs.font-semibold \"Over 20 years, doing nothing is worth\" (12px); p.text-sm.text-white/80 \"Same contributions, same market. The onl\" (14px). Measured at the 1440×900px desktop viewport.",
+    "recommendation": "Raise reading copy to at least 16px (12px absolute minimum for any text).",
+    "source": "engine",
+    "themeId": "eng:small-body-text",
+    "scope": "element",
+    "renderContext": "dom",
+    "observedOn": 1,
+    "sampleSize": 1,
+    "viewport": {
+     "width": 1440,
+     "height": 900,
+     "dpr": 1,
+     "isMobile": false
+    },
+    "evidence": {
+     "measured": "10px",
+     "required": "≥16px (≥11px absolute)",
+     "selector": "p.text-[10px].text-ink-faint",
+     "sample": "Assumes a steady 7% average annual retur",
+     "count": 10
+    }
+   },
+   {
+    "id": "fadc9eb1-6473-45bb-8eef-848eb2d5bfd5",
+    "severity": "P1",
+    "category": "Motion",
+    "device": "desktop",
+    "title": "No @media (prefers-reduced-motion: reduce) rule found",
+    "description": "No @media (prefers-reduced-motion: reduce) rule found — motion is not gated for reduced-motion users.",
+    "recommendation": "Add an @media (prefers-reduced-motion: reduce) block that disables non-essential animation.",
+    "source": "engine",
+    "themeId": "eng:reduced-motion-missing",
+    "scope": "page",
+    "renderContext": "dom",
+    "observedOn": 1,
+    "sampleSize": 1,
+    "viewport": {
+     "width": 1440,
+     "height": 900,
+     "dpr": 1,
+     "isMobile": false
+    },
+    "wcagCriterion": "2.3.3",
+    "evidence": {
+     "measured": "0 matches for @media (prefers-reduced-motion: reduce)",
+     "contributors": [
+      {
+       "selector": "@media (prefers-reduced-motion: reduce)",
+       "value": "no rule found"
+      }
+     ]
+    }
+   }
+  ],
+  "pageContext": {
+   "indexable": true,
+   "siteType": "saas"
+  },
+  "scanData": {
+   "domContext": {
+    "textElements": [
+     {
+      "tag": "a",
+      "text": "CCense",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 408,
+      "y": 14,
+      "width": 85,
+      "height": 28
+     },
+     {
+      "tag": "span",
+      "text": "C",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "lineHeight": "16px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 21,
+      "x": 418,
+      "y": 20,
+      "width": 9,
+      "height": 16
+     },
+     {
+      "tag": "span",
+      "text": "Cense",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "lineHeight": "24px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 444,
+      "y": 16,
+      "width": 49,
+      "height": 24
+     },
+     {
+      "tag": "span",
+      "text": "/",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "color": "rgb(140, 169, 142)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 8.18,
+      "x": 501,
+      "y": 16,
+      "width": 6,
+      "height": 24
+     },
+     {
+      "tag": "span",
+      "text": "Do-Nothing Calculator",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 4.66,
+      "x": 515,
+      "y": 18,
+      "width": 148,
+      "height": 20
+     },
+     {
+      "tag": "span",
+      "text": "No data stored. All calculations run locally.",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "16px",
+      "color": "rgb(140, 169, 142)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 8.18,
+      "x": 791,
+      "y": 20,
+      "width": 241,
+      "height": 16
+     },
+     {
+      "tag": "h1",
+      "text": "The Do-Nothing Calculator",
+      "fontSize": "30px",
+      "fontWeight": "700",
+      "lineHeight": "36px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 384,
+      "y": 97,
+      "width": 672,
+      "height": 36
+     },
+     {
+      "tag": "p",
+      "text": "Two portfolios with the same monthly contribution.",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "22.75px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 4.66,
+      "x": 384,
+      "y": 139,
+      "width": 672,
+      "height": 68
+     },
+     {
+      "tag": "label",
+      "text": "Monthly investment",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "lineHeight": "20px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 405,
+      "y": 250,
+      "width": 134,
+      "height": 20
+     },
+     {
+      "tag": "button",
+      "text": "$100",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 4.66,
+      "x": 866,
+      "y": 248,
+      "width": 51,
+      "height": 26
+     },
+     {
+      "tag": "button",
+      "text": "$200",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(39, 91, 45)",
+      "contrastRatio": 8.01,
+      "x": 923,
+      "y": 248,
+      "width": 53,
+      "height": 26
+     },
+     {
+      "tag": "button",
+      "text": "$500",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 4.66,
+      "x": 982,
+      "y": 248,
+      "width": 53,
+      "height": 26
+     },
+     {
+      "tag": "span",
+      "text": "$",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "color": "rgb(140, 169, 142)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 8.18,
+      "x": 417,
+      "y": 294,
+      "width": 9,
+      "height": 20
+     },
+     {
+      "tag": "p",
+      "text": "Over 20 years, doing nothing is worth",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgba(255, 255, 255, 0.7)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 21,
+      "x": 404,
+      "y": 389,
+      "width": 632,
+      "height": 16
+     },
+     {
+      "tag": "p",
+      "text": "$17,292(20% more)",
+      "fontSize": "36px",
+      "fontWeight": "700",
+      "lineHeight": "40px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 21,
+      "x": 404,
+      "y": 411,
+      "width": 632,
+      "height": 40
+     },
+     {
+      "tag": "span",
+      "text": "(20% more)",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "lineHeight": "24px",
+      "color": "rgba(255, 255, 255, 0.7)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 21,
+      "x": 548,
+      "y": 428,
+      "width": 92,
+      "height": 20
+     },
+     {
+      "tag": "p",
+      "text": "Same contributions, same market. The only differen",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "22.75px",
+      "color": "rgba(255, 255, 255, 0.8)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 21,
+      "x": 404,
+      "y": 457,
+      "width": 632,
+      "height": 23
+     },
+     {
+      "tag": "p",
+      "text": "Hold, never sell",
+      "fontSize": "11px",
+      "fontWeight": "600",
+      "lineHeight": "16.5px",
+      "color": "rgba(39, 91, 45, 0.7)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 421,
+      "y": 553,
+      "width": 277,
+      "height": 17
+     },
+     {
+      "tag": "p",
+      "text": "$104,185",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "lineHeight": "28px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 421,
+      "y": 572,
+      "width": 277,
+      "height": 28
+     },
+     {
+      "tag": "p",
+      "text": "Sell & rebuy",
+      "fontSize": "11px",
+      "fontWeight": "600",
+      "lineHeight": "16.5px",
+      "color": "rgba(193, 101, 46, 0.7)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 5.17,
+      "x": 742,
+      "y": 553,
+      "width": 277,
+      "height": 17
+     },
+     {
+      "tag": "p",
+      "text": "$86,894",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "lineHeight": "28px",
+      "color": "rgb(193, 101, 46)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 5.17,
+      "x": 742,
+      "y": 572,
+      "width": 277,
+      "height": 28
+     },
+     {
+      "tag": "span",
+      "text": "Hold, never sell",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 4.66,
+      "x": 427,
+      "y": 938,
+      "width": 88,
+      "height": 16
+     },
+     {
+      "tag": "span",
+      "text": "Sell & rebuy a few times a year",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 4.66,
+      "x": 553,
+      "y": 938,
+      "width": 174,
+      "height": 16
+     },
+     {
+      "tag": "p",
+      "text": "Assumes a steady 7% average annual return with no ",
+      "fontSize": "10px",
+      "fontWeight": "400",
+      "lineHeight": "16.25px",
+      "color": "rgb(140, 169, 142)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 8.18,
+      "x": 405,
+      "y": 970,
+      "width": 630,
+      "height": 33
+     },
+     {
+      "tag": "p",
+      "text": "Both lines earn the exact same return. The entire ",
+      "fontSize": "10px",
+      "fontWeight": "400",
+      "lineHeight": "16.25px",
+      "color": "rgb(140, 169, 142)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 8.18,
+      "x": 405,
+      "y": 1010,
+      "width": 630,
+      "height": 49
+     },
+     {
+      "tag": "button",
+      "text": "Adjust the assumptions",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 385,
+      "y": 1101,
+      "width": 670,
+      "height": 48
+     },
+     {
+      "tag": "span",
+      "text": "Adjust the assumptions",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "lineHeight": "20px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 405,
+      "y": 1115,
+      "width": 159,
+      "height": 20
+     },
+     {
+      "tag": "label",
+      "text": "Average annual return",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "lineHeight": "20px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 405,
+      "y": 1170,
+      "width": 630,
+      "height": 20
+     },
+     {
+      "tag": "p",
+      "text": "7% is the S&P 500's long-run average after inflati",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "16.5px",
+      "color": "rgb(140, 169, 142)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 8.18,
+      "x": 405,
+      "y": 1192,
+      "width": 630,
+      "height": 33
+     },
+     {
+      "tag": "span",
+      "text": "%",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "color": "rgb(140, 169, 142)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 8.18,
+      "x": 1009,
+      "y": 1243,
+      "width": 14,
+      "height": 20
+     },
+     {
+      "tag": "p",
+      "text": "Tax bracket (on short-term gains)",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "lineHeight": "20px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 405,
+      "y": 1295,
+      "width": 630,
+      "height": 20
+     },
+     {
+      "tag": "button",
+      "text": "10%",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "contrastRatio": 4.51,
+      "x": 405,
+      "y": 1321,
+      "width": 55,
+      "height": 36
+     },
+     {
+      "tag": "button",
+      "text": "12%",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "contrastRatio": 4.51,
+      "x": 468,
+      "y": 1321,
+      "width": 55,
+      "height": 36
+     },
+     {
+      "tag": "button",
+      "text": "22%",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(39, 91, 45)",
+      "contrastRatio": 8.01,
+      "x": 531,
+      "y": 1321,
+      "width": 57,
+      "height": 36
+     },
+     {
+      "tag": "button",
+      "text": "24%",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "contrastRatio": 4.51,
+      "x": 596,
+      "y": 1321,
+      "width": 57,
+      "height": 36
+     },
+     {
+      "tag": "button",
+      "text": "32%",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "contrastRatio": 4.51,
+      "x": 661,
+      "y": 1321,
+      "width": 57,
+      "height": 36
+     },
+     {
+      "tag": "button",
+      "text": "35%",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "contrastRatio": 4.51,
+      "x": 726,
+      "y": 1321,
+      "width": 57,
+      "height": 36
+     },
+     {
+      "tag": "button",
+      "text": "37%",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "contrastRatio": 4.51,
+      "x": 791,
+      "y": 1321,
+      "width": 57,
+      "height": 36
+     },
+     {
+      "tag": "p",
+      "text": "How often you sell and rebuy",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "lineHeight": "20px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 405,
+      "y": 1377,
+      "width": 630,
+      "height": 20
+     },
+     {
+      "tag": "button",
+      "text": "1x/yr",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "contrastRatio": 4.51,
+      "x": 405,
+      "y": 1403,
+      "width": 58,
+      "height": 36
+     },
+     {
+      "tag": "button",
+      "text": "2x/yr",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(39, 91, 45)",
+      "contrastRatio": 8.01,
+      "x": 471,
+      "y": 1403,
+      "width": 61,
+      "height": 36
+     },
+     {
+      "tag": "button",
+      "text": "4x/yr",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "contrastRatio": 4.51,
+      "x": 540,
+      "y": 1403,
+      "width": 61,
+      "height": 36
+     },
+     {
+      "tag": "button",
+      "text": "Monthly",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "contrastRatio": 4.51,
+      "x": 609,
+      "y": 1403,
+      "width": 78,
+      "height": 36
+     },
+     {
+      "tag": "p",
+      "text": "Time horizon",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "lineHeight": "20px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 405,
+      "y": 1459,
+      "width": 630,
+      "height": 20
+     },
+     {
+      "tag": "button",
+      "text": "10 yrs",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "contrastRatio": 4.51,
+      "x": 405,
+      "y": 1485,
+      "width": 64,
+      "height": 36
+     },
+     {
+      "tag": "button",
+      "text": "20 yrs",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(39, 91, 45)",
+      "contrastRatio": 8.01,
+      "x": 477,
+      "y": 1485,
+      "width": 67,
+      "height": 36
+     },
+     {
+      "tag": "button",
+      "text": "30 yrs",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "contrastRatio": 4.51,
+      "x": 552,
+      "y": 1485,
+      "width": 67,
+      "height": 36
+     },
+     {
+      "tag": "button",
+      "text": "40 yrs",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "color": "rgb(92, 127, 95)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "contrastRatio": 4.51,
+      "x": 627,
+      "y": 1485,
+      "width": 67,
+      "height": 36
+     },
+     {
+      "tag": "p",
+      "text": "I built this, nobody paid for it to be here, it is",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "19.5px",
+      "color": "rgb(140, 169, 142)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 8.18,
+      "x": 384,
+      "y": 1562,
+      "width": 672,
+      "height": 20
+     },
+     {
+      "tag": "p",
+      "text": "Educational tool only. Not financial or tax advice",
+      "fontSize": "10px",
+      "fontWeight": "400",
+      "lineHeight": "16.25px",
+      "color": "rgb(140, 169, 142)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 8.18,
+      "x": 384,
+      "y": 1589,
+      "width": 672,
+      "height": 16
+     }
+    ],
+    "interactiveElements": [
+     {
+      "tag": "a",
+      "text": "CCense",
+      "width": 85,
+      "height": 28,
+      "x": 408,
+      "y": 14
+     },
+     {
+      "tag": "button",
+      "text": "$100",
+      "width": 51,
+      "height": 26,
+      "x": 866,
+      "y": 248
+     },
+     {
+      "tag": "button",
+      "text": "$200",
+      "width": 53,
+      "height": 26,
+      "x": 923,
+      "y": 248
+     },
+     {
+      "tag": "button",
+      "text": "$500",
+      "width": 53,
+      "height": 26,
+      "x": 982,
+      "y": 248
+     },
+     {
+      "tag": "button",
+      "text": "Adjust the assumptions",
+      "width": 670,
+      "height": 48,
+      "x": 385,
+      "y": 1101
+     },
+     {
+      "tag": "button",
+      "text": "10%",
+      "width": 55,
+      "height": 36,
+      "x": 405,
+      "y": 1321
+     },
+     {
+      "tag": "button",
+      "text": "12%",
+      "width": 55,
+      "height": 36,
+      "x": 468,
+      "y": 1321
+     },
+     {
+      "tag": "button",
+      "text": "22%",
+      "width": 57,
+      "height": 36,
+      "x": 531,
+      "y": 1321
+     },
+     {
+      "tag": "button",
+      "text": "24%",
+      "width": 57,
+      "height": 36,
+      "x": 596,
+      "y": 1321
+     },
+     {
+      "tag": "button",
+      "text": "32%",
+      "width": 57,
+      "height": 36,
+      "x": 661,
+      "y": 1321
+     },
+     {
+      "tag": "button",
+      "text": "35%",
+      "width": 57,
+      "height": 36,
+      "x": 726,
+      "y": 1321
+     },
+     {
+      "tag": "button",
+      "text": "37%",
+      "width": 57,
+      "height": 36,
+      "x": 791,
+      "y": 1321
+     },
+     {
+      "tag": "button",
+      "text": "1x/yr",
+      "width": 58,
+      "height": 36,
+      "x": 405,
+      "y": 1403
+     },
+     {
+      "tag": "button",
+      "text": "2x/yr",
+      "width": 61,
+      "height": 36,
+      "x": 471,
+      "y": 1403
+     },
+     {
+      "tag": "button",
+      "text": "4x/yr",
+      "width": 61,
+      "height": 36,
+      "x": 540,
+      "y": 1403
+     },
+     {
+      "tag": "button",
+      "text": "Monthly",
+      "width": 78,
+      "height": 36,
+      "x": 609,
+      "y": 1403
+     },
+     {
+      "tag": "button",
+      "text": "10 yrs",
+      "width": 64,
+      "height": 36,
+      "x": 405,
+      "y": 1485
+     },
+     {
+      "tag": "button",
+      "text": "20 yrs",
+      "width": 67,
+      "height": 36,
+      "x": 477,
+      "y": 1485
+     },
+     {
+      "tag": "button",
+      "text": "30 yrs",
+      "width": 67,
+      "height": 36,
+      "x": 552,
+      "y": 1485
+     },
+     {
+      "tag": "button",
+      "text": "40 yrs",
+      "width": 67,
+      "height": 36,
+      "x": 627,
+      "y": 1485
+     }
+    ],
+    "images": [],
+    "headings": [
+     {
+      "tag": "h1",
+      "text": "The Do-Nothing Calculator",
+      "fontSize": "30px",
+      "x": 384,
+      "y": 97,
+      "width": 672,
+      "height": 36
+     }
+    ],
+    "overflowElements": [],
+    "stickyElements": [
+     "header.sticky (sticky)"
+    ],
+    "documentDimensions": {
+     "scrollHeight": 1646,
+     "clientHeight": 900,
+     "scrollWidth": 1440,
+     "clientWidth": 1440
+    }
+   }
+  }
+ },
+ "design": {
+  "report": {
+   "score": 69.3,
+   "grade": "D",
+   "buckets": {
+    "accessibility": {
+     "score": 12.6,
+     "max": 30,
+     "findings": [
+      {
+       "severity": "error",
+       "ruleId": "contrast-fail",
+       "message": "13 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+       "count": 13,
+       "examples": [
+        {
+         "sig": "span.text-ink-faint",
+         "ratio": 2.49,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "/"
+        },
+        {
+         "sig": "span.text-ink-muted.text-sm",
+         "ratio": 4.38,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Do-Nothing Calculator"
+        },
+        {
+         "sig": "span.text-xs.text-ink-faint",
+         "ratio": 2.49,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "No data stored. All calculations run loc"
+        },
+        {
+         "sig": "p.text-sm.text-ink-muted",
+         "ratio": 4.38,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Two portfolios with the same monthly con"
+        },
+        {
+         "sig": "span.absolute.left-3",
+         "ratio": 2.57,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "$"
+        },
+        {
+         "sig": "p.text-[11px].font-semibold",
+         "ratio": 3.51,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgba(39, 91, 45, 0.7)",
+         "sample": "Hold, never sell"
+        },
+        {
+         "sig": "p.text-[11px].font-semibold",
+         "ratio": 2.24,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgba(193, 101, 46, 0.7)",
+         "sample": "Sell & rebuy"
+        },
+        {
+         "sig": "p.text-[10px].text-ink-faint",
+         "ratio": 2.57,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "Assumes a steady 7% average annual retur"
+        }
+       ],
+       "scope": "element",
+       "renderContext": "dom",
+       "wcagCriterion": "1.4.3",
+       "required": "≥4.5:1 (3:1 large)"
+      },
+      {
+       "severity": "info",
+       "ruleId": "contrast-coverage",
+       "message": "Contrast skipped for 12 element(s) (background images/gradients, colors not resolvable to sRGB, or <svg>/<canvas> artwork) — check those manually.",
+       "skippedUnknownBg": 0,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 12,
+       "scope": "page"
+      },
+      {
+       "severity": "warn",
+       "ruleId": "tap-target-comfort",
+       "message": "20 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide — they clear the WCAG 2.5.8 24px minimum.",
+       "count": 20,
+       "examples": [
+        {
+         "sig": "button.text-xs.font-semibold",
+         "tag": "button",
+         "w": 51,
+         "h": 26,
+         "sample": "$100",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.text-xs.font-semibold",
+         "tag": "button",
+         "w": 53,
+         "h": 26,
+         "sample": "$200",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.text-xs.font-semibold",
+         "tag": "button",
+         "w": 53,
+         "h": 26,
+         "sample": "$500",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.min-h-[36px].px-3.5",
+         "tag": "button",
+         "w": 55,
+         "h": 36,
+         "sample": "10%",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.min-h-[36px].px-3.5",
+         "tag": "button",
+         "w": 55,
+         "h": 36,
+         "sample": "12%",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.min-h-[36px].px-3.5",
+         "tag": "button",
+         "w": 57,
+         "h": 36,
+         "sample": "22%",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.min-h-[36px].px-3.5",
+         "tag": "button",
+         "w": 57,
+         "h": 36,
+         "sample": "24%",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.min-h-[36px].px-3.5",
+         "tag": "button",
+         "w": 57,
+         "h": 36,
+         "sample": "32%",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        }
+       ],
+       "scope": "element",
+       "required": "≥48×48px",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       },
+       "wcagCriterion": "2.5.8"
+      },
+      {
+       "severity": "warn",
+       "ruleId": "missing-landmarks",
+       "message": "Missing landmark(s): main, nav, contentinfo.",
+       "landmarks": [
+        "main",
+        "nav",
+        "contentinfo"
+       ],
+       "scope": "page",
+       "contributors": [
+        {
+         "selector": "main, [role=\"main\"]",
+         "value": "no matching element"
+        },
+        {
+         "selector": "nav, [role=\"navigation\"]",
+         "value": "no matching element"
+        },
+        {
+         "selector": "footer, [role=\"contentinfo\"]",
+         "value": "no matching element"
+        }
+       ]
+      }
+     ]
+    },
+    "consistency": {
+     "score": 15.2,
+     "max": 20,
+     "findings": [
+      {
+       "severity": "warn",
+       "ruleId": "text-color-fragmentation",
+       "message": "9 distinct text colors — color fragmentation (M3 uses a small set of on-* roles).",
+       "count": 9,
+       "scope": "page",
+       "contributors": [
+        {
+         "selector": "span.text-ink-muted.text-sm",
+         "value": "rgb(92,127,95) · 18 node(s)"
+        },
+        {
+         "selector": "span.font-semibold.text-ink",
+         "value": "rgb(39,91,45) · 9 node(s)"
+        },
+        {
+         "selector": "span.text-ink-faint",
+         "value": "rgb(140,169,142) · 9 node(s)"
+        },
+        {
+         "selector": "span.text-white.text-xs",
+         "value": "rgb(255,255,255) · 6 node(s)"
+        },
+        {
+         "selector": "p.text-xs.font-semibold",
+         "value": "rgba(255,255,255,0.7) · 2 node(s)"
+        },
+        {
+         "selector": "p.text-sm.text-white/80",
+         "value": "rgba(255,255,255,0.8) · 1 node(s)"
+        }
+       ]
+      },
+      {
+       "severity": "warn",
+       "ruleId": "small-body-text",
+       "message": "10 reading-copy text node(s) below 16px (or any text below 11px).",
+       "count": 10,
+       "examples": [
+        {
+         "sig": "p.text-sm.text-ink-muted",
+         "px": 14,
+         "sample": "Two portfolios with the same monthly con"
+        },
+        {
+         "sig": "p.text-xs.font-semibold",
+         "px": 12,
+         "sample": "Over 20 years, doing nothing is worth"
+        },
+        {
+         "sig": "p.text-sm.text-white/80",
+         "px": 14,
+         "sample": "Same contributions, same market. The onl"
+        },
+        {
+         "sig": "p.text-[10px].text-ink-faint",
+         "px": 10,
+         "sample": "Assumes a steady 7% average annual retur"
+        },
+        {
+         "sig": "p.text-[10px].text-ink-faint",
+         "px": 10,
+         "sample": "Both lines earn the exact same return. T"
+        },
+        {
+         "sig": "p.text-xs.text-ink-faint",
+         "px": 12,
+         "sample": "7% is the S&P 500's long-run average aft"
+        },
+        {
+         "sig": "p.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Tax bracket (on short-term gains)"
+        },
+        {
+         "sig": "p.text-sm.font-semibold",
+         "px": 14,
+         "sample": "How often you sell and rebuy"
+        }
+       ],
+       "scope": "element",
+       "renderContext": "dom",
+       "required": "≥16px (≥11px absolute)",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "severity": "info",
+       "ruleId": "small-ui-labels",
+       "message": "31 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+       "count": 31,
+       "examples": [
+        {
+         "sig": "span.text-white.text-xs",
+         "px": 12,
+         "sample": "C"
+        },
+        {
+         "sig": "span.text-ink-muted.text-sm",
+         "px": 14,
+         "sample": "Do-Nothing Calculator"
+        },
+        {
+         "sig": "span.text-xs.text-ink-faint",
+         "px": 12,
+         "sample": "No data stored. All calculations run loc"
+        },
+        {
+         "sig": "label.block.text-sm",
+         "px": 14,
+         "sample": "Monthly investment"
+        },
+        {
+         "sig": "button.text-xs.font-semibold",
+         "px": 12,
+         "sample": "$100"
+        },
+        {
+         "sig": "button.text-xs.font-semibold",
+         "px": 12,
+         "sample": "$200"
+        }
+       ],
+       "scope": "element",
+       "renderContext": "dom",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "severity": "info",
+       "ruleId": "typography-coverage",
+       "message": "Typography skipped for 25 node(s) inside <svg>/<canvas> artwork — sign lettering, chart labels and diagram callouts are not reading copy. 1 display-size node(s) at 32px+ not scored against the 1.25 body floor — M3's own display roles are prescribed below it (36/44, 45/52, 57/64), so they are judged against 1.1.",
+       "skippedRenderContext": 25,
+       "displayLeadingRelaxed": 1,
+       "formattedBlocksSkipped": 0,
+       "scope": "page"
+      }
+     ]
+    },
+    "motion": {
+     "score": 16.5,
+     "max": 25,
+     "findings": [
+      {
+       "severity": "error",
+       "ruleId": "reduced-motion-missing",
+       "message": "No @media (prefers-reduced-motion: reduce) rule found — motion is not gated for reduced-motion users.",
+       "scope": "page",
+       "wcagCriterion": "2.3.3",
+       "contributors": [
+        {
+         "selector": "@media (prefers-reduced-motion: reduce)",
+         "value": "no rule found"
+        }
+       ]
+      }
+     ]
+    },
+    "performance": {
+     "score": 25,
+     "max": 25,
+     "findings": []
+    }
+   },
+   "sections": {
+    "color": {
+     "sampled": 48,
+     "skippedUnknownBg": 0,
+     "skippedUnparseable": 0,
+     "skippedRenderContext": 12,
+     "distinctTextColors": 9,
+     "failureCount": 13,
+     "failures": [
+      {
+       "sig": "span.text-ink-faint",
+       "ratio": 2.49,
+       "threshold": 4.5,
+       "large": false,
+       "fg": "rgb(140, 169, 142)",
+       "sample": "/"
+      },
+      {
+       "sig": "span.text-ink-muted.text-sm",
+       "ratio": 4.38,
+       "threshold": 4.5,
+       "large": false,
+       "fg": "rgb(92, 127, 95)",
+       "sample": "Do-Nothing Calculator"
+      },
+      {
+       "sig": "span.text-xs.text-ink-faint",
+       "ratio": 2.49,
+       "threshold": 4.5,
+       "large": false,
+       "fg": "rgb(140, 169, 142)",
+       "sample": "No data stored. All calculations run loc"
+      },
+      {
+       "sig": "p.text-sm.text-ink-muted",
+       "ratio": 4.38,
+       "threshold": 4.5,
+       "large": false,
+       "fg": "rgb(92, 127, 95)",
+       "sample": "Two portfolios with the same monthly con"
+      },
+      {
+       "sig": "span.absolute.left-3",
+       "ratio": 2.57,
+       "threshold": 4.5,
+       "large": false,
+       "fg": "rgb(140, 169, 142)",
+       "sample": "$"
+      },
+      {
+       "sig": "p.text-[11px].font-semibold",
+       "ratio": 3.51,
+       "threshold": 4.5,
+       "large": false,
+       "fg": "rgba(39, 91, 45, 0.7)",
+       "sample": "Hold, never sell"
+      },
+      {
+       "sig": "p.text-[11px].font-semibold",
+       "ratio": 2.24,
+       "threshold": 4.5,
+       "large": false,
+       "fg": "rgba(193, 101, 46, 0.7)",
+       "sample": "Sell & rebuy"
+      },
+      {
+       "sig": "p.text-[10px].text-ink-faint",
+       "ratio": 2.57,
+       "threshold": 4.5,
+       "large": false,
+       "fg": "rgb(140, 169, 142)",
+       "sample": "Assumes a steady 7% average annual retur"
+      },
+      {
+       "sig": "p.text-[10px].text-ink-faint",
+       "ratio": 2.57,
+       "threshold": 4.5,
+       "large": false,
+       "fg": "rgb(140, 169, 142)",
+       "sample": "Both lines earn the exact same return. T"
+      },
+      {
+       "sig": "p.text-xs.text-ink-faint",
+       "ratio": 2.57,
+       "threshold": 4.5,
+       "large": false,
+       "fg": "rgb(140, 169, 142)",
+       "sample": "7% is the S&P 500's long-run average aft"
+      },
+      {
+       "sig": "span.absolute.right-3",
+       "ratio": 2.57,
+       "threshold": 4.5,
+       "large": false,
+       "fg": "rgb(140, 169, 142)",
+       "sample": "%"
+      },
+      {
+       "sig": "p.text-center.text-xs",
+       "ratio": 2.49,
+       "threshold": 4.5,
+       "large": false,
+       "fg": "rgb(140, 169, 142)",
+       "sample": "I built this, nobody paid for it to be h"
+      },
+      {
+       "sig": "p.text-center.text-[10px]",
+       "ratio": 2.49,
+       "threshold": 4.5,
+       "large": false,
+       "fg": "rgb(140, 169, 142)",
+       "sample": "Educational tool only. Not financial or "
+      }
+     ]
+    },
+    "typography": {
+     "distinctFamilies": 1,
+     "families": [
+      "__Inter_d8ebd1, __Inter_Fallback_d8ebd1"
+     ],
+     "distinctSizes": 8,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      16,
+      20,
+      30,
+      36
+     ],
+     "distinctLineHeights": 8,
+     "smallBodyCount": 10,
+     "smallBody": [
+      {
+       "sig": "p.text-sm.text-ink-muted",
+       "px": 14,
+       "sample": "Two portfolios with the same monthly con"
+      },
+      {
+       "sig": "p.text-xs.font-semibold",
+       "px": 12,
+       "sample": "Over 20 years, doing nothing is worth"
+      },
+      {
+       "sig": "p.text-sm.text-white/80",
+       "px": 14,
+       "sample": "Same contributions, same market. The onl"
+      },
+      {
+       "sig": "p.text-[10px].text-ink-faint",
+       "px": 10,
+       "sample": "Assumes a steady 7% average annual retur"
+      },
+      {
+       "sig": "p.text-[10px].text-ink-faint",
+       "px": 10,
+       "sample": "Both lines earn the exact same return. T"
+      },
+      {
+       "sig": "p.text-xs.text-ink-faint",
+       "px": 12,
+       "sample": "7% is the S&P 500's long-run average aft"
+      },
+      {
+       "sig": "p.text-sm.font-semibold",
+       "px": 14,
+       "sample": "Tax bracket (on short-term gains)"
+      },
+      {
+       "sig": "p.text-sm.font-semibold",
+       "px": 14,
+       "sample": "How often you sell and rebuy"
+      },
+      {
+       "sig": "p.text-center.text-xs",
+       "px": 12,
+       "sample": "I built this, nobody paid for it to be h"
+      },
+      {
+       "sig": "p.text-center.text-[10px]",
+       "px": 10,
+       "sample": "Educational tool only. Not financial or "
+      }
+     ],
+     "smallLabelCount": 31,
+     "smallLabels": [
+      {
+       "sig": "span.text-white.text-xs",
+       "px": 12,
+       "sample": "C"
+      },
+      {
+       "sig": "span.text-ink-muted.text-sm",
+       "px": 14,
+       "sample": "Do-Nothing Calculator"
+      },
+      {
+       "sig": "span.text-xs.text-ink-faint",
+       "px": 12,
+       "sample": "No data stored. All calculations run loc"
+      },
+      {
+       "sig": "label.block.text-sm",
+       "px": 14,
+       "sample": "Monthly investment"
+      },
+      {
+       "sig": "button.text-xs.font-semibold",
+       "px": 12,
+       "sample": "$100"
+      },
+      {
+       "sig": "button.text-xs.font-semibold",
+       "px": 12,
+       "sample": "$200"
+      },
+      {
+       "sig": "button.text-xs.font-semibold",
+       "px": 12,
+       "sample": "$500"
+      },
+      {
+       "sig": "span.absolute.left-3",
+       "px": 14,
+       "sample": "$"
+      },
+      {
+       "sig": "p.text-[11px].font-semibold",
+       "px": 11,
+       "sample": "Hold, never sell"
+      },
+      {
+       "sig": "p.text-[11px].font-semibold",
+       "px": 11,
+       "sample": "Sell & rebuy"
+      },
+      {
+       "sig": "span.text-xs.text-ink-muted",
+       "px": 12,
+       "sample": "Hold, never sell"
+      },
+      {
+       "sig": "span.text-xs.text-ink-muted",
+       "px": 12,
+       "sample": "Sell & rebuy a few times a year"
+      }
+     ],
+     "tightLeadingCount": 0,
+     "tightLeading": [],
+     "displayLeadingRelaxed": 1,
+     "formattedBlocksSkipped": 0,
+     "distinctHeadingSizes": 1,
+     "headingCount": 1,
+     "skippedRenderContext": 25
+    },
+    "shape": {
+     "distinctRadii": 4,
+     "radii": [
+      8,
+      12,
+      16,
+      9999
+     ],
+     "scale": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      28,
+      9999
+     ],
+     "offScaleValues": []
+    },
+    "elevation": {
+     "distinctShadows": 0,
+     "levels": 6,
+     "recipes": []
+    },
+    "states": {
+     "interactiveCount": 22,
+     "hasHoverRules": true,
+     "hasFocusVisibleRules": true,
+     "stylesheetsReachable": true,
+     "sheetsSkipped": 0,
+     "noVisibleFocusCount": 0,
+     "noVisibleFocusExamples": []
+    },
+    "motion": {
+     "hasReducedMotionQuery": false,
+     "reducedMotionStatus": "missing",
+     "activeAnimations": 0,
+     "tooShort": [],
+     "tooLong": [],
+     "linearMovement": [],
+     "easeInEntrance": [],
+     "layoutAnimated": [],
+     "infiniteLoops": [],
+     "sheetsSkipped": 0
+    },
+    "a11yLayout": {
+     "smallTargetCount": 20,
+     "smallTargets": [
+      {
+       "sig": "button.text-xs.font-semibold",
+       "tag": "button",
+       "w": 51,
+       "h": 26,
+       "sample": "$100",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.text-xs.font-semibold",
+       "tag": "button",
+       "w": 53,
+       "h": 26,
+       "sample": "$200",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.text-xs.font-semibold",
+       "tag": "button",
+       "w": 53,
+       "h": 26,
+       "sample": "$500",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.min-h-[36px].px-3.5",
+       "tag": "button",
+       "w": 55,
+       "h": 36,
+       "sample": "10%",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.min-h-[36px].px-3.5",
+       "tag": "button",
+       "w": 55,
+       "h": 36,
+       "sample": "12%",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.min-h-[36px].px-3.5",
+       "tag": "button",
+       "w": 57,
+       "h": 36,
+       "sample": "22%",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.min-h-[36px].px-3.5",
+       "tag": "button",
+       "w": 57,
+       "h": 36,
+       "sample": "24%",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.min-h-[36px].px-3.5",
+       "tag": "button",
+       "w": 57,
+       "h": 36,
+       "sample": "32%",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.min-h-[36px].px-3.5",
+       "tag": "button",
+       "w": 57,
+       "h": 36,
+       "sample": "35%",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.min-h-[36px].px-3.5",
+       "tag": "button",
+       "w": 57,
+       "h": 36,
+       "sample": "37%",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.min-h-[36px].px-3.5",
+       "tag": "button",
+       "w": 58,
+       "h": 36,
+       "sample": "1x/yr",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.min-h-[36px].px-3.5",
+       "tag": "button",
+       "w": 61,
+       "h": 36,
+       "sample": "2x/yr",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.min-h-[36px].px-3.5",
+       "tag": "button",
+       "w": 61,
+       "h": 36,
+       "sample": "4x/yr",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.min-h-[36px].px-3.5",
+       "tag": "button",
+       "w": 64,
+       "h": 36,
+       "sample": "10 yrs",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "a.flex.items-center",
+       "tag": "a",
+       "w": 85,
+       "h": 28,
+       "sample": "CCense",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.min-h-[36px].px-3.5",
+       "tag": "button",
+       "w": 67,
+       "h": 36,
+       "sample": "20 yrs",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.min-h-[36px].px-3.5",
+       "tag": "button",
+       "w": 67,
+       "h": 36,
+       "sample": "30 yrs",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.min-h-[36px].px-3.5",
+       "tag": "button",
+       "w": 67,
+       "h": 36,
+       "sample": "40 yrs",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.min-h-[36px].px-3.5",
+       "tag": "button",
+       "w": 78,
+       "h": 36,
+       "sample": "Monthly",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "input.w-full.min-h-[44px]",
+       "tag": "input",
+       "w": 630,
+       "h": 44,
+       "sample": "7.00",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      }
+     ],
+     "undersizedCount": 0,
+     "belowComfortCount": 20,
+     "spacingExceptionChecked": true,
+     "spacingExceptionSkipReason": null,
+     "targetCount": 22,
+     "missingAltCount": 0,
+     "missingAlt": [],
+     "headingJumpCount": 0,
+     "headingJumps": [],
+     "h1Count": 1,
+     "missingLandmarks": [
+      "main",
+      "nav",
+      "contentinfo"
+     ]
+    }
+   },
+   "notAutoDetectable": [
+    "Spatial coherence — whether elements enter/exit from where they logically belong (a menu growing from its anchor, a sheet rising from the edge it docks to). The audit sees durations and easings, not spatial origin.",
+    "Clean fades — whether opacity transitions are free of mid-fade color shifts, banding, or double-compositing. Only a human eye (or pixel diff) can judge fade quality.",
+    "Jump cuts — abrupt state changes with no transition where one is expected (content swaps, route changes). Absence of animation is not itself in the DOM.",
+    "Unified direction — whether a group of elements animates along a consistent axis/choreography rather than each doing its own thing.",
+    "Perceived hierarchy / emphasis — whether motion draws the eye to the right thing at the right time.",
+    "Content-appropriate personality — expressive vs. standard scheme being the right call for the brand and context.",
+    "Interruptibility & continuity — whether in-flight animations respond gracefully to new input rather than snapping.",
+    "Real contrast under imagery/gradients — text over photos or gradient backgrounds (the audit samples solid computed backgrounds only).",
+    "Closed shadow roots — their internals are structurally unreachable from script and are not scanned."
+   ],
+   "meta": {
+    "url": "https://do-nothing-calculator.vercel.app/",
+    "title": "The Do-Nothing Calculator by Cense",
+    "timestamp": "2026-11-15T18:49:07.050Z",
+    "contentFingerprint": "1pvw8r2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "viewport": {
+     "width": 1440,
+     "height": 900,
+     "dpr": 1,
+     "isMobile": false,
+     "w": 1440,
+     "h": 900
+    },
+    "siteType": "saas",
+    "elementsScanned": 117,
+    "elementsTotal": 128,
+    "sampleCap": 1500,
+    "sampleCapped": false,
+    "sheetsSkipped": 0,
+    "openShadowRoots": 1,
+    "notes": [
+     "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+    ],
+    "durationMs": 5
+   }
+  },
+  "probes": {
+   "animationsAtLoad": {
+    "count": 0,
+    "running": 0,
+    "anims": []
+   },
+   "animationsAfterScroll": {
+    "count": 0,
+    "running": 0,
+    "anims": []
+   },
+   "hoverProbe": [
+    {
+     "label": "CCense",
+     "selector": "a.flex",
+     "changes": false
+    },
+    {
+     "label": "$100",
+     "selector": "button.text-xs",
+     "changes": false
+    },
+    {
+     "label": "$200",
+     "selector": "button.text-xs",
+     "changes": false
+    },
+    {
+     "label": "$500",
+     "selector": "button.text-xs",
+     "changes": false
+    },
+    {
+     "label": "Adjust the assumptions",
+     "selector": "button.w-full",
+     "changes": false
+    },
+    {
+     "label": "10%",
+     "selector": "button.min-h-[36px]",
+     "changes": false
+    }
+   ],
+   "reducedMotion": {
+    "emulated": true,
+    "snapshot": {
+     "count": 0,
+     "running": 0,
+     "anims": []
+    },
+    "ungatedCount": 0
+   }
+  },
+  "durationMs": 2428
+ },
+ "extras": [
+  {
+   "id": "6dc91e39-8a2d-44bd-b266-fabb842af5b6",
+   "severity": "P3",
+   "category": "Accessibility",
+   "device": "desktop",
+   "title": "Primary controls show no hover feedback",
+   "description": "6 of 6 sampled primary controls showed no visual change on hover (CCense, $100, $200).",
+   "recommendation": "Add :hover feedback (background, color, or elevation change) to interactive elements.",
+   "source": "engine",
+   "scope": "page",
+   "renderContext": "dom",
+   "observedOn": 1,
+   "sampleSize": 1,
+   "viewport": {
+    "width": 1440,
+    "height": 900,
+    "dpr": 1,
+    "isMobile": false
+   },
+   "themeId": "eng:hover-no-feedback",
+   "evidence": {
+    "measured": "6/6 unresponsive",
+    "contributors": [
+     {
+      "selector": "a.flex",
+      "value": "CCense"
+     },
+     {
+      "selector": "button.text-xs",
+      "value": "$100"
+     },
+     {
+      "selector": "button.text-xs",
+      "value": "$200"
+     },
+     {
+      "selector": "button.text-xs",
+      "value": "$500"
+     },
+     {
+      "selector": "button.w-full",
+      "value": "Adjust the assumptions"
+     }
+    ]
+   }
+  }
+ ]
+}

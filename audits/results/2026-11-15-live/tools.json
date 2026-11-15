@@ -1,0 +1,444 @@
+{
+ "url": "https://do-nothing-calculator.vercel.app/",
+ "results": {
+  "header-check": {
+   "url": "https://do-nothing-calculator.vercel.app/",
+   "statusCode": 200,
+   "allHeaders": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "age": "280841",
+    "cache-control": "public, max-age=0, must-revalidate",
+    "connection": "close",
+    "content-disposition": "inline",
+    "content-length": "16942",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Sun, 15 Nov 2026 18:49:18 GMT",
+    "etag": "\"a30c86069243f6cf2097885f1d5dbedd\"",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+    "x-matched-path": "/",
+    "x-vercel-cache": "HIT",
+    "x-vercel-id": "iad1::znj5s-1794768558769-fb6ef7d7990d"
+   },
+   "analysis": [
+    {
+     "name": "Cache-Control",
+     "value": "public, max-age=0, must-revalidate",
+     "status": "good",
+     "recommendation": "Cache-Control is configured."
+    },
+    {
+     "name": "Content-Encoding",
+     "value": null,
+     "status": "warning",
+     "recommendation": "Enable gzip or Brotli compression to reduce transfer sizes by 60-80%."
+    },
+    {
+     "name": "Strict-Transport-Security",
+     "value": "max-age=63072000; includeSubDomains; preload",
+     "status": "good",
+     "recommendation": "Strict-Transport-Security is set."
+    },
+    {
+     "name": "X-Content-Type-Options",
+     "value": null,
+     "status": "missing",
+     "recommendation": "Add \"X-Content-Type-Options: nosniff\" to prevent MIME sniffing."
+    },
+    {
+     "name": "X-Frame-Options",
+     "value": null,
+     "status": "missing",
+     "recommendation": "Add \"X-Frame-Options: DENY\" or \"SAMEORIGIN\" to prevent clickjacking."
+    },
+    {
+     "name": "Content-Security-Policy",
+     "value": null,
+     "status": "missing",
+     "recommendation": "Add a Content-Security-Policy to prevent XSS and data injection."
+    },
+    {
+     "name": "Referrer-Policy",
+     "value": null,
+     "status": "missing",
+     "recommendation": "Add \"Referrer-Policy: strict-origin-when-cross-origin\" for privacy."
+    },
+    {
+     "name": "Permissions-Policy",
+     "value": null,
+     "status": "missing",
+     "recommendation": "Add Permissions-Policy to control browser features (camera, geolocation, etc.)."
+    },
+    {
+     "name": "ETag",
+     "value": "\"a30c86069243f6cf2097885f1d5dbedd\"",
+     "status": "good",
+     "recommendation": "ETag is set for conditional requests."
+    },
+    {
+     "name": "Vary",
+     "value": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+     "status": "good",
+     "recommendation": "Vary header set: RSC, Next-Router-State-Tree, Next-Router-Prefetch"
+    }
+   ],
+   "summary": {
+    "good": 4,
+    "warnings": 1,
+    "missing": 5,
+    "total": 10
+   },
+   "score": 40
+  },
+  "meta-validate": {
+   "url": "https://do-nothing-calculator.vercel.app/",
+   "tags": [
+    {
+     "name": "title",
+     "content": "The Do-Nothing Calculator by Cense",
+     "status": "good",
+     "recommendation": "Title is 34 chars. Good length."
+    },
+    {
+     "name": "meta description",
+     "content": "See what selling and rebuying your investments actually costs you in taxes, versus just leaving it alone.",
+     "status": "good",
+     "recommendation": "Description is 105 chars. Good length."
+    },
+    {
+     "name": "viewport",
+     "content": "width=device-width, initial-scale=1",
+     "status": "good",
+     "recommendation": "Viewport is set."
+    },
+    {
+     "name": "canonical",
+     "content": null,
+     "status": "warning",
+     "recommendation": "Add a canonical URL to prevent duplicate content issues."
+    },
+    {
+     "name": "og:title",
+     "content": "The Do-Nothing Calculator by Cense",
+     "status": "good",
+     "recommendation": "Set to: The Do-Nothing Calculator by Cense"
+    },
+    {
+     "name": "og:description",
+     "content": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+     "status": "good",
+     "recommendation": "Set to: Two lines. One is you holding. One is you fidgeting. Watch the gap."
+    },
+    {
+     "name": "og:image",
+     "content": null,
+     "status": "missing",
+     "recommendation": "Add og:image for better social media sharing."
+    },
+    {
+     "name": "og:url",
+     "content": null,
+     "status": "missing",
+     "recommendation": "Add og:url for better social media sharing."
+    },
+    {
+     "name": "og:type",
+     "content": "website",
+     "status": "good",
+     "recommendation": "Set to: website"
+    },
+    {
+     "name": "twitter:card",
+     "content": "summary_large_image",
+     "status": "good",
+     "recommendation": "Set to: summary_large_image"
+    },
+    {
+     "name": "twitter:title",
+     "content": "The Do-Nothing Calculator by Cense",
+     "status": "good",
+     "recommendation": "Set to: The Do-Nothing Calculator by Cense"
+    },
+    {
+     "name": "twitter:description",
+     "content": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+     "status": "good",
+     "recommendation": "Set to: Two lines. One is you holding. One is you fidgeting. Watch the gap."
+    },
+    {
+     "name": "twitter:image",
+     "content": null,
+     "status": "warning",
+     "recommendation": "Add twitter:image for Twitter card previews."
+    },
+    {
+     "name": "lang attribute",
+     "content": "en",
+     "status": "good",
+     "recommendation": "Language: en"
+    },
+    {
+     "name": "favicon",
+     "content": null,
+     "status": "warning",
+     "recommendation": "Add a favicon for better browser tab identification."
+    }
+   ],
+   "preview": {
+    "title": "The Do-Nothing Calculator by Cense",
+    "description": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+    "image": null,
+    "url": "https://do-nothing-calculator.vercel.app/",
+    "siteName": "do-nothing-calculator.vercel.app"
+   },
+   "summary": {
+    "good": 10,
+    "warnings": 3,
+    "missing": 2,
+    "total": 15
+   },
+   "score": 67
+  },
+  "structured-data": {
+   "url": "https://do-nothing-calculator.vercel.app/",
+   "totalSchemas": 0,
+   "items": [],
+   "summary": {
+    "total": 0,
+    "valid": 0,
+    "withErrors": 0,
+    "totalErrors": 0,
+    "totalWarnings": 0,
+    "jsonLd": 0,
+    "microdata": 0
+   },
+   "richResultEligibility": {
+    "eligible": false,
+    "types": []
+   }
+  },
+  "sitemap-validate": {
+   "sitemapUrl": "https://do-nothing-calculator.vercel.app/sitemap.xml",
+   "found": false,
+   "urls": [],
+   "issues": [
+    "Sitemap not found. Try providing a direct URL to your sitemap.xml."
+   ],
+   "summary": {
+    "total": 0,
+    "ok": 0,
+    "redirects": 0,
+    "errors": 0,
+    "dead": 0,
+    "slow": 0
+   },
+   "error": "Sitemap not found at https://do-nothing-calculator.vercel.app/sitemap.xml. HTTP 404"
+  },
+  "redirect-check": {
+   "url": "https://do-nothing-calculator.vercel.app/",
+   "finalUrl": "https://do-nothing-calculator.vercel.app/",
+   "finalStatus": 200,
+   "hops": [
+    {
+     "url": "https://do-nothing-calculator.vercel.app/",
+     "statusCode": 200,
+     "location": null,
+     "timeMs": 164
+    }
+   ],
+   "redirectCount": 0,
+   "totalTimeMs": 164,
+   "status": "good",
+   "message": "No redirects detected. URL resolves directly."
+  },
+  "broken-links": {
+   "url": "https://do-nothing-calculator.vercel.app/",
+   "depth": "page",
+   "pagesScanned": 1,
+   "pagesScannedList": [
+    "https://do-nothing-calculator.vercel.app/"
+   ],
+   "totalLinks": 10,
+   "totalDiscoveredLinks": 10,
+   "links": [
+    {
+     "sourceUrl": "https://do-nothing-calculator.vercel.app/",
+     "targetUrl": "https://cense.beehiiv.com/",
+     "anchorText": "CCense",
+     "linkType": "a",
+     "isInternal": false,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 246,
+     "sources": [
+      "https://do-nothing-calculator.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://do-nothing-calculator.vercel.app/",
+     "targetUrl": "https://do-nothing-calculator.vercel.app/_next/static/chunks/fd9d1056-b11b2651f33aae7f.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 34,
+     "sources": [
+      "https://do-nothing-calculator.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://do-nothing-calculator.vercel.app/",
+     "targetUrl": "https://do-nothing-calculator.vercel.app/_next/static/chunks/117-bdb895d1249d295d.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 81,
+     "sources": [
+      "https://do-nothing-calculator.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://do-nothing-calculator.vercel.app/",
+     "targetUrl": "https://do-nothing-calculator.vercel.app/_next/static/chunks/main-app-2dcde4753ea0d175.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 81,
+     "sources": [
+      "https://do-nothing-calculator.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://do-nothing-calculator.vercel.app/",
+     "targetUrl": "https://do-nothing-calculator.vercel.app/_next/static/chunks/898-53017fb4894a2966.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 76,
+     "sources": [
+      "https://do-nothing-calculator.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://do-nothing-calculator.vercel.app/",
+     "targetUrl": "https://do-nothing-calculator.vercel.app/_next/static/chunks/app/page-00056f3332cc0726.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 80,
+     "sources": [
+      "https://do-nothing-calculator.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://do-nothing-calculator.vercel.app/",
+     "targetUrl": "https://do-nothing-calculator.vercel.app/_next/static/chunks/polyfills-42372ed130431b0a.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 579,
+     "sources": [
+      "https://do-nothing-calculator.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://do-nothing-calculator.vercel.app/",
+     "targetUrl": "https://do-nothing-calculator.vercel.app/_next/static/chunks/webpack-95c3068086c22d21.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 80,
+     "sources": [
+      "https://do-nothing-calculator.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://do-nothing-calculator.vercel.app/",
+     "targetUrl": "https://do-nothing-calculator.vercel.app/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+     "anchorText": "preload",
+     "linkType": "link",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 79,
+     "sources": [
+      "https://do-nothing-calculator.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://do-nothing-calculator.vercel.app/",
+     "targetUrl": "https://do-nothing-calculator.vercel.app/_next/static/css/234d9a83a41e4e19.css",
+     "anchorText": "stylesheet",
+     "linkType": "link",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 78,
+     "sources": [
+      "https://do-nothing-calculator.vercel.app/"
+     ]
+    }
+   ],
+   "summary": {
+    "total": 10,
+    "ok": 10,
+    "broken": 0,
+    "redirects": 0,
+    "errors": 0,
+    "timeouts": 0
+   }
+  },
+  "webmcp-check": {
+   "url": "https://do-nothing-calculator.vercel.app/",
+   "aiReadinessScore": 0,
+   "mcpDiscovery": {
+    "score": 0,
+    "found": false,
+    "valid": false,
+    "hasAuth": false,
+    "data": null,
+    "errors": [
+     "HTTP 404 response from https://do-nothing-calculator.vercel.app/.well-known/mcp.json."
+    ]
+   },
+   "webmcpDeclarative": {
+    "score": 0,
+    "toolCount": 0,
+    "tools": [],
+    "findings": [
+     "No declarative WebMCP tools found (no toolname attributes in HTML)."
+    ]
+   },
+   "webmcpImperative": {
+    "score": 0,
+    "detected": false,
+    "registerToolCalls": 0,
+    "findings": [
+     "No imperative WebMCP tool registration detected in inline scripts.",
+     "Note: This check cannot detect tools registered via external JavaScript files."
+    ]
+   },
+   "recommendations": [
+    "Add a .well-known/mcp.json file to enable MCP server discovery. This lets AI agents find and connect to your API endpoints automatically.",
+    "Add WebMCP declarative tools to your HTML using toolname attributes on <form> elements. Example: <form toolname=\"search\" tooldescription=\"Search products\"> to expose functionality to AI agents.",
+    "Consider implementing imperative WebMCP tools using navigator.modelContext.registerTool() for dynamic tool registration that depends on runtime state.",
+    "This page has no AI/MCP integration. Start with .well-known/mcp.json for server discovery or add toolname attributes to existing forms for quick wins."
+   ]
+  }
+ }
+}

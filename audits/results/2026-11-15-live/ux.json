@@ -1,0 +1,103 @@
+{
+ "url": "https://do-nothing-calculator.vercel.app/",
+ "siteType": "saas",
+ "viewports": {
+  "desktop": {
+   "width": 1440,
+   "height": 900,
+   "dpr": 1,
+   "isMobile": false
+  },
+  "mobile": {
+   "width": 375,
+   "height": 812,
+   "dpr": 1,
+   "isMobile": true
+  }
+ },
+ "note": "Deterministic findings only. UX scores come from the AI review: it writes ux/ai/<tag>.json, then node lib/merge-ux.mjs <this folder>/ux scores and merges them.",
+ "screens": [
+  {
+   "tag": "result-desktop",
+   "state": "result",
+   "formFactor": "desktop",
+   "findings": 6,
+   "p1": 2,
+   "p2": 4,
+   "p3": 0,
+   "extras": 1,
+   "designScore": 69.3,
+   "designGrade": "D",
+   "findingTitles": [
+    "P1 11 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+    "P2 4 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide",
+    "P2 Missing landmark(s): main, nav, contentinfo.",
+    "P2 9 distinct text colors",
+    "P2 7 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P1 No @media (prefers-reduced-motion: reduce) rule found",
+    "P3 Primary controls show no hover feedback"
+   ]
+  },
+  {
+   "tag": "result-mobile",
+   "state": "result",
+   "formFactor": "mobile",
+   "findings": 6,
+   "p1": 2,
+   "p2": 4,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 69.3,
+   "designGrade": "D",
+   "findingTitles": [
+    "P1 10 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+    "P2 4 tap target(s) smaller than M3's comfortable 48×48px at 375px wide",
+    "P2 Missing landmark(s): main, nav, contentinfo.",
+    "P2 9 distinct text colors",
+    "P2 7 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P1 No @media (prefers-reduced-motion: reduce) rule found"
+   ]
+  },
+  {
+   "tag": "assumptions-desktop",
+   "state": "assumptions",
+   "formFactor": "desktop",
+   "findings": 6,
+   "p1": 2,
+   "p2": 4,
+   "p3": 0,
+   "extras": 1,
+   "designScore": 69.3,
+   "designGrade": "D",
+   "findingTitles": [
+    "P1 13 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+    "P2 20 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide",
+    "P2 Missing landmark(s): main, nav, contentinfo.",
+    "P2 9 distinct text colors",
+    "P2 10 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P1 No @media (prefers-reduced-motion: reduce) rule found",
+    "P3 Primary controls show no hover feedback"
+   ]
+  },
+  {
+   "tag": "assumptions-mobile",
+   "state": "assumptions",
+   "formFactor": "mobile",
+   "findings": 6,
+   "p1": 2,
+   "p2": 4,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 69.3,
+   "designGrade": "D",
+   "findingTitles": [
+    "P1 12 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+    "P2 20 tap target(s) smaller than M3's comfortable 48×48px at 375px wide",
+    "P2 Missing landmark(s): main, nav, contentinfo.",
+    "P2 9 distinct text colors",
+    "P2 10 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P1 No @media (prefers-reduced-motion: reduce) rule found"
+   ]
+  }
+ ]
+}
