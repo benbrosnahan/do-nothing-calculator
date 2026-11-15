@@ -1,0 +1,132 @@
+{
+ "url": "http://localhost:3205/",
+ "widths": [
+  {
+   "w": 320,
+   "h": 640,
+   "mobile": true
+  },
+  {
+   "w": 375,
+   "h": 812,
+   "mobile": true
+  },
+  {
+   "w": 768,
+   "h": 1024,
+   "mobile": true
+  },
+  {
+   "w": 1024,
+   "h": 768,
+   "mobile": false
+  },
+  {
+   "w": 1440,
+   "h": 900,
+   "mobile": false
+  }
+ ],
+ "rows": [
+  {
+   "state": "result",
+   "width": 320,
+   "viewportHeight": 640,
+   "scrollWidth": 320,
+   "clientWidth": 320,
+   "pageHeight": 2545,
+   "overflow": false,
+   "screenshot": "responsive/result-320.jpg"
+  },
+  {
+   "state": "result",
+   "width": 375,
+   "viewportHeight": 812,
+   "scrollWidth": 375,
+   "clientWidth": 375,
+   "pageHeight": 2319,
+   "overflow": false,
+   "screenshot": "responsive/result-375.jpg"
+  },
+  {
+   "state": "result",
+   "width": 768,
+   "viewportHeight": 1024,
+   "scrollWidth": 768,
+   "clientWidth": 768,
+   "pageHeight": 1960,
+   "overflow": false,
+   "screenshot": "responsive/result-768.jpg"
+  },
+  {
+   "state": "result",
+   "width": 1024,
+   "viewportHeight": 768,
+   "scrollWidth": 1024,
+   "clientWidth": 1024,
+   "pageHeight": 1960,
+   "overflow": false,
+   "screenshot": "responsive/result-1024.jpg"
+  },
+  {
+   "state": "result",
+   "width": 1440,
+   "viewportHeight": 900,
+   "scrollWidth": 1440,
+   "clientWidth": 1440,
+   "pageHeight": 1960,
+   "overflow": false,
+   "screenshot": "responsive/result-1440.jpg"
+  },
+  {
+   "state": "assumptions",
+   "width": 320,
+   "viewportHeight": 640,
+   "scrollWidth": 320,
+   "clientWidth": 320,
+   "pageHeight": 3616,
+   "overflow": false,
+   "screenshot": "responsive/assumptions-320.jpg"
+  },
+  {
+   "state": "assumptions",
+   "width": 375,
+   "viewportHeight": 812,
+   "scrollWidth": 375,
+   "clientWidth": 375,
+   "pageHeight": 3250,
+   "overflow": false,
+   "screenshot": "responsive/assumptions-375.jpg"
+  },
+  {
+   "state": "assumptions",
+   "width": 768,
+   "viewportHeight": 1024,
+   "scrollWidth": 768,
+   "clientWidth": 768,
+   "pageHeight": 2588,
+   "overflow": false,
+   "screenshot": "responsive/assumptions-768.jpg"
+  },
+  {
+   "state": "assumptions",
+   "width": 1024,
+   "viewportHeight": 768,
+   "scrollWidth": 1024,
+   "clientWidth": 1024,
+   "pageHeight": 2588,
+   "overflow": false,
+   "screenshot": "responsive/assumptions-1024.jpg"
+  },
+  {
+   "state": "assumptions",
+   "width": 1440,
+   "viewportHeight": 900,
+   "scrollWidth": 1440,
+   "clientWidth": 1440,
+   "pageHeight": 2588,
+   "overflow": false,
+   "screenshot": "responsive/assumptions-1440.jpg"
+  }
+ ]
+}

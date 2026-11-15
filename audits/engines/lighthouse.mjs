@@ -479,6 +479,19 @@ export async function loanDeskJourney({ page, navigate, timespan, snapshot, sett
   await snapshot('Records tab');
 }
 
+// Like clickButton, but also finds a radio's label: the pre-audit build used buttons, the audited one native radios.
+async function clickControl(page, pattern) {
+  const handle = await page.evaluateHandle((source, flags) => {
+    const norm = s => (s || '').replace(/\s+/g, ' ').trim();
+    const re = new RegExp(source, flags);
+    return [...document.querySelectorAll('button, label, [role="radio"]')].find(e => re.test(norm(e.innerText)) && e.offsetParent) || null;
+  }, pattern.source, pattern.flags);
+  const el = handle.asElement();
+  if (!el) return false;
+  await el.click();
+  return true;
+}
+
 // Do-Nothing Calculator: first load -> type a monthly amount -> open the assumptions -> change bracket, how often you
 // sell and the horizon. Controls are found by their visible text, which the pre-audit and redesigned builds share.
 export async function doNothingJourney({ page, navigate, timespan, snapshot, settle, warn }) {
@@ -507,7 +520,7 @@ export async function doNothingJourney({ page, navigate, timespan, snapshot, set
 
   await timespan('Change bracket, how often and horizon', async () => {
     for (const [label, re] of [['bracket', /^24%/], ['how often', /^(4x\/yr|4 times a year|Every 3 months|Quarterly)/i], ['horizon', /^40/]]) {
-      const ok = await clickButton(page, re);
+      const ok = await clickControl(page, re);
       if (!ok) warn(`Change ${label}: no matching control`);
       await sleep(300);
       await settle();

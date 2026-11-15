@@ -1,0 +1,141 @@
+Auditing http://localhost:3205/: lighthouse, flow, security, geo, design, ux, tools, responsive, readable. Results go to /Users/benjaminbrosnahan/Desktop/dev/do-nothing-calculator/audits/results/2026-11-15-local
+
+== lighthouse
+  first-mobile run 1/1: perf 100 a11y 100 bp 100 seo 100 lcp 758.024 fcp 758.024 cls 0 tbt 12.5
+  first-desktop run 1/1: perf 100 a11y 100 bp 100 seo 100 lcp 208.956 fcp 208.956 cls 0 tbt 0
+  lighthouse: ok in 13.7 s
+
+== flow
+  mobile [navigation] First load: perf 100 a11y 100 bp 100 seo 100 cls 0 tbt 12.5
+  mobile [timespan] Type a monthly amount: perf 100 bp 100 inp 22.296 cls 0 tbt 0
+  mobile [snapshot] Result for $350 a month: a11y 100 bp 100 seo 100
+  mobile [timespan] Open the assumptions: perf 100 bp 100 inp 65.92 cls 0 tbt 0
+  mobile [timespan] Change bracket, how often and horizon: perf 100 bp 100 inp 24.294 cls 0 tbt 0
+  mobile [snapshot] Assumptions changed: a11y 100 bp 100 seo 100
+  desktop [navigation] First load: perf 100 a11y 100 bp 100 seo 100 cls 0 tbt 0
+  desktop [timespan] Type a monthly amount: perf 100 bp 100 inp 22.74 cls 0 tbt 0
+  desktop [snapshot] Result for $350 a month: a11y 100 bp 100 seo 100
+  desktop [timespan] Open the assumptions: perf 100 bp 100 inp 50.233 cls 0 tbt 0
+  desktop [timespan] Change bracket, how often and horizon: perf 100 bp 100 inp 24.397 cls 0 tbt 0
+  desktop [snapshot] Assumptions changed: a11y 100 bp 100 seo 100
+  flow: ok in 96.5 s
+
+== security
+  score 35 {"https":0,"headers":0,"cookies":100,"content":100,"deps":null}
+  security: ok in under 0.1 s
+
+== geo
+  score 86 parity 100% raw words 475 rendered words 475
+  geo: ok in 10.6 s
+
+== design
+  result: desktop 85 B, mobile 85 B, merged 85 B
+  assumptions: desktop 85 B, mobile 85 B, merged 85 B
+  design: ok in 32.8 s
+
+== ux
+  result-desktop: 5 rule findings (P1 0, P2 5, P3 0), 0 probe findings, design 85
+  result-mobile: 5 rule findings (P1 0, P2 5, P3 0), 0 probe findings, design 85
+  assumptions-desktop: 5 rule findings (P1 0, P2 5, P3 0), 0 probe findings, design 85
+  assumptions-mobile: 5 rule findings (P1 0, P2 5, P3 0), 0 probe findings, design 85
+  ux: ok in under 0.1 s
+
+== tools
+  header-check: score 80: 8 good, 1 warnings, 1 missing
+  meta-validate: score 93: 14 good, 1 warnings, 0 missing
+  structured-data: 1 schemas, 0 errors, 1 warnings
+  sitemap-validate: found, 1 URLs, 1 issues
+  redirect-check: 0 redirects, final status 200: No redirects detected. URL resolves directly.
+  broken-links: 17 links, 0 broken, 0 redirects, 0 errors, 1 timeouts
+  webmcp-check: AI readiness 0
+  tools: ok in 8.3 s
+
+== responsive
+  result@320: scrollWidth=320 clientWidth=320 height=2545
+  result@375: scrollWidth=375 clientWidth=375 height=2319
+  result@768: scrollWidth=768 clientWidth=768 height=1960
+  result@1024: scrollWidth=1024 clientWidth=1024 height=1960
+  result@1440: scrollWidth=1440 clientWidth=1440 height=1960
+  assumptions@320: scrollWidth=320 clientWidth=320 height=3616
+  assumptions@375: scrollWidth=375 clientWidth=375 height=3250
+  assumptions@768: scrollWidth=768 clientWidth=768 height=2588
+  assumptions@1024: scrollWidth=1024 clientWidth=1024 height=2588
+  assumptions@1440: scrollWidth=1440 clientWidth=1440 height=2588
+  responsive: ok in 21.2 s
+
+== readable
+  first run1 fp 1444 fcp 1444 skeleton – real 1431 readable 1431 lcp 1884 (lcp on p "Two people put in the same amount every ")
+  readable: ok in 4.2 s
+
+Scoreboard for http://localhost:3205/, median of 1 run
+
+| Page | Perf | A11y | BP | SEO | LCP | FCP | CLS |
+|---|---|---|---|---|---|---|---|
+| First, mobile | 100 | 100 | 100 | 100 | 758 ms | 758 ms | 0 |
+| First, desktop | 100 | 100 | 100 | 100 | 209 ms | 209 ms | 0 |
+
+Security 35 · GEO 86 · Design 85-85 · Flow INP mobile 66 ms · Flow INP desktop 50 ms · Overflow 0 of 10 · Readable first visit 1431 ms · First-load JS 104.1 kB
+Budgets PASS: 17 passed, 0 failed
+Changes since results/2026-11-15-live:
+  WORSE  security.headers: 27 -> 0
+  WORSE  security.https: 100 -> 0
+  WORSE  security.score: 71 -> 35
+  WORSE  ux.assumptions-desktop.p2: 4 -> 5
+  WORSE  ux.assumptions-mobile.p2: 4 -> 5
+  WORSE  ux.result-desktop.p2: 4 -> 5
+  WORSE  ux.result-mobile.p2: 4 -> 5
+  better design.assumptions.desktop: 69.3 -> 85
+  better design.assumptions.merged: 69 -> 85
+  better design.assumptions.mobile: 69.3 -> 85
+  better design.result.desktop: 69.3 -> 85
+  better design.result.merged: 69 -> 85
+  better design.result.mobile: 69.3 -> 85
+  better flow.desktop.assumptions-changed.accessibility: 94 -> 100
+  better flow.desktop.change-bracket-how-often-and-horizon.bestPractices: 95 -> 100
+  better flow.desktop.first-load.accessibility: 94 -> 100
+  better flow.desktop.first-load.bestPractices: 96 -> 100
+  better flow.desktop.open-the-assumptions.bestPractices: 95 -> 100
+  better flow.desktop.result-for-350-a-month.accessibility: 94 -> 100
+  better flow.desktop.type-a-monthly-amount.bestPractices: 95 -> 100
+  better flow.mobile.assumptions-changed.accessibility: 94 -> 100
+  better flow.mobile.change-bracket-how-often-and-horizon.bestPractices: 95 -> 100
+  better flow.mobile.first-load.accessibility: 94 -> 100
+  better flow.mobile.first-load.bestPractices: 96 -> 100
+  better flow.mobile.open-the-assumptions.bestPractices: 95 -> 100
+  better flow.mobile.result-for-350-a-month.accessibility: 94 -> 100
+  better flow.mobile.type-a-monthly-amount.bestPractices: 95 -> 100
+  better flow.mobile.type-a-monthly-amount.inp: 87.033 -> 22.296
+  better geo.score: 60 -> 86
+  better geo.serverContent: 28 -> 30
+  better geo.socialMeta: 7 -> 15
+  better geo.structuredData: 0 -> 16
+  better lighthouse.first-desktop.accessibility: 94 -> 100
+  better lighthouse.first-desktop.bestPractices: 96 -> 100
+  better lighthouse.first-desktop.lcp: 422.705 -> 208.956
+  better lighthouse.first-desktop.si: 305.03 -> 208.956
+  better lighthouse.first-desktop.tti: 422.705 -> 208.956
+  better lighthouse.first-mobile.accessibility: 94 -> 100
+  better lighthouse.first-mobile.bestPractices: 96 -> 100
+  better lighthouse.first-mobile.fcp: 851.117 -> 758.024
+  better lighthouse.first-mobile.lcp: 1850.117 -> 758.024
+  better lighthouse.first-mobile.si: 1397.281 -> 758.024
+  better lighthouse.first-mobile.tti: 1850.117 -> 1651.774
+  better readable.first.lcp: 2528 -> 1884
+  better readable.first.readable: 2892 -> 1431
+  better security.content: 80 -> 100
+  better tools.header-check.score: 40 -> 80
+  better tools.meta-validate.score: 67 -> 93
+  better tools.sitemap-validate.found: 0 -> 1
+  better tools.structured-data.totalSchemas: 0 -> 1
+  better ux.assumptions-desktop.extras: 1 -> 0
+  better ux.assumptions-desktop.findings: 6 -> 5
+  better ux.assumptions-desktop.p1: 2 -> 0
+  better ux.assumptions-mobile.findings: 6 -> 5
+  better ux.assumptions-mobile.p1: 2 -> 0
+  better ux.result-desktop.extras: 1 -> 0
+  better ux.result-desktop.findings: 6 -> 5
+  better ux.result-desktop.p1: 2 -> 0
+  better ux.result-mobile.findings: 6 -> 5
+  better ux.result-mobile.p1: 2 -> 0
+Summary: /Users/benjaminbrosnahan/Desktop/dev/do-nothing-calculator/audits/results/2026-11-15-local/SUMMARY.md
+exit 0

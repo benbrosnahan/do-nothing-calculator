@@ -1,0 +1,97 @@
+{
+ "url": "http://localhost:3205/",
+ "siteType": "saas",
+ "viewports": {
+  "desktop": {
+   "width": 1440,
+   "height": 900,
+   "dpr": 1,
+   "isMobile": false
+  },
+  "mobile": {
+   "width": 375,
+   "height": 812,
+   "dpr": 1,
+   "isMobile": true
+  }
+ },
+ "note": "Deterministic findings only. UX scores come from the AI review: it writes ux/ai/<tag>.json, then node lib/merge-ux.mjs <this folder>/ux scores and merges them.",
+ "screens": [
+  {
+   "tag": "result-desktop",
+   "state": "result",
+   "formFactor": "desktop",
+   "findings": 5,
+   "p1": 0,
+   "p2": 5,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 85,
+   "designGrade": "B",
+   "findingTitles": [
+    "P2 11 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 17 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 1 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P2 1 animation/transition(s) under 50ms (non-instant but too fast to read)."
+   ]
+  },
+  {
+   "tag": "result-mobile",
+   "state": "result",
+   "formFactor": "mobile",
+   "findings": 5,
+   "p1": 0,
+   "p2": 5,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 85,
+   "designGrade": "B",
+   "findingTitles": [
+    "P2 11 tap target(s) smaller than M3's comfortable 48×48px at 375px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 17 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 1 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P2 1 animation/transition(s) under 50ms (non-instant but too fast to read)."
+   ]
+  },
+  {
+   "tag": "assumptions-desktop",
+   "state": "assumptions",
+   "formFactor": "desktop",
+   "findings": 5,
+   "p1": 0,
+   "p2": 5,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 85,
+   "designGrade": "B",
+   "findingTitles": [
+    "P2 26 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 20 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P2 1 animation/transition(s) under 50ms (non-instant but too fast to read)."
+   ]
+  },
+  {
+   "tag": "assumptions-mobile",
+   "state": "assumptions",
+   "formFactor": "mobile",
+   "findings": 5,
+   "p1": 0,
+   "p2": 5,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 85,
+   "designGrade": "B",
+   "findingTitles": [
+    "P2 26 tap target(s) smaller than M3's comfortable 48×48px at 375px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 20 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P2 1 animation/transition(s) under 50ms (non-instant but too fast to read)."
+   ]
+  }
+ ]
+}

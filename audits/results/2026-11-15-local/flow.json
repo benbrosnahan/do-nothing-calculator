@@ -1,0 +1,375 @@
+{
+ "url": "http://localhost:3205/",
+ "journey": "Do-Nothing Calculator core journey",
+ "formFactors": {
+  "mobile": {
+   "steps": [
+    {
+     "name": "First load",
+     "gatherMode": "navigation",
+     "performance": 100,
+     "accessibility": 100,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": 1454.746,
+     "fcp": 1454.746,
+     "cls": 0,
+     "tbt": 12.5,
+     "si": 2088.849,
+     "tti": 2013.546,
+     "inp": null,
+     "failing": [
+      {
+       "id": "first-contentful-paint",
+       "title": "First Contentful Paint",
+       "score": 0.96,
+       "displayValue": "1.5 s"
+      },
+      {
+       "id": "speed-index",
+       "title": "Speed Index",
+       "score": 0.99,
+       "displayValue": "2.1 s"
+      },
+      {
+       "id": "max-potential-fid",
+       "title": "Max Potential First Input Delay",
+       "score": 0.99,
+       "displayValue": "70 ms"
+      },
+      {
+       "id": "interactive",
+       "title": "Time to Interactive",
+       "score": 0.99,
+       "displayValue": "2.0 s"
+      },
+      {
+       "id": "unused-javascript",
+       "title": "Reduce unused JavaScript",
+       "score": 0,
+       "displayValue": "Est savings of 20 KiB"
+      },
+      {
+       "id": "legacy-javascript-insight",
+       "title": "Legacy JavaScript",
+       "score": 0.5,
+       "displayValue": "Est savings of 11 KiB"
+      },
+      {
+       "id": "network-dependency-tree-insight",
+       "title": "Network dependency tree",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "render-blocking-insight",
+       "title": "Render-blocking requests",
+       "score": 0,
+       "displayValue": "Est savings of 150 ms"
+      }
+     ],
+     "opportunities": [
+      {
+       "id": "unused-javascript",
+       "title": "Reduce unused JavaScript",
+       "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+       "score": 0,
+       "scoreDisplayMode": "metricSavings",
+       "displayValue": "Est savings of 20 KiB",
+       "numericValue": 150,
+       "numericUnit": "millisecond",
+       "savingsMs": 150,
+       "savingsBytes": 20723,
+       "items": [
+        {
+         "url": "http://localhost:3205/_next/static/chunks/fd9d1056-7192ccad7d208432.js",
+         "wastedBytes": 20723,
+         "wastedMs": null,
+         "totalBytes": 53829
+        }
+       ]
+      }
+     ],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Type a monthly amount",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 22.296,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 3
+     }
+    },
+    {
+     "name": "Result for $350 a month",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 100,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Open the assumptions",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 65.92,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 1
+     }
+    },
+    {
+     "name": "Change bracket, how often and horizon",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 24.294,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 1
+     }
+    },
+    {
+     "name": "Assumptions changed",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 100,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": null
+    }
+   ],
+   "warnings": []
+  },
+  "desktop": {
+   "steps": [
+    {
+     "name": "First load",
+     "gatherMode": "navigation",
+     "performance": 100,
+     "accessibility": 100,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": 227.263,
+     "fcp": 227.263,
+     "cls": 0,
+     "tbt": 0,
+     "si": 227.263,
+     "tti": 227.263,
+     "inp": null,
+     "failing": [
+      {
+       "id": "legacy-javascript-insight",
+       "title": "Legacy JavaScript",
+       "score": 0.5,
+       "displayValue": "Est savings of 11 KiB"
+      },
+      {
+       "id": "network-dependency-tree-insight",
+       "title": "Network dependency tree",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "render-blocking-insight",
+       "title": "Render-blocking requests",
+       "score": 0,
+       "displayValue": "Est savings of 50 ms"
+      }
+     ],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Type a monthly amount",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 22.74,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 1
+     }
+    },
+    {
+     "name": "Result for $350 a month",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 100,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Open the assumptions",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 50.233,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 1
+     }
+    },
+    {
+     "name": "Change bracket, how often and horizon",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 24.397,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 2
+     }
+    },
+    {
+     "name": "Assumptions changed",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 100,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": null
+    }
+   ],
+   "warnings": []
+  }
+ }
+}

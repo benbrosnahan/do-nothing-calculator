@@ -1,0 +1,4138 @@
+{
+ "url": "http://localhost:3205/",
+ "engineVersion": "1.3.0",
+ "siteType": "saas",
+ "viewports": {
+  "desktop": {
+   "width": 1440,
+   "height": 900,
+   "dpr": 1,
+   "isMobile": false
+  },
+  "mobile": {
+   "width": 375,
+   "height": 812,
+   "dpr": 1,
+   "isMobile": true
+  }
+ },
+ "states": {
+  "result": {
+   "engineVersion": "1.3.0",
+   "desktop": {
+    "report": {
+     "score": 85,
+     "grade": "B",
+     "buckets": {
+      "accessibility": {
+       "score": 22.8,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "info",
+         "ruleId": "contrast-coverage",
+         "message": "Contrast skipped for 2 element(s) (background images/gradients, colors not resolvable to sRGB, or <svg>/<canvas> artwork) — check those manually.",
+         "skippedUnknownBg": 0,
+         "skippedUnparseable": 0,
+         "skippedRenderContext": 2,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "11 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide — they clear the WCAG 2.5.8 24px minimum (7 via the spacing/inline exception).",
+         "count": 11,
+         "examples": [
+          {
+           "sig": "a.sr-only.focus:not-sr-only",
+           "tag": "a",
+           "w": 1,
+           "h": 1,
+           "sample": "Skip to content",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "a.font-semibold.text-slate-900",
+           "tag": "a",
+           "w": 42,
+           "h": 18,
+           "sample": "Cense",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "a.font-semibold.text-slate-900",
+           "tag": "a",
+           "w": 90,
+           "h": 18,
+           "sample": "IRS Topic 409",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "a.rounded.font-display",
+           "tag": "a",
+           "w": 60,
+           "h": 28,
+           "sample": "Cense newsletter",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "a.font-semibold.text-slate-900",
+           "tag": "a",
+           "w": 110,
+           "h": 18,
+           "sample": "consumer prices",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "button.rounded.font-semibold",
+           "tag": "button",
+           "w": 92,
+           "h": 23,
+           "sample": "Change these",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "a.font-semibold.text-slate-900",
+           "tag": "a",
+           "w": 146,
+           "h": 18,
+           "sample": "IRS Rev. Proc. 2025-32",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "button.tnum.min-h-[44px]",
+           "tag": "button",
+           "w": 68,
+           "h": 44,
+           "sample": "$100",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "17 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 17,
+         "examples": [
+          {
+           "sig": "p.mt-2.text-sm",
+           "px": 14,
+           "sample": "At the 12% tax bracket and a 7% yearly r"
+          },
+          {
+           "sig": "p.text-sm.font-semibold",
+           "px": 14,
+           "sample": "If each sold everything that year, after"
+          },
+          {
+           "sig": "li.flex.items-center",
+           "px": 14,
+           "sample": "Sell and rebuy twice a year"
+          },
+          {
+           "sig": "dd.mt-1.text-sm",
+           "px": 14,
+           "sample": "$101,507 in the account, less $4,241 tax"
+          },
+          {
+           "sig": "dd.mt-1.text-sm",
+           "px": 14,
+           "sample": "Paid $8,371 in tax along the way."
+          },
+          {
+           "sig": "p.mt-5.text-sm",
+           "px": 14,
+           "sample": "Never sell at all, and the holder never "
+          },
+          {
+           "sig": "li",
+           "px": 14,
+           "sample": "Both grow at the same steady return ever"
+          },
+          {
+           "sig": "li",
+           "px": 14,
+           "sample": "Everything is in today's dollars. Prices"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "102 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 102,
+         "examples": [
+          {
+           "sig": "span.flex-shrink-0.items-center",
+           "px": 13,
+           "sample": "Nothing stored"
+          },
+          {
+           "sig": "button.tnum.min-h-[44px]",
+           "px": 14,
+           "sample": "$100"
+          },
+          {
+           "sig": "button.tnum.min-h-[44px]",
+           "px": 14,
+           "sample": "$200"
+          },
+          {
+           "sig": "button.tnum.min-h-[44px]",
+           "px": 14,
+           "sample": "$500"
+          },
+          {
+           "sig": "button.rounded.font-semibold",
+           "px": 14,
+           "sample": "Change these"
+          },
+          {
+           "sig": "li.flex.items-center",
+           "px": 14,
+           "sample": "Leave it alone"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "typography-coverage",
+         "message": "Typography skipped for 9 node(s) inside <svg>/<canvas> artwork — sign lettering, chart labels and diagram callouts are not reading copy.",
+         "skippedRenderContext": 9,
+         "displayLeadingRelaxed": 0,
+         "formattedBlocksSkipped": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "1 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          24
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "contributors": [
+          {
+           "selector": "section.mt-6.rounded-3xl",
+           "value": "24px · 8 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 22,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "duration-too-short",
+         "message": "1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+         "examples": [
+          {
+           "selector": "*, ::after, ::before",
+           "sig": "*, ::after, ::before",
+           "ms": 0
+          }
+         ],
+         "scope": "element",
+         "required": "50–1000ms"
+        }
+       ]
+      },
+      "performance": {
+       "score": 25,
+       "max": 25,
+       "findings": []
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 139,
+       "skippedUnknownBg": 0,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 2,
+       "distinctTextColors": 6,
+       "failureCount": 0,
+       "failures": []
+      },
+      "typography": {
+       "distinctFamilies": 2,
+       "families": [
+        "__Instrument_Sans_3f4a4b, __Instrument_Sans_Fallback_3f4a4b, system-ui, sans-serif",
+        "__Bricolage_Grotesque_2e8889, __Bricolage_Grotesque_Fallback_2e8889, __Instrument_Sans_3f4a4b, __Instrument_Sans_Fallback_3f4a4b, system-ui, sans-serif"
+       ],
+       "distinctSizes": 8,
+       "sizes": [
+        13,
+        14,
+        16,
+        18,
+        20,
+        24,
+        60,
+        72
+       ],
+       "distinctLineHeights": 8,
+       "smallBodyCount": 17,
+       "smallBody": [
+        {
+         "sig": "p.mt-2.text-sm",
+         "px": 14,
+         "sample": "At the 12% tax bracket and a 7% yearly r"
+        },
+        {
+         "sig": "p.text-sm.font-semibold",
+         "px": 14,
+         "sample": "If each sold everything that year, after"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Sell and rebuy twice a year"
+        },
+        {
+         "sig": "dd.mt-1.text-sm",
+         "px": 14,
+         "sample": "$101,507 in the account, less $4,241 tax"
+        },
+        {
+         "sig": "dd.mt-1.text-sm",
+         "px": 14,
+         "sample": "Paid $8,371 in tax along the way."
+        },
+        {
+         "sig": "p.mt-5.text-sm",
+         "px": 14,
+         "sample": "Never sell at all, and the holder never "
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Both grow at the same steady return ever"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Everything is in today's dollars. Prices"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Tax is on the whole dollar gain, inflati"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "2026 federal brackets for a single filer"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "The seller pays tax out of each sale rig"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Selling at the end, anything held more t"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Federal tax only. State tax, and the 3.8"
+        },
+        {
+         "sig": "p.mt-4.text-slate-600",
+         "px": 14,
+         "sample": "Sources: IRS Rev. Proc. 2025-32 (2026 br"
+        },
+        {
+         "sig": "p.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Nothing you type is saved or sent anywhe"
+        },
+        {
+         "sig": "p.mt-2.text-sm",
+         "px": 14,
+         "sample": "An estimate to learn from, not tax or in"
+        },
+        {
+         "sig": "p.mt-2.text-sm",
+         "px": 14,
+         "sample": "I built this, nobody paid for it to be h"
+        }
+       ],
+       "smallLabelCount": 102,
+       "smallLabels": [
+        {
+         "sig": "span.flex-shrink-0.items-center",
+         "px": 13,
+         "sample": "Nothing stored"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "px": 14,
+         "sample": "$100"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "px": 14,
+         "sample": "$200"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "px": 14,
+         "sample": "$500"
+        },
+        {
+         "sig": "button.rounded.font-semibold",
+         "px": 14,
+         "sample": "Change these"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Leave it alone"
+        },
+        {
+         "sig": "dt.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Leave it alone"
+        },
+        {
+         "sig": "span.tnum",
+         "px": 14,
+         "sample": "$101,507"
+        },
+        {
+         "sig": "span.tnum",
+         "px": 14,
+         "sample": "$4,241"
+        },
+        {
+         "sig": "dt.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Sell and rebuy"
+        },
+        {
+         "sig": "span.tnum",
+         "px": 14,
+         "sample": "$8,371"
+        },
+        {
+         "sig": "span.tnum.font-semibold",
+         "px": 14,
+         "sample": "$12,972"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 3,
+       "headingCount": 4,
+       "skippedRenderContext": 9
+      },
+      "shape": {
+       "distinctRadii": 4,
+       "radii": [
+        4,
+        16,
+        24,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        24
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 1,
+       "levels": 6,
+       "recipes": [
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(39, 91, 45, 0.04) 0px 1px 0px 0px, rgba(39, 91, 45, 0.18) 0px 8px 24px -12px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 13,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": true,
+       "reducedMotionStatus": "present",
+       "activeAnimations": 2,
+       "tooShort": [
+        {
+         "selector": "*, ::after, ::before",
+         "sig": "*, ::after, ::before",
+         "ms": 0
+        }
+       ],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 11,
+       "smallTargets": [
+        {
+         "sig": "a.sr-only.focus:not-sr-only",
+         "tag": "a",
+         "w": 1,
+         "h": 1,
+         "sample": "Skip to content",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 42,
+         "h": 18,
+         "sample": "Cense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 90,
+         "h": 18,
+         "sample": "IRS Topic 409",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.rounded.font-display",
+         "tag": "a",
+         "w": 60,
+         "h": 28,
+         "sample": "Cense newsletter",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 110,
+         "h": 18,
+         "sample": "consumer prices",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "button.rounded.font-semibold",
+         "tag": "button",
+         "w": 92,
+         "h": 23,
+         "sample": "Change these",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 146,
+         "h": 18,
+         "sample": "IRS Rev. Proc. 2025-32",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "tag": "button",
+         "w": 68,
+         "h": 44,
+         "sample": "$100",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "tag": "button",
+         "w": 68,
+         "h": 44,
+         "sample": "$200",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "tag": "button",
+         "w": 68,
+         "h": 44,
+         "sample": "$500",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 199,
+         "h": 18,
+         "sample": "S&P 500 returns, 1928 to 2025",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 11,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 13,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "http://localhost:3205/",
+      "title": "The Do-Nothing Calculator by Cense",
+      "timestamp": "2026-11-15T19:17:19.873Z",
+      "contentFingerprint": "zfbs6f",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 1440,
+       "height": 900,
+       "dpr": 1,
+       "isMobile": false,
+       "w": 1440,
+       "h": 900
+      },
+      "siteType": "saas",
+      "elementsScanned": 202,
+      "elementsTotal": 246,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 9.7
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 2,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.pt-8",
+        "name": "rise",
+        "dur": 240,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.reveal-gap.absolute",
+        "name": "reveal-gap",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     },
+     "animationsAfterScroll": {
+      "count": 2,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.pt-8",
+        "name": "rise",
+        "dur": 240,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.reveal-gap.absolute",
+        "name": "reveal-gap",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     },
+     "hoverProbe": [
+      {
+       "label": "Cense newsletter",
+       "selector": "a.rounded",
+       "changes": false
+      },
+      {
+       "label": "$100",
+       "selector": "button.tnum",
+       "changes": true
+      },
+      {
+       "label": "$200",
+       "selector": "button.tnum",
+       "changes": false
+      },
+      {
+       "label": "$500",
+       "selector": "button.tnum",
+       "changes": true
+      },
+      {
+       "label": "Change these",
+       "selector": "button.rounded",
+       "changes": true
+      }
+     ],
+     "reducedMotion": {
+      "emulated": true,
+      "snapshot": {
+       "count": 2,
+       "running": 0,
+       "anims": [
+        {
+         "target": "section.rise.pt-8",
+         "name": "rise",
+         "dur": 0,
+         "infinite": false,
+         "state": "finished"
+        },
+        {
+         "target": "div.reveal-gap.absolute",
+         "name": "reveal-gap",
+         "dur": 0,
+         "infinite": false,
+         "state": "finished"
+        }
+       ]
+      },
+      "ungatedCount": 0
+     }
+    },
+    "durationMs": 2447
+   },
+   "mobile": {
+    "report": {
+     "score": 85,
+     "grade": "B",
+     "buckets": {
+      "accessibility": {
+       "score": 22.8,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "info",
+         "ruleId": "contrast-coverage",
+         "message": "Contrast skipped for 2 element(s) (background images/gradients, colors not resolvable to sRGB, or <svg>/<canvas> artwork) — check those manually.",
+         "skippedUnknownBg": 0,
+         "skippedUnparseable": 0,
+         "skippedRenderContext": 2,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "11 tap target(s) smaller than M3's comfortable 48×48px at 375px wide — they clear the WCAG 2.5.8 24px minimum (6 via the spacing/inline exception).",
+         "count": 11,
+         "examples": [
+          {
+           "sig": "a.sr-only.focus:not-sr-only",
+           "tag": "a",
+           "w": 1,
+           "h": 1,
+           "sample": "Skip to content",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "a.font-semibold.text-slate-900",
+           "tag": "a",
+           "w": 42,
+           "h": 18,
+           "sample": "Cense",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "a.rounded.font-display",
+           "tag": "a",
+           "w": 54,
+           "h": 28,
+           "sample": "Cense newsletter",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "a.font-semibold.text-slate-900",
+           "tag": "a",
+           "w": 90,
+           "h": 18,
+           "sample": "IRS Topic 409",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "a.font-semibold.text-slate-900",
+           "tag": "a",
+           "w": 110,
+           "h": 18,
+           "sample": "consumer prices",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "button.rounded.font-semibold",
+           "tag": "button",
+           "w": 92,
+           "h": 23,
+           "sample": "Change these",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "a.font-semibold.text-slate-900",
+           "tag": "a",
+           "w": 146,
+           "h": 18,
+           "sample": "IRS Rev. Proc. 2025-32",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "button.tnum.min-h-[44px]",
+           "tag": "button",
+           "w": 64,
+           "h": 44,
+           "sample": "$100",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "17 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 17,
+         "examples": [
+          {
+           "sig": "p.mt-2.text-sm",
+           "px": 14,
+           "sample": "At the 12% tax bracket and a 7% yearly r"
+          },
+          {
+           "sig": "p.text-sm.font-semibold",
+           "px": 14,
+           "sample": "If each sold everything that year, after"
+          },
+          {
+           "sig": "li.flex.items-center",
+           "px": 14,
+           "sample": "Sell and rebuy twice a year"
+          },
+          {
+           "sig": "dd.mt-1.text-sm",
+           "px": 14,
+           "sample": "$101,507 in the account, less $4,241 tax"
+          },
+          {
+           "sig": "dd.mt-1.text-sm",
+           "px": 14,
+           "sample": "Paid $8,371 in tax along the way."
+          },
+          {
+           "sig": "p.mt-5.text-sm",
+           "px": 14,
+           "sample": "Never sell at all, and the holder never "
+          },
+          {
+           "sig": "li",
+           "px": 14,
+           "sample": "Both grow at the same steady return ever"
+          },
+          {
+           "sig": "li",
+           "px": 14,
+           "sample": "Everything is in today's dollars. Prices"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "102 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 102,
+         "examples": [
+          {
+           "sig": "span.inline-flex.flex-shrink-0",
+           "px": 13,
+           "sample": "Nothing stored"
+          },
+          {
+           "sig": "button.tnum.min-h-[44px]",
+           "px": 14,
+           "sample": "$100"
+          },
+          {
+           "sig": "button.tnum.min-h-[44px]",
+           "px": 14,
+           "sample": "$200"
+          },
+          {
+           "sig": "button.tnum.min-h-[44px]",
+           "px": 14,
+           "sample": "$500"
+          },
+          {
+           "sig": "button.rounded.font-semibold",
+           "px": 14,
+           "sample": "Change these"
+          },
+          {
+           "sig": "li.flex.items-center",
+           "px": 14,
+           "sample": "Leave it alone"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "typography-coverage",
+         "message": "Typography skipped for 9 node(s) inside <svg>/<canvas> artwork — sign lettering, chart labels and diagram callouts are not reading copy.",
+         "skippedRenderContext": 9,
+         "displayLeadingRelaxed": 0,
+         "formattedBlocksSkipped": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "1 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          24
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "contributors": [
+          {
+           "selector": "section.mt-6.rounded-3xl",
+           "value": "24px · 8 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 22,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "duration-too-short",
+         "message": "1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+         "examples": [
+          {
+           "selector": "*, ::after, ::before",
+           "sig": "*, ::after, ::before",
+           "ms": 0
+          }
+         ],
+         "scope": "element",
+         "required": "50–1000ms"
+        }
+       ]
+      },
+      "performance": {
+       "score": 25,
+       "max": 25,
+       "findings": []
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 139,
+       "skippedUnknownBg": 0,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 2,
+       "distinctTextColors": 6,
+       "failureCount": 0,
+       "failures": []
+      },
+      "typography": {
+       "distinctFamilies": 2,
+       "families": [
+        "__Instrument_Sans_3f4a4b, __Instrument_Sans_Fallback_3f4a4b, system-ui, sans-serif",
+        "__Bricolage_Grotesque_2e8889, __Bricolage_Grotesque_Fallback_2e8889, __Instrument_Sans_3f4a4b, __Instrument_Sans_Fallback_3f4a4b, system-ui, sans-serif"
+       ],
+       "distinctSizes": 8,
+       "sizes": [
+        13,
+        14,
+        16,
+        18,
+        20,
+        24,
+        36.8,
+        54.4
+       ],
+       "distinctLineHeights": 9,
+       "smallBodyCount": 17,
+       "smallBody": [
+        {
+         "sig": "p.mt-2.text-sm",
+         "px": 14,
+         "sample": "At the 12% tax bracket and a 7% yearly r"
+        },
+        {
+         "sig": "p.text-sm.font-semibold",
+         "px": 14,
+         "sample": "If each sold everything that year, after"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Sell and rebuy twice a year"
+        },
+        {
+         "sig": "dd.mt-1.text-sm",
+         "px": 14,
+         "sample": "$101,507 in the account, less $4,241 tax"
+        },
+        {
+         "sig": "dd.mt-1.text-sm",
+         "px": 14,
+         "sample": "Paid $8,371 in tax along the way."
+        },
+        {
+         "sig": "p.mt-5.text-sm",
+         "px": 14,
+         "sample": "Never sell at all, and the holder never "
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Both grow at the same steady return ever"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Everything is in today's dollars. Prices"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Tax is on the whole dollar gain, inflati"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "2026 federal brackets for a single filer"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "The seller pays tax out of each sale rig"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Selling at the end, anything held more t"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Federal tax only. State tax, and the 3.8"
+        },
+        {
+         "sig": "p.mt-4.text-slate-600",
+         "px": 14,
+         "sample": "Sources: IRS Rev. Proc. 2025-32 (2026 br"
+        },
+        {
+         "sig": "p.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Nothing you type is saved or sent anywhe"
+        },
+        {
+         "sig": "p.mt-2.text-sm",
+         "px": 14,
+         "sample": "An estimate to learn from, not tax or in"
+        },
+        {
+         "sig": "p.mt-2.text-sm",
+         "px": 14,
+         "sample": "I built this, nobody paid for it to be h"
+        }
+       ],
+       "smallLabelCount": 102,
+       "smallLabels": [
+        {
+         "sig": "span.inline-flex.flex-shrink-0",
+         "px": 13,
+         "sample": "Nothing stored"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "px": 14,
+         "sample": "$100"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "px": 14,
+         "sample": "$200"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "px": 14,
+         "sample": "$500"
+        },
+        {
+         "sig": "button.rounded.font-semibold",
+         "px": 14,
+         "sample": "Change these"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Leave it alone"
+        },
+        {
+         "sig": "dt.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Leave it alone"
+        },
+        {
+         "sig": "span.tnum",
+         "px": 14,
+         "sample": "$101,507"
+        },
+        {
+         "sig": "span.tnum",
+         "px": 14,
+         "sample": "$4,241"
+        },
+        {
+         "sig": "dt.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Sell and rebuy"
+        },
+        {
+         "sig": "span.tnum",
+         "px": 14,
+         "sample": "$8,371"
+        },
+        {
+         "sig": "span.tnum.font-semibold",
+         "px": 14,
+         "sample": "$12,972"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 4,
+       "headingCount": 4,
+       "skippedRenderContext": 9
+      },
+      "shape": {
+       "distinctRadii": 4,
+       "radii": [
+        4,
+        16,
+        24,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        24
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 1,
+       "levels": 6,
+       "recipes": [
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(39, 91, 45, 0.04) 0px 1px 0px 0px, rgba(39, 91, 45, 0.18) 0px 8px 24px -12px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 13,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": true,
+       "reducedMotionStatus": "present",
+       "activeAnimations": 2,
+       "tooShort": [
+        {
+         "selector": "*, ::after, ::before",
+         "sig": "*, ::after, ::before",
+         "ms": 0
+        }
+       ],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 11,
+       "smallTargets": [
+        {
+         "sig": "a.sr-only.focus:not-sr-only",
+         "tag": "a",
+         "w": 1,
+         "h": 1,
+         "sample": "Skip to content",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 42,
+         "h": 18,
+         "sample": "Cense",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.rounded.font-display",
+         "tag": "a",
+         "w": 54,
+         "h": 28,
+         "sample": "Cense newsletter",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 90,
+         "h": 18,
+         "sample": "IRS Topic 409",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 110,
+         "h": 18,
+         "sample": "consumer prices",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "button.rounded.font-semibold",
+         "tag": "button",
+         "w": 92,
+         "h": 23,
+         "sample": "Change these",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 146,
+         "h": 18,
+         "sample": "IRS Rev. Proc. 2025-32",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "tag": "button",
+         "w": 64,
+         "h": 44,
+         "sample": "$100",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "tag": "button",
+         "w": 64,
+         "h": 44,
+         "sample": "$200",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "tag": "button",
+         "w": 64,
+         "h": 44,
+         "sample": "$500",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 287,
+         "h": 41,
+         "sample": "S&P 500 returns, 1928 to 2025",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 11,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 13,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "http://localhost:3205/",
+      "title": "The Do-Nothing Calculator by Cense",
+      "timestamp": "2026-11-15T19:17:29.334Z",
+      "contentFingerprint": "zfbs6f",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 375,
+       "height": 812,
+       "dpr": 1,
+       "isMobile": true,
+       "w": 375,
+       "h": 812
+      },
+      "siteType": "saas",
+      "elementsScanned": 202,
+      "elementsTotal": 243,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 6.8
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 2,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.pt-8",
+        "name": "rise",
+        "dur": 240,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.reveal-gap.absolute",
+        "name": "reveal-gap",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     },
+     "animationsAfterScroll": {
+      "count": 2,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.pt-8",
+        "name": "rise",
+        "dur": 240,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.reveal-gap.absolute",
+        "name": "reveal-gap",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     }
+    },
+    "durationMs": 2636
+   },
+   "designScore": 85,
+   "designGrade": "B",
+   "measuredViewports": [
+    "desktop",
+    "mobile"
+   ],
+   "buckets": {
+    "accessibility": 76,
+    "consistency": 76,
+    "motion": 88,
+    "performance": 100
+   }
+  },
+  "assumptions": {
+   "engineVersion": "1.3.0",
+   "desktop": {
+    "report": {
+     "score": 85,
+     "grade": "B",
+     "buckets": {
+      "accessibility": {
+       "score": 22.8,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "info",
+         "ruleId": "contrast-coverage",
+         "message": "Contrast skipped for 2 element(s) (background images/gradients, colors not resolvable to sRGB, or <svg>/<canvas> artwork) — check those manually.",
+         "skippedUnknownBg": 0,
+         "skippedUnparseable": 0,
+         "skippedRenderContext": 2,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "26 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide — they clear the WCAG 2.5.8 24px minimum (22 via the spacing/inline exception).",
+         "count": 26,
+         "examples": [
+          {
+           "sig": "a.sr-only.focus:not-sr-only",
+           "tag": "a",
+           "w": 1,
+           "h": 1,
+           "sample": "Skip to content",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "input.peer.sr-only",
+           "tag": "input",
+           "w": 1,
+           "h": 1,
+           "sample": "0.1",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "input.peer.sr-only",
+           "tag": "input",
+           "w": 1,
+           "h": 1,
+           "sample": "0.12",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "input.peer.sr-only",
+           "tag": "input",
+           "w": 1,
+           "h": 1,
+           "sample": "0.22",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "input.peer.sr-only",
+           "tag": "input",
+           "w": 1,
+           "h": 1,
+           "sample": "0.24",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "input.peer.sr-only",
+           "tag": "input",
+           "w": 1,
+           "h": 1,
+           "sample": "0.32",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "input.peer.sr-only",
+           "tag": "input",
+           "w": 1,
+           "h": 1,
+           "sample": "0.35",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "input.peer.sr-only",
+           "tag": "input",
+           "w": 1,
+           "h": 1,
+           "sample": "0.37",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "20 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 20,
+         "examples": [
+          {
+           "sig": "p.mt-2.text-sm",
+           "px": 14,
+           "sample": "At the 12% tax bracket and a 7% yearly r"
+          },
+          {
+           "sig": "p.text-sm.font-semibold",
+           "px": 14,
+           "sample": "If each sold everything that year, after"
+          },
+          {
+           "sig": "li.flex.items-center",
+           "px": 14,
+           "sample": "Sell and rebuy twice a year"
+          },
+          {
+           "sig": "dd.mt-1.text-sm",
+           "px": 14,
+           "sample": "$101,507 in the account, less $4,241 tax"
+          },
+          {
+           "sig": "dd.mt-1.text-sm",
+           "px": 14,
+           "sample": "Paid $8,371 in tax along the way."
+          },
+          {
+           "sig": "p.mt-5.text-sm",
+           "px": 14,
+           "sample": "Never sell at all, and the holder never "
+          },
+          {
+           "sig": "p",
+           "px": 14,
+           "sample": "12% is taxable income from $12,400 to $5"
+          },
+          {
+           "sig": "p.mt-2",
+           "px": 14,
+           "sample": "Under 24, a student, and mostly supporte"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "118 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 118,
+         "examples": [
+          {
+           "sig": "span.flex-shrink-0.items-center",
+           "px": 13,
+           "sample": "Nothing stored"
+          },
+          {
+           "sig": "button.tnum.min-h-[44px]",
+           "px": 14,
+           "sample": "$100"
+          },
+          {
+           "sig": "button.tnum.min-h-[44px]",
+           "px": 14,
+           "sample": "$200"
+          },
+          {
+           "sig": "button.tnum.min-h-[44px]",
+           "px": 14,
+           "sample": "$500"
+          },
+          {
+           "sig": "button.rounded.font-semibold",
+           "px": 14,
+           "sample": "Change these"
+          },
+          {
+           "sig": "li.flex.items-center",
+           "px": 14,
+           "sample": "Leave it alone"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "typography-coverage",
+         "message": "Typography skipped for 9 node(s) inside <svg>/<canvas> artwork — sign lettering, chart labels and diagram callouts are not reading copy.",
+         "skippedRenderContext": 9,
+         "displayLeadingRelaxed": 0,
+         "formattedBlocksSkipped": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          24,
+          50
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "contributors": [
+          {
+           "selector": "input.peer.sr-only",
+           "value": "50px · 15 node(s)"
+          },
+          {
+           "selector": "section.mt-6.rounded-3xl",
+           "value": "24px · 8 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 22,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "duration-too-short",
+         "message": "1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+         "examples": [
+          {
+           "selector": "*, ::after, ::before",
+           "sig": "*, ::after, ::before",
+           "ms": 0
+          }
+         ],
+         "scope": "element",
+         "required": "50–1000ms"
+        }
+       ]
+      },
+      "performance": {
+       "score": 25,
+       "max": 25,
+       "findings": []
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 163,
+       "skippedUnknownBg": 0,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 2,
+       "distinctTextColors": 6,
+       "failureCount": 0,
+       "failures": []
+      },
+      "typography": {
+       "distinctFamilies": 2,
+       "families": [
+        "__Instrument_Sans_3f4a4b, __Instrument_Sans_Fallback_3f4a4b, system-ui, sans-serif",
+        "__Bricolage_Grotesque_2e8889, __Bricolage_Grotesque_Fallback_2e8889, __Instrument_Sans_3f4a4b, __Instrument_Sans_Fallback_3f4a4b, system-ui, sans-serif"
+       ],
+       "distinctSizes": 8,
+       "sizes": [
+        13,
+        14,
+        16,
+        18,
+        20,
+        24,
+        60,
+        72
+       ],
+       "distinctLineHeights": 8,
+       "smallBodyCount": 20,
+       "smallBody": [
+        {
+         "sig": "p.mt-2.text-sm",
+         "px": 14,
+         "sample": "At the 12% tax bracket and a 7% yearly r"
+        },
+        {
+         "sig": "p.text-sm.font-semibold",
+         "px": 14,
+         "sample": "If each sold everything that year, after"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Sell and rebuy twice a year"
+        },
+        {
+         "sig": "dd.mt-1.text-sm",
+         "px": 14,
+         "sample": "$101,507 in the account, less $4,241 tax"
+        },
+        {
+         "sig": "dd.mt-1.text-sm",
+         "px": 14,
+         "sample": "Paid $8,371 in tax along the way."
+        },
+        {
+         "sig": "p.mt-5.text-sm",
+         "px": 14,
+         "sample": "Never sell at all, and the holder never "
+        },
+        {
+         "sig": "p",
+         "px": 14,
+         "sample": "12% is taxable income from $12,400 to $5"
+        },
+        {
+         "sig": "p.mt-2",
+         "px": 14,
+         "sample": "Under 24, a student, and mostly supporte"
+        },
+        {
+         "sig": "p.mt-2.5.text-sm",
+         "px": 14,
+         "sample": "7% is close to what the S&P 500 returned"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Both grow at the same steady return ever"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Everything is in today's dollars. Prices"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Tax is on the whole dollar gain, inflati"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "2026 federal brackets for a single filer"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "The seller pays tax out of each sale rig"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Selling at the end, anything held more t"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Federal tax only. State tax, and the 3.8"
+        },
+        {
+         "sig": "p.mt-4.text-slate-600",
+         "px": 14,
+         "sample": "Sources: IRS Rev. Proc. 2025-32 (2026 br"
+        },
+        {
+         "sig": "p.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Nothing you type is saved or sent anywhe"
+        },
+        {
+         "sig": "p.mt-2.text-sm",
+         "px": 14,
+         "sample": "An estimate to learn from, not tax or in"
+        },
+        {
+         "sig": "p.mt-2.text-sm",
+         "px": 14,
+         "sample": "I built this, nobody paid for it to be h"
+        }
+       ],
+       "smallLabelCount": 118,
+       "smallLabels": [
+        {
+         "sig": "span.flex-shrink-0.items-center",
+         "px": 13,
+         "sample": "Nothing stored"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "px": 14,
+         "sample": "$100"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "px": 14,
+         "sample": "$200"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "px": 14,
+         "sample": "$500"
+        },
+        {
+         "sig": "button.rounded.font-semibold",
+         "px": 14,
+         "sample": "Change these"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Leave it alone"
+        },
+        {
+         "sig": "dt.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Leave it alone"
+        },
+        {
+         "sig": "span.tnum",
+         "px": 14,
+         "sample": "$101,507"
+        },
+        {
+         "sig": "span.tnum",
+         "px": 14,
+         "sample": "$4,241"
+        },
+        {
+         "sig": "dt.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Sell and rebuy"
+        },
+        {
+         "sig": "span.tnum",
+         "px": 14,
+         "sample": "$8,371"
+        },
+        {
+         "sig": "span.tnum.font-semibold",
+         "px": 14,
+         "sample": "$12,972"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 3,
+       "headingCount": 4,
+       "skippedRenderContext": 9
+      },
+      "shape": {
+       "distinctRadii": 5,
+       "radii": [
+        4,
+        16,
+        24,
+        50,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        24,
+        50
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 1,
+       "levels": 6,
+       "recipes": [
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(39, 91, 45, 0.04) 0px 1px 0px 0px, rgba(39, 91, 45, 0.18) 0px 8px 24px -12px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 29,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": true,
+       "reducedMotionStatus": "present",
+       "activeAnimations": 3,
+       "tooShort": [
+        {
+         "selector": "*, ::after, ::before",
+         "sig": "*, ::after, ::before",
+         "ms": 0
+        }
+       ],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 26,
+       "smallTargets": [
+        {
+         "sig": "a.sr-only.focus:not-sr-only",
+         "tag": "a",
+         "w": 1,
+         "h": 1,
+         "sample": "Skip to content",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "0.1",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "0.12",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "0.22",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "0.24",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "0.32",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "0.35",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "0.37",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "1",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "2",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "4",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "12",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "10",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "20",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "30",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "40",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 42,
+         "h": 18,
+         "sample": "Cense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 90,
+         "h": 18,
+         "sample": "IRS Topic 409",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.rounded.font-display",
+         "tag": "a",
+         "w": 60,
+         "h": 28,
+         "sample": "Cense newsletter",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 110,
+         "h": 18,
+         "sample": "consumer prices",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "button.rounded.font-semibold",
+         "tag": "button",
+         "w": 92,
+         "h": 23,
+         "sample": "Change these",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 146,
+         "h": 18,
+         "sample": "IRS Rev. Proc. 2025-32",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "tag": "button",
+         "w": 68,
+         "h": 44,
+         "sample": "$100",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "tag": "button",
+         "w": 68,
+         "h": 44,
+         "sample": "$200",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "tag": "button",
+         "w": 68,
+         "h": 44,
+         "sample": "$500",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 199,
+         "h": 18,
+         "sample": "S&P 500 returns, 1928 to 2025",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 26,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 29,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "http://localhost:3205/",
+      "title": "The Do-Nothing Calculator by Cense",
+      "timestamp": "2026-11-15T19:17:36.314Z",
+      "contentFingerprint": "zfbs6f",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 1440,
+       "height": 900,
+       "dpr": 1,
+       "isMobile": false,
+       "w": 1440,
+       "h": 900
+      },
+      "siteType": "saas",
+      "elementsScanned": 267,
+      "elementsTotal": 311,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 8.6
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 3,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.pt-8",
+        "name": "rise",
+        "dur": 240,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.reveal-gap.absolute",
+        "name": "reveal-gap",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.unfold.space-y-7",
+        "name": "unfold",
+        "dur": 200,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     },
+     "animationsAfterScroll": {
+      "count": 3,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.pt-8",
+        "name": "rise",
+        "dur": 240,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.reveal-gap.absolute",
+        "name": "reveal-gap",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.unfold.space-y-7",
+        "name": "unfold",
+        "dur": 200,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     },
+     "hoverProbe": [
+      {
+       "label": "Cense newsletter",
+       "selector": "a.rounded",
+       "changes": false
+      },
+      {
+       "label": "$100",
+       "selector": "button.tnum",
+       "changes": true
+      },
+      {
+       "label": "$200",
+       "selector": "button.tnum",
+       "changes": false
+      },
+      {
+       "label": "$500",
+       "selector": "button.tnum",
+       "changes": true
+      },
+      {
+       "label": "Change these",
+       "selector": "button.rounded",
+       "changes": true
+      }
+     ],
+     "reducedMotion": {
+      "emulated": true,
+      "snapshot": {
+       "count": 2,
+       "running": 0,
+       "anims": [
+        {
+         "target": "section.rise.pt-8",
+         "name": "rise",
+         "dur": 0,
+         "infinite": false,
+         "state": "finished"
+        },
+        {
+         "target": "div.reveal-gap.absolute",
+         "name": "reveal-gap",
+         "dur": 0,
+         "infinite": false,
+         "state": "finished"
+        }
+       ]
+      },
+      "ungatedCount": 0
+     }
+    },
+    "durationMs": 2635
+   },
+   "mobile": {
+    "report": {
+     "score": 85,
+     "grade": "B",
+     "buckets": {
+      "accessibility": {
+       "score": 22.8,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "info",
+         "ruleId": "contrast-coverage",
+         "message": "Contrast skipped for 2 element(s) (background images/gradients, colors not resolvable to sRGB, or <svg>/<canvas> artwork) — check those manually.",
+         "skippedUnknownBg": 0,
+         "skippedUnparseable": 0,
+         "skippedRenderContext": 2,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "26 tap target(s) smaller than M3's comfortable 48×48px at 375px wide — they clear the WCAG 2.5.8 24px minimum (21 via the spacing/inline exception).",
+         "count": 26,
+         "examples": [
+          {
+           "sig": "a.sr-only.focus:not-sr-only",
+           "tag": "a",
+           "w": 1,
+           "h": 1,
+           "sample": "Skip to content",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "input.peer.sr-only",
+           "tag": "input",
+           "w": 1,
+           "h": 1,
+           "sample": "0.1",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "input.peer.sr-only",
+           "tag": "input",
+           "w": 1,
+           "h": 1,
+           "sample": "0.12",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "input.peer.sr-only",
+           "tag": "input",
+           "w": 1,
+           "h": 1,
+           "sample": "0.22",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "input.peer.sr-only",
+           "tag": "input",
+           "w": 1,
+           "h": 1,
+           "sample": "0.24",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "input.peer.sr-only",
+           "tag": "input",
+           "w": 1,
+           "h": 1,
+           "sample": "0.32",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "input.peer.sr-only",
+           "tag": "input",
+           "w": 1,
+           "h": 1,
+           "sample": "0.35",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "input.peer.sr-only",
+           "tag": "input",
+           "w": 1,
+           "h": 1,
+           "sample": "0.37",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "20 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 20,
+         "examples": [
+          {
+           "sig": "p.mt-2.text-sm",
+           "px": 14,
+           "sample": "At the 12% tax bracket and a 7% yearly r"
+          },
+          {
+           "sig": "p.text-sm.font-semibold",
+           "px": 14,
+           "sample": "If each sold everything that year, after"
+          },
+          {
+           "sig": "li.flex.items-center",
+           "px": 14,
+           "sample": "Sell and rebuy twice a year"
+          },
+          {
+           "sig": "dd.mt-1.text-sm",
+           "px": 14,
+           "sample": "$101,507 in the account, less $4,241 tax"
+          },
+          {
+           "sig": "dd.mt-1.text-sm",
+           "px": 14,
+           "sample": "Paid $8,371 in tax along the way."
+          },
+          {
+           "sig": "p.mt-5.text-sm",
+           "px": 14,
+           "sample": "Never sell at all, and the holder never "
+          },
+          {
+           "sig": "p",
+           "px": 14,
+           "sample": "12% is taxable income from $12,400 to $5"
+          },
+          {
+           "sig": "p.mt-2",
+           "px": 14,
+           "sample": "Under 24, a student, and mostly supporte"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "118 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 118,
+         "examples": [
+          {
+           "sig": "span.inline-flex.flex-shrink-0",
+           "px": 13,
+           "sample": "Nothing stored"
+          },
+          {
+           "sig": "button.tnum.min-h-[44px]",
+           "px": 14,
+           "sample": "$100"
+          },
+          {
+           "sig": "button.tnum.min-h-[44px]",
+           "px": 14,
+           "sample": "$200"
+          },
+          {
+           "sig": "button.tnum.min-h-[44px]",
+           "px": 14,
+           "sample": "$500"
+          },
+          {
+           "sig": "button.rounded.font-semibold",
+           "px": 14,
+           "sample": "Change these"
+          },
+          {
+           "sig": "li.flex.items-center",
+           "px": 14,
+           "sample": "Leave it alone"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "typography-coverage",
+         "message": "Typography skipped for 9 node(s) inside <svg>/<canvas> artwork — sign lettering, chart labels and diagram callouts are not reading copy.",
+         "skippedRenderContext": 9,
+         "displayLeadingRelaxed": 0,
+         "formattedBlocksSkipped": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          24,
+          50
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "contributors": [
+          {
+           "selector": "input.peer.sr-only",
+           "value": "50px · 15 node(s)"
+          },
+          {
+           "selector": "section.mt-6.rounded-3xl",
+           "value": "24px · 8 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 22,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "duration-too-short",
+         "message": "1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+         "examples": [
+          {
+           "selector": "*, ::after, ::before",
+           "sig": "*, ::after, ::before",
+           "ms": 0
+          }
+         ],
+         "scope": "element",
+         "required": "50–1000ms"
+        }
+       ]
+      },
+      "performance": {
+       "score": 25,
+       "max": 25,
+       "findings": []
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 163,
+       "skippedUnknownBg": 0,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 2,
+       "distinctTextColors": 6,
+       "failureCount": 0,
+       "failures": []
+      },
+      "typography": {
+       "distinctFamilies": 2,
+       "families": [
+        "__Instrument_Sans_3f4a4b, __Instrument_Sans_Fallback_3f4a4b, system-ui, sans-serif",
+        "__Bricolage_Grotesque_2e8889, __Bricolage_Grotesque_Fallback_2e8889, __Instrument_Sans_3f4a4b, __Instrument_Sans_Fallback_3f4a4b, system-ui, sans-serif"
+       ],
+       "distinctSizes": 8,
+       "sizes": [
+        13,
+        14,
+        16,
+        18,
+        20,
+        24,
+        36.8,
+        54.4
+       ],
+       "distinctLineHeights": 9,
+       "smallBodyCount": 20,
+       "smallBody": [
+        {
+         "sig": "p.mt-2.text-sm",
+         "px": 14,
+         "sample": "At the 12% tax bracket and a 7% yearly r"
+        },
+        {
+         "sig": "p.text-sm.font-semibold",
+         "px": 14,
+         "sample": "If each sold everything that year, after"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Sell and rebuy twice a year"
+        },
+        {
+         "sig": "dd.mt-1.text-sm",
+         "px": 14,
+         "sample": "$101,507 in the account, less $4,241 tax"
+        },
+        {
+         "sig": "dd.mt-1.text-sm",
+         "px": 14,
+         "sample": "Paid $8,371 in tax along the way."
+        },
+        {
+         "sig": "p.mt-5.text-sm",
+         "px": 14,
+         "sample": "Never sell at all, and the holder never "
+        },
+        {
+         "sig": "p",
+         "px": 14,
+         "sample": "12% is taxable income from $12,400 to $5"
+        },
+        {
+         "sig": "p.mt-2",
+         "px": 14,
+         "sample": "Under 24, a student, and mostly supporte"
+        },
+        {
+         "sig": "p.mt-2.5.text-sm",
+         "px": 14,
+         "sample": "7% is close to what the S&P 500 returned"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Both grow at the same steady return ever"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Everything is in today's dollars. Prices"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Tax is on the whole dollar gain, inflati"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "2026 federal brackets for a single filer"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "The seller pays tax out of each sale rig"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Selling at the end, anything held more t"
+        },
+        {
+         "sig": "li",
+         "px": 14,
+         "sample": "Federal tax only. State tax, and the 3.8"
+        },
+        {
+         "sig": "p.mt-4.text-slate-600",
+         "px": 14,
+         "sample": "Sources: IRS Rev. Proc. 2025-32 (2026 br"
+        },
+        {
+         "sig": "p.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Nothing you type is saved or sent anywhe"
+        },
+        {
+         "sig": "p.mt-2.text-sm",
+         "px": 14,
+         "sample": "An estimate to learn from, not tax or in"
+        },
+        {
+         "sig": "p.mt-2.text-sm",
+         "px": 14,
+         "sample": "I built this, nobody paid for it to be h"
+        }
+       ],
+       "smallLabelCount": 118,
+       "smallLabels": [
+        {
+         "sig": "span.inline-flex.flex-shrink-0",
+         "px": 13,
+         "sample": "Nothing stored"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "px": 14,
+         "sample": "$100"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "px": 14,
+         "sample": "$200"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "px": 14,
+         "sample": "$500"
+        },
+        {
+         "sig": "button.rounded.font-semibold",
+         "px": 14,
+         "sample": "Change these"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Leave it alone"
+        },
+        {
+         "sig": "dt.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Leave it alone"
+        },
+        {
+         "sig": "span.tnum",
+         "px": 14,
+         "sample": "$101,507"
+        },
+        {
+         "sig": "span.tnum",
+         "px": 14,
+         "sample": "$4,241"
+        },
+        {
+         "sig": "dt.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Sell and rebuy"
+        },
+        {
+         "sig": "span.tnum",
+         "px": 14,
+         "sample": "$8,371"
+        },
+        {
+         "sig": "span.tnum.font-semibold",
+         "px": 14,
+         "sample": "$12,972"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 4,
+       "headingCount": 4,
+       "skippedRenderContext": 9
+      },
+      "shape": {
+       "distinctRadii": 5,
+       "radii": [
+        4,
+        16,
+        24,
+        50,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        24,
+        50
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 1,
+       "levels": 6,
+       "recipes": [
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(39, 91, 45, 0.04) 0px 1px 0px 0px, rgba(39, 91, 45, 0.18) 0px 8px 24px -12px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 29,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": true,
+       "reducedMotionStatus": "present",
+       "activeAnimations": 3,
+       "tooShort": [
+        {
+         "selector": "*, ::after, ::before",
+         "sig": "*, ::after, ::before",
+         "ms": 0
+        }
+       ],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 26,
+       "smallTargets": [
+        {
+         "sig": "a.sr-only.focus:not-sr-only",
+         "tag": "a",
+         "w": 1,
+         "h": 1,
+         "sample": "Skip to content",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "0.1",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "0.12",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "0.22",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "0.24",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "0.32",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "0.35",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "0.37",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "1",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "2",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "4",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "12",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "10",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "20",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "30",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "input.peer.sr-only",
+         "tag": "input",
+         "w": 1,
+         "h": 1,
+         "sample": "40",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 42,
+         "h": 18,
+         "sample": "Cense",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.rounded.font-display",
+         "tag": "a",
+         "w": 54,
+         "h": 28,
+         "sample": "Cense newsletter",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 90,
+         "h": 18,
+         "sample": "IRS Topic 409",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 110,
+         "h": 18,
+         "sample": "consumer prices",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "button.rounded.font-semibold",
+         "tag": "button",
+         "w": 92,
+         "h": 23,
+         "sample": "Change these",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 146,
+         "h": 18,
+         "sample": "IRS Rev. Proc. 2025-32",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "tag": "button",
+         "w": 64,
+         "h": 44,
+         "sample": "$100",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "tag": "button",
+         "w": 64,
+         "h": 44,
+         "sample": "$200",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "button.tnum.min-h-[44px]",
+         "tag": "button",
+         "w": 64,
+         "h": 44,
+         "sample": "$500",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "a.font-semibold.text-slate-900",
+         "tag": "a",
+         "w": 287,
+         "h": 41,
+         "sample": "S&P 500 returns, 1928 to 2025",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 26,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 29,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "http://localhost:3205/",
+      "title": "The Do-Nothing Calculator by Cense",
+      "timestamp": "2026-11-15T19:17:46.256Z",
+      "contentFingerprint": "zfbs6f",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 375,
+       "height": 812,
+       "dpr": 1,
+       "isMobile": true,
+       "w": 375,
+       "h": 812
+      },
+      "siteType": "saas",
+      "elementsScanned": 267,
+      "elementsTotal": 308,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 16.6
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 3,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.pt-8",
+        "name": "rise",
+        "dur": 240,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.reveal-gap.absolute",
+        "name": "reveal-gap",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.unfold.space-y-7",
+        "name": "unfold",
+        "dur": 200,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     },
+     "animationsAfterScroll": {
+      "count": 3,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.pt-8",
+        "name": "rise",
+        "dur": 240,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.reveal-gap.absolute",
+        "name": "reveal-gap",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.unfold.space-y-7",
+        "name": "unfold",
+        "dur": 200,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     }
+    },
+    "durationMs": 2859
+   },
+   "designScore": 85,
+   "designGrade": "B",
+   "measuredViewports": [
+    "desktop",
+    "mobile"
+   ],
+   "buckets": {
+    "accessibility": 76,
+    "consistency": 76,
+    "motion": 88,
+    "performance": 100
+   }
+  }
+ },
+ "notAutoDetectable": [
+  "Spatial coherence — whether elements enter/exit from where they logically belong (a menu growing from its anchor, a sheet rising from the edge it docks to). The audit sees durations and easings, not spatial origin.",
+  "Clean fades — whether opacity transitions are free of mid-fade color shifts, banding, or double-compositing. Only a human eye (or pixel diff) can judge fade quality.",
+  "Jump cuts — abrupt state changes with no transition where one is expected (content swaps, route changes). Absence of animation is not itself in the DOM.",
+  "Unified direction — whether a group of elements animates along a consistent axis/choreography rather than each doing its own thing.",
+  "Perceived hierarchy / emphasis — whether motion draws the eye to the right thing at the right time.",
+  "Content-appropriate personality — expressive vs. standard scheme being the right call for the brand and context.",
+  "Interruptibility & continuity — whether in-flight animations respond gracefully to new input rather than snapping.",
+  "Real contrast under imagery/gradients — text over photos or gradient backgrounds (the audit samples solid computed backgrounds only).",
+  "Closed shadow roots — their internals are structurally unreachable from script and are not scanned."
+ ]
+}

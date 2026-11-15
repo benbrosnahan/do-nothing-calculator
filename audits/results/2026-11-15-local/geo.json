@@ -1,0 +1,649 @@
+{
+ "url": "http://localhost:3205/",
+ "geoScore": 86,
+ "measurementValid": true,
+ "categories": {
+  "crawlAccess": {
+   "score": 20,
+   "max": 20
+  },
+  "serverContent": {
+   "score": 30,
+   "max": 30
+  },
+  "structuredData": {
+   "score": 16,
+   "max": 20
+  },
+  "socialMeta": {
+   "score": 15,
+   "max": 15
+  },
+  "discovery": {
+   "score": 0,
+   "max": 10
+  },
+  "indexability": {
+   "score": 5,
+   "max": 5
+  }
+ },
+ "contentParity": 100,
+ "ssrWordCount": 475,
+ "csrWordCount": 475,
+ "checks": [
+  {
+   "category": "LLM Crawl Access",
+   "name": "AI Bot Access in robots.txt",
+   "score": 20,
+   "maxScore": 20,
+   "status": "pass",
+   "detail": "14/14 LLM bots allowed (0 blocked)"
+  },
+  {
+   "category": "Server-Side Content",
+   "name": "Title in SSR",
+   "score": 5,
+   "maxScore": 5,
+   "status": "pass",
+   "detail": "\"The Do-Nothing Calculator by Cense\""
+  },
+  {
+   "category": "Server-Side Content",
+   "name": "Meta Description in SSR",
+   "score": 7,
+   "maxScore": 7,
+   "status": "pass",
+   "detail": "\"See what selling and rebuying your investments costs in tax, against leaving them alone. Uses 2026 federal tax rates, sh\""
+  },
+  {
+   "category": "Server-Side Content",
+   "name": "H1 Tag in SSR",
+   "score": 5,
+   "maxScore": 5,
+   "status": "pass",
+   "detail": "H1 present & matches CSR"
+  },
+  {
+   "category": "Server-Side Content",
+   "name": "Heading Hierarchy",
+   "score": 3,
+   "maxScore": 3,
+   "status": "pass",
+   "detail": "4 headings in SSR (4 in CSR)"
+  },
+  {
+   "category": "Server-Side Content",
+   "name": "Body Text Parity (SSR vs CSR)",
+   "score": 10,
+   "maxScore": 10,
+   "status": "pass",
+   "detail": "SSR matches CSR exactly (475 words, parity 100%) — LLMs see everything users see."
+  },
+  {
+   "category": "Structured Data",
+   "name": "JSON-LD in SSR",
+   "score": 12,
+   "maxScore": 12,
+   "status": "pass",
+   "detail": "1 JSON-LD block(s) in server-rendered HTML"
+  },
+  {
+   "category": "Structured Data",
+   "name": "Rich Schema Types",
+   "score": 4,
+   "maxScore": 8,
+   "status": "warn",
+   "detail": "Types in SSR: WebApplication"
+  },
+  {
+   "category": "Social & Meta Tags",
+   "name": "Open Graph Tags",
+   "score": 7,
+   "maxScore": 7,
+   "status": "pass",
+   "detail": "Complete OG tags (title + description + image)"
+  },
+  {
+   "category": "Social & Meta Tags",
+   "name": "Twitter Card",
+   "score": 4,
+   "maxScore": 4,
+   "status": "pass",
+   "detail": "Card type: summary_large_image"
+  },
+  {
+   "category": "Social & Meta Tags",
+   "name": "Canonical URL",
+   "score": 4,
+   "maxScore": 4,
+   "status": "pass",
+   "detail": "https://do-nothing-calculator.vercel.app"
+  },
+  {
+   "category": "LLM Discovery",
+   "name": "llms.txt",
+   "score": 0,
+   "maxScore": 5,
+   "status": "info",
+   "detail": "No /llms.txt — consider adding one for AI crawlers"
+  },
+  {
+   "category": "LLM Discovery",
+   "name": "Markdown Content Negotiation",
+   "score": 0,
+   "maxScore": 3,
+   "status": "info",
+   "detail": "No markdown via content negotiation"
+  },
+  {
+   "category": "LLM Discovery",
+   "name": "AI Plugin / MCP Discovery",
+   "score": 0,
+   "maxScore": 2,
+   "status": "info",
+   "detail": "No AI plugin manifest"
+  },
+  {
+   "category": "Indexability",
+   "name": "Meta Robots",
+   "score": 5,
+   "maxScore": 5,
+   "status": "pass",
+   "detail": "No restrictive meta robots"
+  }
+ ],
+ "recommendations": [
+  {
+   "severity": "low",
+   "title": "Create /llms.txt",
+   "detail": "The llms.txt convention (like robots.txt for AI) provides a structured summary of your site for LLM crawlers. See llmstxt.org for the spec."
+  },
+  {
+   "severity": "low",
+   "title": "Serve markdown via Accept header",
+   "detail": "Some AI crawlers request text/markdown. Serving a markdown version improves content extraction quality. Cloudflare and some CDNs can automate this."
+  }
+ ],
+ "comparison": {
+  "title": {
+   "status": "match",
+   "ssr": "The Do-Nothing Calculator by Cense",
+   "csr": "The Do-Nothing Calculator by Cense"
+  },
+  "description": {
+   "status": "match",
+   "ssr": "See what selling and rebuying your investments costs in tax, against leaving them alone. Uses 2026 federal tax rates, shows the result in today's dollars, and saves nothing you type.",
+   "csr": "See what selling and rebuying your investments costs in tax, against leaving them alone. Uses 2026 federal tax rates, shows the result in today's dollars, and saves nothing you type."
+  },
+  "og": [
+   {
+    "key": "og:title",
+    "ssr": "The Do-Nothing Calculator by Cense",
+    "csr": "The Do-Nothing Calculator by Cense",
+    "match": true
+   },
+   {
+    "key": "og:description",
+    "ssr": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+    "csr": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+    "match": true
+   },
+   {
+    "key": "og:url",
+    "ssr": "https://do-nothing-calculator.vercel.app",
+    "csr": "https://do-nothing-calculator.vercel.app",
+    "match": true
+   },
+   {
+    "key": "og:site_name",
+    "ssr": "Cense",
+    "csr": "Cense",
+    "match": true
+   },
+   {
+    "key": "og:locale",
+    "ssr": "en_US",
+    "csr": "en_US",
+    "match": true
+   },
+   {
+    "key": "og:image:alt",
+    "ssr": "The Do-Nothing Calculator by Cense: what selling and rebuying your investments costs in tax",
+    "csr": "The Do-Nothing Calculator by Cense: what selling and rebuying your investments costs in tax",
+    "match": true
+   },
+   {
+    "key": "og:image:type",
+    "ssr": "image/png",
+    "csr": "image/png",
+    "match": true
+   },
+   {
+    "key": "og:image",
+    "ssr": "https://do-nothing-calculator.vercel.app/opengraph-image?2ab57fcb7920f1bf",
+    "csr": "https://do-nothing-calculator.vercel.app/opengraph-image?2ab57fcb7920f1bf",
+    "match": true
+   },
+   {
+    "key": "og:image:width",
+    "ssr": "1200",
+    "csr": "1200",
+    "match": true
+   },
+   {
+    "key": "og:image:height",
+    "ssr": "630",
+    "csr": "630",
+    "match": true
+   },
+   {
+    "key": "og:type",
+    "ssr": "website",
+    "csr": "website",
+    "match": true
+   }
+  ],
+  "twitter": [
+   {
+    "key": "twitter:card",
+    "ssr": "summary_large_image",
+    "csr": "summary_large_image",
+    "match": true
+   },
+   {
+    "key": "twitter:title",
+    "ssr": "The Do-Nothing Calculator by Cense",
+    "csr": "The Do-Nothing Calculator by Cense",
+    "match": true
+   },
+   {
+    "key": "twitter:description",
+    "ssr": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+    "csr": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+    "match": true
+   },
+   {
+    "key": "twitter:image:alt",
+    "ssr": "The Do-Nothing Calculator by Cense: what selling and rebuying your investments costs in tax",
+    "csr": "The Do-Nothing Calculator by Cense: what selling and rebuying your investments costs in tax",
+    "match": true
+   },
+   {
+    "key": "twitter:image:type",
+    "ssr": "image/png",
+    "csr": "image/png",
+    "match": true
+   },
+   {
+    "key": "twitter:image",
+    "ssr": "https://do-nothing-calculator.vercel.app/opengraph-image?2ab57fcb7920f1bf",
+    "csr": "https://do-nothing-calculator.vercel.app/opengraph-image?2ab57fcb7920f1bf",
+    "match": true
+   },
+   {
+    "key": "twitter:image:width",
+    "ssr": "1200",
+    "csr": "1200",
+    "match": true
+   },
+   {
+    "key": "twitter:image:height",
+    "ssr": "630",
+    "csr": "630",
+    "match": true
+   }
+  ],
+  "h1": {
+   "status": "match",
+   "ssr": [
+    "The Do-Nothing Calculator"
+   ],
+   "csr": [
+    "The Do-Nothing Calculator"
+   ]
+  },
+  "parity": {
+   "ssrWords": 475,
+   "csrWords": 475,
+   "pct": 100,
+   "gapDirection": "even",
+   "ssrChunkCount": 24,
+   "csrChunkCount": 24,
+   "onlyInSSR": [],
+   "onlyInCSR": []
+  },
+  "structuredData": {
+   "ssrTypes": [
+    "WebApplication"
+   ],
+   "csrTypes": [
+    "WebApplication"
+   ],
+   "onlyCSR": [],
+   "onlySSR": [],
+   "match": true
+  },
+  "headingsOnlyCSR": [],
+  "headingsOnlySSR": [],
+  "canonical": {
+   "ssr": "https://do-nothing-calculator.vercel.app",
+   "csr": "https://do-nothing-calculator.vercel.app"
+  },
+  "robotsMeta": {
+   "ssr": "",
+   "csr": ""
+  },
+  "lang": {
+   "ssr": "en",
+   "csr": "en"
+  }
+ },
+ "robots": {
+  "found": true,
+  "bots": [
+   {
+    "name": "GPTBot",
+    "owner": "OpenAI",
+    "status": "allowed"
+   },
+   {
+    "name": "ChatGPT-User",
+    "owner": "OpenAI",
+    "status": "allowed"
+   },
+   {
+    "name": "ClaudeBot",
+    "owner": "Anthropic",
+    "status": "allowed"
+   },
+   {
+    "name": "anthropic-ai",
+    "owner": "Anthropic",
+    "status": "allowed"
+   },
+   {
+    "name": "CCBot",
+    "owner": "Common Crawl",
+    "status": "allowed"
+   },
+   {
+    "name": "Google-Extended",
+    "owner": "Google",
+    "status": "allowed"
+   },
+   {
+    "name": "GoogleOther",
+    "owner": "Google",
+    "status": "allowed"
+   },
+   {
+    "name": "PerplexityBot",
+    "owner": "Perplexity",
+    "status": "allowed"
+   },
+   {
+    "name": "cohere-ai",
+    "owner": "Cohere",
+    "status": "allowed"
+   },
+   {
+    "name": "Bytespider",
+    "owner": "ByteDance",
+    "status": "allowed"
+   },
+   {
+    "name": "Amazonbot",
+    "owner": "Amazon",
+    "status": "allowed"
+   },
+   {
+    "name": "Meta-ExternalAgent",
+    "owner": "Meta",
+    "status": "allowed"
+   },
+   {
+    "name": "Applebot-Extended",
+    "owner": "Apple",
+    "status": "allowed"
+   },
+   {
+    "name": "Diffbot",
+    "owner": "Diffbot",
+    "status": "allowed"
+   }
+  ]
+ },
+ "discovery": {
+  "llmsTxt": {
+   "found": false
+  },
+  "llmsFullTxt": {
+   "found": false
+  },
+  "markdown": {
+   "served": false,
+   "contentType": "text/html; charset=utf-8"
+  },
+  "aiPlugin": {
+   "found": false
+  }
+ },
+ "metaResult": {
+  "url": "http://localhost:3205/",
+  "tags": [
+   {
+    "name": "title",
+    "content": "The Do-Nothing Calculator by Cense",
+    "status": "good",
+    "recommendation": "Title is 34 chars. Good length."
+   },
+   {
+    "name": "meta description",
+    "content": "See what selling and rebuying your investments costs in tax, against leaving them alone. Uses 2026 federal tax rates, shows the result in today's dollars, and saves nothing you type.",
+    "status": "warning",
+    "recommendation": "Description is 182 chars. Keep under 160."
+   },
+   {
+    "name": "viewport",
+    "content": "width=device-width, initial-scale=1",
+    "status": "good",
+    "recommendation": "Viewport is set."
+   },
+   {
+    "name": "canonical",
+    "content": "https://do-nothing-calculator.vercel.app",
+    "status": "good",
+    "recommendation": "Canonical URL: https://do-nothing-calculator.vercel.app"
+   },
+   {
+    "name": "og:title",
+    "content": "The Do-Nothing Calculator by Cense",
+    "status": "good",
+    "recommendation": "Set to: The Do-Nothing Calculator by Cense"
+   },
+   {
+    "name": "og:description",
+    "content": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+    "status": "good",
+    "recommendation": "Set to: Two lines. One is you holding. One is you fidgeting. Watch the gap."
+   },
+   {
+    "name": "og:image",
+    "content": "https://do-nothing-calculator.vercel.app/opengraph-image?2ab57fcb7920f1bf",
+    "status": "good",
+    "recommendation": "Set to: https://do-nothing-calculator.vercel.app/opengraph-image?2ab57fcb7920f1bf"
+   },
+   {
+    "name": "og:url",
+    "content": "https://do-nothing-calculator.vercel.app",
+    "status": "good",
+    "recommendation": "Set to: https://do-nothing-calculator.vercel.app"
+   },
+   {
+    "name": "og:type",
+    "content": "website",
+    "status": "good",
+    "recommendation": "Set to: website"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image",
+    "status": "good",
+    "recommendation": "Set to: summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "The Do-Nothing Calculator by Cense",
+    "status": "good",
+    "recommendation": "Set to: The Do-Nothing Calculator by Cense"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+    "status": "good",
+    "recommendation": "Set to: Two lines. One is you holding. One is you fidgeting. Watch the gap."
+   },
+   {
+    "name": "twitter:image",
+    "content": "https://do-nothing-calculator.vercel.app/opengraph-image?2ab57fcb7920f1bf",
+    "status": "good",
+    "recommendation": "Set to: https://do-nothing-calculator.vercel.app/opengraph-image?2ab57fcb7920f1bf"
+   },
+   {
+    "name": "lang attribute",
+    "content": "en",
+    "status": "good",
+    "recommendation": "Language: en"
+   },
+   {
+    "name": "favicon",
+    "content": "/icon.svg?497578d03306b208",
+    "status": "good",
+    "recommendation": "Favicon found: /icon.svg?497578d03306b208"
+   }
+  ],
+  "preview": {
+   "title": "The Do-Nothing Calculator by Cense",
+   "description": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+   "image": "https://do-nothing-calculator.vercel.app/opengraph-image?2ab57fcb7920f1bf",
+   "url": "https://do-nothing-calculator.vercel.app",
+   "siteName": "Cense"
+  },
+  "summary": {
+   "good": 14,
+   "warnings": 1,
+   "missing": 0,
+   "total": 15
+  },
+  "score": 93
+ },
+ "structuredDataResult": {
+  "url": "http://localhost:3205/",
+  "totalSchemas": 1,
+  "items": [
+   {
+    "type": "WebApplication",
+    "source": "json-ld",
+    "raw": "{\"@context\":\"https://schema.org\",\"@type\":\"WebApplication\",\"name\":\"The Do-Nothing Calculator by Cense\",\"url\":\"https://do-nothing-calculator.vercel.app\",\"description\":\"See what selling and rebuying your investments costs in tax, against leaving them alone. Uses 2026 federal tax rates, shows the result in today's dollars, and saves nothing you type.\",\"applicationCategory\":\"FinanceApplication\",\"operatingSystem\":\"Any\",\"isAccessibleForFree\":true,\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\"},\"audience\":{\"@type\":\"Audience\",\"audienceType\":\"College students\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Cense\",\"url\":\"https://cense.beehiiv.com\"}}",
+    "parsed": {
+     "@context": "https://schema.org",
+     "@type": "WebApplication",
+     "name": "The Do-Nothing Calculator by Cense",
+     "url": "https://do-nothing-calculator.vercel.app",
+     "description": "See what selling and rebuying your investments costs in tax, against leaving them alone. Uses 2026 federal tax rates, shows the result in today's dollars, and saves nothing you type.",
+     "applicationCategory": "FinanceApplication",
+     "operatingSystem": "Any",
+     "isAccessibleForFree": true,
+     "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+     },
+     "audience": {
+      "@type": "Audience",
+      "audienceType": "College students"
+     },
+     "publisher": {
+      "@type": "Organization",
+      "name": "Cense",
+      "url": "https://cense.beehiiv.com"
+     }
+    },
+    "errors": [],
+    "warnings": [
+     "Schema type \"WebApplication\" is valid but not in our validation database. Basic checks only."
+    ],
+    "properties": [
+     {
+      "name": "name",
+      "value": "The Do-Nothing Calculator by Cense",
+      "required": false,
+      "present": true
+     },
+     {
+      "name": "url",
+      "value": "https://do-nothing-calculator.vercel.app",
+      "required": false,
+      "present": true
+     },
+     {
+      "name": "description",
+      "value": "See what selling and rebuying your investments costs in tax, against leaving the...",
+      "required": false,
+      "present": true
+     },
+     {
+      "name": "applicationCategory",
+      "value": "FinanceApplication",
+      "required": false,
+      "present": true
+     },
+     {
+      "name": "operatingSystem",
+      "value": "Any",
+      "required": false,
+      "present": true
+     },
+     {
+      "name": "isAccessibleForFree",
+      "value": "true",
+      "required": false,
+      "present": true
+     },
+     {
+      "name": "offers",
+      "value": "{Offer}",
+      "required": false,
+      "present": true
+     },
+     {
+      "name": "audience",
+      "value": "{Audience}",
+      "required": false,
+      "present": true
+     },
+     {
+      "name": "publisher",
+      "value": "{Organization}",
+      "required": false,
+      "present": true
+     }
+    ]
+   }
+  ],
+  "summary": {
+   "total": 1,
+   "valid": 1,
+   "withErrors": 0,
+   "totalErrors": 0,
+   "totalWarnings": 1,
+   "jsonLd": 1,
+   "microdata": 0
+  },
+  "richResultEligibility": {
+   "eligible": false,
+   "types": []
+  }
+ }
+}

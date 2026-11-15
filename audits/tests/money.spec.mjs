@@ -113,7 +113,7 @@ test('MONEY-07 selling once a year is named plainly and said to be short-term, w
   await expect(page.getByText(/Hold it for more than a year first/)).toBeVisible();
 });
 
-test('MONEY-08 when selling comes out ahead, the headline says so instead of showing a negative gain', async ({ page }) => {
+test('MONEY-03 when selling comes out ahead, the headline says so instead of showing a negative gain', async ({ page }) => {
   // No real growth, large amounts, lowest bracket, once a year: the holder's 15% at the end outweighs the
   // seller's 10% to 22% along the way.
   const p = { monthly: 10000, realReturn: 0, bracket: 0.1, salesPerYear: 1, years: 20 };

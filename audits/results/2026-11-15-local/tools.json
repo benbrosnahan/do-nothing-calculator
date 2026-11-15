@@ -1,0 +1,644 @@
+{
+ "url": "http://localhost:3205/",
+ "results": {
+  "header-check": {
+   "url": "http://localhost:3205/",
+   "statusCode": 200,
+   "allHeaders": {
+    "cache-control": "s-maxage=31536000, stale-while-revalidate",
+    "connection": "close",
+    "content-length": "29712",
+    "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'",
+    "content-type": "text/html; charset=utf-8",
+    "cross-origin-opener-policy": "same-origin",
+    "date": "Sun, 15 Nov 2026 19:17:47 GMT",
+    "etag": "\"alqo949jk0mq9\"",
+    "permissions-policy": "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "x-nextjs-cache": "HIT"
+   },
+   "analysis": [
+    {
+     "name": "Cache-Control",
+     "value": "s-maxage=31536000, stale-while-revalidate",
+     "status": "good",
+     "recommendation": "Cache-Control is configured."
+    },
+    {
+     "name": "Content-Encoding",
+     "value": null,
+     "status": "warning",
+     "recommendation": "Enable gzip or Brotli compression to reduce transfer sizes by 60-80%."
+    },
+    {
+     "name": "Strict-Transport-Security",
+     "value": null,
+     "status": "missing",
+     "recommendation": "Add HSTS header: \"max-age=63072000; includeSubDomains; preload\""
+    },
+    {
+     "name": "X-Content-Type-Options",
+     "value": "nosniff",
+     "status": "good",
+     "recommendation": "X-Content-Type-Options is set."
+    },
+    {
+     "name": "X-Frame-Options",
+     "value": "DENY",
+     "status": "good",
+     "recommendation": "X-Frame-Options is set."
+    },
+    {
+     "name": "Content-Security-Policy",
+     "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'",
+     "status": "good",
+     "recommendation": "Content-Security-Policy is set."
+    },
+    {
+     "name": "Referrer-Policy",
+     "value": "strict-origin-when-cross-origin",
+     "status": "good",
+     "recommendation": "Referrer-Policy is set."
+    },
+    {
+     "name": "Permissions-Policy",
+     "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
+     "status": "good",
+     "recommendation": "Permissions-Policy is set."
+    },
+    {
+     "name": "ETag",
+     "value": "\"alqo949jk0mq9\"",
+     "status": "good",
+     "recommendation": "ETag is set for conditional requests."
+    },
+    {
+     "name": "Vary",
+     "value": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept-Encoding",
+     "status": "good",
+     "recommendation": "Vary header set: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept-Encoding"
+    }
+   ],
+   "summary": {
+    "good": 8,
+    "warnings": 1,
+    "missing": 1,
+    "total": 10
+   },
+   "score": 80
+  },
+  "meta-validate": {
+   "url": "http://localhost:3205/",
+   "tags": [
+    {
+     "name": "title",
+     "content": "The Do-Nothing Calculator by Cense",
+     "status": "good",
+     "recommendation": "Title is 34 chars. Good length."
+    },
+    {
+     "name": "meta description",
+     "content": "See what selling and rebuying your investments costs in tax, against leaving them alone. Uses 2026 federal tax rates, shows the result in today's dollars, and saves nothing you type.",
+     "status": "warning",
+     "recommendation": "Description is 182 chars. Keep under 160."
+    },
+    {
+     "name": "viewport",
+     "content": "width=device-width, initial-scale=1",
+     "status": "good",
+     "recommendation": "Viewport is set."
+    },
+    {
+     "name": "canonical",
+     "content": "https://do-nothing-calculator.vercel.app",
+     "status": "good",
+     "recommendation": "Canonical URL: https://do-nothing-calculator.vercel.app"
+    },
+    {
+     "name": "og:title",
+     "content": "The Do-Nothing Calculator by Cense",
+     "status": "good",
+     "recommendation": "Set to: The Do-Nothing Calculator by Cense"
+    },
+    {
+     "name": "og:description",
+     "content": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+     "status": "good",
+     "recommendation": "Set to: Two lines. One is you holding. One is you fidgeting. Watch the gap."
+    },
+    {
+     "name": "og:image",
+     "content": "https://do-nothing-calculator.vercel.app/opengraph-image?2ab57fcb7920f1bf",
+     "status": "good",
+     "recommendation": "Set to: https://do-nothing-calculator.vercel.app/opengraph-image?2ab57fcb7920f1bf"
+    },
+    {
+     "name": "og:url",
+     "content": "https://do-nothing-calculator.vercel.app",
+     "status": "good",
+     "recommendation": "Set to: https://do-nothing-calculator.vercel.app"
+    },
+    {
+     "name": "og:type",
+     "content": "website",
+     "status": "good",
+     "recommendation": "Set to: website"
+    },
+    {
+     "name": "twitter:card",
+     "content": "summary_large_image",
+     "status": "good",
+     "recommendation": "Set to: summary_large_image"
+    },
+    {
+     "name": "twitter:title",
+     "content": "The Do-Nothing Calculator by Cense",
+     "status": "good",
+     "recommendation": "Set to: The Do-Nothing Calculator by Cense"
+    },
+    {
+     "name": "twitter:description",
+     "content": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+     "status": "good",
+     "recommendation": "Set to: Two lines. One is you holding. One is you fidgeting. Watch the gap."
+    },
+    {
+     "name": "twitter:image",
+     "content": "https://do-nothing-calculator.vercel.app/opengraph-image?2ab57fcb7920f1bf",
+     "status": "good",
+     "recommendation": "Set to: https://do-nothing-calculator.vercel.app/opengraph-image?2ab57fcb7920f1bf"
+    },
+    {
+     "name": "lang attribute",
+     "content": "en",
+     "status": "good",
+     "recommendation": "Language: en"
+    },
+    {
+     "name": "favicon",
+     "content": "/icon.svg?497578d03306b208",
+     "status": "good",
+     "recommendation": "Favicon found: /icon.svg?497578d03306b208"
+    }
+   ],
+   "preview": {
+    "title": "The Do-Nothing Calculator by Cense",
+    "description": "Two lines. One is you holding. One is you fidgeting. Watch the gap.",
+    "image": "https://do-nothing-calculator.vercel.app/opengraph-image?2ab57fcb7920f1bf",
+    "url": "https://do-nothing-calculator.vercel.app",
+    "siteName": "Cense"
+   },
+   "summary": {
+    "good": 14,
+    "warnings": 1,
+    "missing": 0,
+    "total": 15
+   },
+   "score": 93
+  },
+  "structured-data": {
+   "url": "http://localhost:3205/",
+   "totalSchemas": 1,
+   "items": [
+    {
+     "type": "WebApplication",
+     "source": "json-ld",
+     "raw": "{\"@context\":\"https://schema.org\",\"@type\":\"WebApplication\",\"name\":\"The Do-Nothing Calculator by Cense\",\"url\":\"https://do-nothing-calculator.vercel.app\",\"description\":\"See what selling and rebuying your investments costs in tax, against leaving them alone. Uses 2026 federal tax rates, shows the result in today's dollars, and saves nothing you type.\",\"applicationCategory\":\"FinanceApplication\",\"operatingSystem\":\"Any\",\"isAccessibleForFree\":true,\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\"},\"audience\":{\"@type\":\"Audience\",\"audienceType\":\"College students\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Cense\",\"url\":\"https://cense.beehiiv.com\"}}",
+     "parsed": {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "The Do-Nothing Calculator by Cense",
+      "url": "https://do-nothing-calculator.vercel.app",
+      "description": "See what selling and rebuying your investments costs in tax, against leaving them alone. Uses 2026 federal tax rates, shows the result in today's dollars, and saves nothing you type.",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any",
+      "isAccessibleForFree": true,
+      "offers": {
+       "@type": "Offer",
+       "price": "0",
+       "priceCurrency": "USD"
+      },
+      "audience": {
+       "@type": "Audience",
+       "audienceType": "College students"
+      },
+      "publisher": {
+       "@type": "Organization",
+       "name": "Cense",
+       "url": "https://cense.beehiiv.com"
+      }
+     },
+     "errors": [],
+     "warnings": [
+      "Schema type \"WebApplication\" is valid but not in our validation database. Basic checks only."
+     ],
+     "properties": [
+      {
+       "name": "name",
+       "value": "The Do-Nothing Calculator by Cense",
+       "required": false,
+       "present": true
+      },
+      {
+       "name": "url",
+       "value": "https://do-nothing-calculator.vercel.app",
+       "required": false,
+       "present": true
+      },
+      {
+       "name": "description",
+       "value": "See what selling and rebuying your investments costs in tax, against leaving the...",
+       "required": false,
+       "present": true
+      },
+      {
+       "name": "applicationCategory",
+       "value": "FinanceApplication",
+       "required": false,
+       "present": true
+      },
+      {
+       "name": "operatingSystem",
+       "value": "Any",
+       "required": false,
+       "present": true
+      },
+      {
+       "name": "isAccessibleForFree",
+       "value": "true",
+       "required": false,
+       "present": true
+      },
+      {
+       "name": "offers",
+       "value": "{Offer}",
+       "required": false,
+       "present": true
+      },
+      {
+       "name": "audience",
+       "value": "{Audience}",
+       "required": false,
+       "present": true
+      },
+      {
+       "name": "publisher",
+       "value": "{Organization}",
+       "required": false,
+       "present": true
+      }
+     ]
+    }
+   ],
+   "summary": {
+    "total": 1,
+    "valid": 1,
+    "withErrors": 0,
+    "totalErrors": 0,
+    "totalWarnings": 1,
+    "jsonLd": 1,
+    "microdata": 0
+   },
+   "richResultEligibility": {
+    "eligible": false,
+    "types": []
+   }
+  },
+  "sitemap-validate": {
+   "sitemapUrl": "http://localhost:3205/sitemap.xml",
+   "found": true,
+   "isSitemapIndex": false,
+   "totalUrls": 1,
+   "checkedUrls": 1,
+   "urls": [
+    {
+     "loc": "https://do-nothing-calculator.vercel.app/",
+     "lastmod": null,
+     "status": 200,
+     "statusText": "ok",
+     "responseTimeMs": 153,
+     "issues": [
+      "Missing lastmod. Add last modification date for better crawling."
+     ]
+    }
+   ],
+   "uncheckedUrls": [],
+   "missingCommonPages": [
+    "http://localhost:3205/"
+   ],
+   "duplicates": [],
+   "issues": [
+    "1 common page(s) exist but are missing from sitemap: http://localhost:3205/"
+   ],
+   "summary": {
+    "total": 1,
+    "checked": 1,
+    "ok": 1,
+    "redirects": 0,
+    "errors": 0,
+    "dead": 0,
+    "slow": 0,
+    "duplicates": 0,
+    "missingCommon": 1
+   }
+  },
+  "redirect-check": {
+   "url": "http://localhost:3205/",
+   "finalUrl": "http://localhost:3205/",
+   "finalStatus": 200,
+   "hops": [
+    {
+     "url": "http://localhost:3205/",
+     "statusCode": 200,
+     "location": null,
+     "timeMs": 2
+    }
+   ],
+   "redirectCount": 0,
+   "totalTimeMs": 2,
+   "status": "good",
+   "message": "No redirects detected. URL resolves directly."
+  },
+  "broken-links": {
+   "url": "http://localhost:3205/",
+   "depth": "page",
+   "pagesScanned": 1,
+   "pagesScannedList": [
+    "http://localhost:3205/"
+   ],
+   "totalLinks": 17,
+   "totalDiscoveredLinks": 17,
+   "links": [
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "https://fred.stlouisfed.org/series/CPIAUCNS",
+     "anchorText": "consumer prices",
+     "linkType": "a",
+     "isInternal": false,
+     "statusCode": 0,
+     "statusText": "timeout",
+     "responseTimeMs": null,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "https://cense.beehiiv.com/",
+     "anchorText": "Cense newsletter",
+     "linkType": "a",
+     "isInternal": false,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 216,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+     "anchorText": "IRS Rev. Proc. 2025-32",
+     "linkType": "a",
+     "isInternal": false,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 287,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "https://www.irs.gov/taxtopics/tc409",
+     "anchorText": "IRS Topic 409",
+     "linkType": "a",
+     "isInternal": false,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 199,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html",
+     "anchorText": "S&P 500 returns, 1928 to 2025",
+     "linkType": "a",
+     "isInternal": false,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 118,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "http://localhost:3205/_next/static/chunks/fd9d1056-7192ccad7d208432.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 28,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "http://localhost:3205/_next/static/chunks/117-5e9c2d34c3ba5755.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 29,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "http://localhost:3205/_next/static/chunks/main-app-f50378d245571868.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 29,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "http://localhost:3205/_next/static/chunks/137-a3e1f3eebce6c471.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 29,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "http://localhost:3205/_next/static/chunks/app/page-666ea771ff8e9f17.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 29,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "http://localhost:3205/_next/static/chunks/polyfills-42372ed130431b0a.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 29,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "http://localhost:3205/_next/static/chunks/webpack-1c68981ec52aae02.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 30,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "http://localhost:3205/_next/static/media/26d0ba92e140f0dc-s.p.woff2",
+     "anchorText": "preload",
+     "linkType": "link",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 30,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "http://localhost:3205/_next/static/media/9d5a263311222317-s.p.woff2",
+     "anchorText": "preload",
+     "linkType": "link",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 30,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "http://localhost:3205/_next/static/css/fec1f23f9e73e707.css",
+     "anchorText": "stylesheet",
+     "linkType": "link",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 30,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "https://do-nothing-calculator.vercel.app/",
+     "anchorText": "canonical",
+     "linkType": "link",
+     "isInternal": false,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 117,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3205/",
+     "targetUrl": "http://localhost:3205/icon.svg?497578d03306b208",
+     "anchorText": "icon",
+     "linkType": "link",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 32,
+     "sources": [
+      "http://localhost:3205/"
+     ]
+    }
+   ],
+   "summary": {
+    "total": 17,
+    "ok": 16,
+    "broken": 0,
+    "redirects": 0,
+    "errors": 0,
+    "timeouts": 1
+   }
+  },
+  "webmcp-check": {
+   "url": "http://localhost:3205/",
+   "aiReadinessScore": 0,
+   "mcpDiscovery": {
+    "score": 0,
+    "found": false,
+    "valid": false,
+    "hasAuth": false,
+    "data": null,
+    "errors": [
+     "HTTP 404 response from http://localhost:3205/.well-known/mcp.json."
+    ]
+   },
+   "webmcpDeclarative": {
+    "score": 0,
+    "toolCount": 0,
+    "tools": [],
+    "findings": [
+     "No declarative WebMCP tools found (no toolname attributes in HTML)."
+    ]
+   },
+   "webmcpImperative": {
+    "score": 0,
+    "detected": false,
+    "registerToolCalls": 0,
+    "findings": [
+     "No imperative WebMCP tool registration detected in inline scripts.",
+     "Note: This check cannot detect tools registered via external JavaScript files."
+    ]
+   },
+   "recommendations": [
+    "Add a .well-known/mcp.json file to enable MCP server discovery. This lets AI agents find and connect to your API endpoints automatically.",
+    "Add WebMCP declarative tools to your HTML using toolname attributes on <form> elements. Example: <form toolname=\"search\" tooldescription=\"Search products\"> to expose functionality to AI agents.",
+    "Consider implementing imperative WebMCP tools using navigator.modelContext.registerTool() for dynamic tool registration that depends on runtime state.",
+    "This page has no AI/MCP integration. Start with .well-known/mcp.json for server discovery or add toolname attributes to existing forms for quick wins."
+   ]
+  }
+ }
+}
